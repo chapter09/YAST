@@ -13,7 +13,7 @@
     <div>
       <div id="main-container">
         <div id="content-container" class="wrap group">
-          <div id="hero-text-container">
+          <div id="hero-text-container" style="display:none;">
             <h1><?php echo __("Our Clients", true);?></h1>
             <!--SLIDE-->
             <?php $count = 0;
@@ -29,7 +29,7 @@
           </div>
           <!--#hero-text-container-->
           
-          <div id="slide-wrapper">
+          <div id="slide-wrapper" style="display:none;">
             <div class="xfade">
               <div class="xfade-container">
                 <ul id="slide" style="position: relative; height: 330px; overflow: hidden; ">

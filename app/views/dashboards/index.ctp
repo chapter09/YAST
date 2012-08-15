@@ -1,6 +1,6 @@
 <?php
-  echo $this->Html->css('main');
-  echo $this->Html->css('home');
+  echo $this->Html->css('main', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('home', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('jquery.easing.1.3', false);
   echo $javascript->link('jquery.xfade', false);
