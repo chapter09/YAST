@@ -61,7 +61,27 @@
                                 <ul></ul>
                               </li></ul>
                               
-                              <ul><li class="">
+                              <ul><li class="first">
+                                <?php
+                                  echo $this->Html->link(__("About", true), array(
+                                    'controller' => 'dashboards',
+                                    'action' => 'about',
+                                  ));
+                                  ?>
+                                <ul></ul>
+                              </li></ul>
+                             
+                              <ul><li class="first">
+                                <?php
+                                  echo $this->Html->link(__("About", true), array(
+                                    'controller' => 'dashboards',
+                                    'action' => 'about',
+                                  ));
+                                  ?>
+                                <ul></ul>
+                              </li></ul>
+			     
+                             <ul><li class="">
                                 <?php
                                 echo $this->Html->link("中文", array(
                                   'language' => 'chi'
@@ -79,6 +99,11 @@
                                 <ul></ul>
                               </li></ul>
                               
+                              <ul><li class="">
+                                <a id="home" href="/">
+				</a>
+				<ul></ul>
+                              </li></ul>
                             </div>
                                    
                           </div>

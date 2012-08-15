@@ -79,7 +79,7 @@
 		var $firstChild = '';
 		var childrenWidth = '';
 		var childrenOuterWidth = '';
-		var wrapperWidth = '';
+		var wrapperWidth = '840';
 		var wrapperHeight = '';
 		var $pager = '';	
 		var interval = '';
@@ -627,8 +627,8 @@
 			if(options.mode == 'horizontal'){
 				// wrap the <ul> in div that acts as a window and make the <ul> uber wide
 				$parent
-				.wrap('<div class="'+options.wrapperClass+'" style="width:'+wrapperWidth+'px; position:relative;"></div>')
-				.wrap('<div class="bx-window" style="position:relative; overflow:hidden; width:'+wrapperWidth+'px;"></div>')
+				.wrap('<div class="'+options.wrapperClass+'" style="width:'+840+'px; position:relative;"></div>')
+				.wrap('<div class="bx-window" style="position:relative; overflow:hidden; width:'+840+'px;"></div>')
 				.css({
 				  width: '999999px',
 				  position: 'relative',

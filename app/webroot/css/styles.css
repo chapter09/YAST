@@ -178,7 +178,7 @@ header img, #masthead img {
 /* ==LEVEL ONE==*/
 #nav-dropdown {
 	background:#383535;
-	border-top:3px solid #a5cf10;
+	border-top:3px solid #379EE0;
 	height:38px;
 }
 #nav-dropdown a, #nav-dropdown ul {
@@ -250,7 +250,7 @@ header img, #masthead img {
 	background-color:#5a5a55;
 }
 .membership-btn {
-	background:url("../img/ts.gif") repeat-x #a5cf10;
+	background:url("../img/bg-membership-btn.gif") repeat-x #379ee0;
 	color:#fff;
 	float:right !important;
 	font-weight:bold;
@@ -264,9 +264,9 @@ header img, #masthead img {
 		padding:11px 12px 12px 12px;
 		letter-spacing: 0mm;
 		background: #a5cf10;
-		background: -moz-linear-gradient(top, #a5cf10 1%, #8EB30F 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a5cf10), color-stop(100%, #8EB30F));
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5cf10', endColorstr='#8EB30F', GradientType=0);
+		background: -moz-linear-gradient(top, #379EE0 1%, #2977a9 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #379ee0), color-stop(100%, #2977a9));
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#379ee0', endColorstr='#2977a9', GradientType=0);
 	}
 	#nav-dropdown .membership-btn a span {
 		background:url("../img/btn-membership-arrow.png") no-repeat right 1px;
@@ -275,9 +275,9 @@ header img, #masthead img {
 	}
 	#nav-dropdown .membership-btn a:hover {
 		background: #2976a8;
-		background: -moz-linear-gradient(top, #9DC510 1%, #54690A 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #9DC510), color-stop(100%, #54690A));
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9DC510', endColorstr='#54690A', GradientType=0);
+		background: -moz-linear-gradient(top, #379ee0 1%, #1c5071 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #379ee0), color-stop(100%, #1c5071));
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#379ee0', endColorstr='1c5071', GradientType=0);
 	}
 
 /*==FOOTER====================================================*/
@@ -325,7 +325,7 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 	background:url("../img/util-nav-bg.gif") 0 0 repeat-x;
 	float:right;
 	height:38px;
-	width:310px; /*changed from 491px for migration*/
+	width:360px; /*changed from 491px for migration*/
 }
 	
 	#utility-bar ul {
@@ -566,4 +566,10 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
     padding: 5px;
     top: 0;
     left: 400px;
+}
+
+li #home {
+    background: url("/img/home.png") no-repeat 2px;
+    width:8px;
+    height:10px;
 }
