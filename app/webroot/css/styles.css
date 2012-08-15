@@ -137,7 +137,7 @@ header#masthead, #masthead {
 	background:url("../img/bg-masthead.gif") repeat-x #9e9fa1;
 }
 header img, #masthead img {
-	padding: 18px 0 17px 0;
+	padding: 18px 0 10px 0;
 	float:left;
 }
 #tagline {

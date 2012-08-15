@@ -46,7 +46,7 @@ body {
 /*==HOMEPAGE INSIGHTS=========================================*/
 #insight-container {
 	background-color:#fefefe;
-	height:117px;
+	height:130px;
 	border-top: 1px solid #BBB;
 }
 #insight-navigation-container {
@@ -69,7 +69,7 @@ body {
 }
 #insight-content {
 	float:left;
-	height:115px;
+	height:99px;
 	margin:15px 20px;
 	overflow:hidden;
 	width:840px;
