@@ -58,4 +58,10 @@ class WidgetsController extends AppController {
 		$this->Session->setFlash(__('Widget was not deleted', true));
 		$this->redirect(array('action' => 'index'));
 	}
+
+	function beforeFilter() {
+    parent::beforeFilter(); 
+    $this->Auth->allowedActions = array('index', 'view');
+	}
+	
 }

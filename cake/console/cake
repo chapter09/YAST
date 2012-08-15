@@ -29,6 +29,6 @@ done
 LIB=$(dirname -- "$LIB")/
 APP=`pwd`
 
-exec php -q ${LIB}cake.php -working "${APP}" "$@"
+exec /Applications/MAMP/bin/php/php5.2.17/bin/php -q ${LIB}cake.php -working "${APP}" "$@"
 
 exit;

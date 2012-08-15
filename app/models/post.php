@@ -12,5 +12,6 @@ class Post extends AppModel{
        'message' => '这个字段不能为空',
      )
   );
+
 }
 ?>

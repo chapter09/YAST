@@ -1,5 +1,5 @@
 <!-- File: /app/View/Posts/index.ctp -->
-<h1>Blog posts</h1>
+<h1><?php __('Blog posts'); ?></h1>
 <p><?php echo $html->link("Add Post","/posts/add");?>
  
  

@@ -9,11 +9,17 @@ class UsersController extends AppController {
   }
   
 
-  function login(){
-  }
-
+	function login() {
+		if ($this->Session->read('Auth.User')) {
+			$this->Session->setFlash('已登錄!');
+			$this->redirect('/', null, false);
+		}
+	}       
+ 	
   function logout(){
-  }
+		$this->Session->setFlash('已登出!');
+		$this->redirect($this->Auth->logout());
+	}
 
 	function index() {
 		$this->User->recursive = 0;
@@ -74,4 +80,29 @@ class UsersController extends AppController {
 		$this->Session->setFlash(__('User was not deleted', true));
 		$this->redirect(array('action' => 'index'));
 	}
+
+	function initDB() {
+    $group =& $this->User->Group;
+    //Allow admins to everything
+    $group->id = 9;     
+    $this->Acl->allow($group, 'controllers');
+ 
+    //allow managers to posts and widgets
+    $group->id = 10;
+    $this->Acl->deny($group, 'controllers');
+    $this->Acl->allow($group, 'controllers/Posts');
+    $this->Acl->allow($group, 'controllers/Widgets');
+ 
+    //allow users to only add and edit on posts and widgets
+    $group->id = 11;
+    $this->Acl->deny($group, 'controllers');        
+    $this->Acl->allow($group, 'controllers/Posts/add');
+    $this->Acl->allow($group, 'controllers/Posts/edit');        
+    $this->Acl->allow($group, 'controllers/Widgets/add');
+    $this->Acl->allow($group, 'controllers/Widgets/edit');
+    //we add an exit to avoid an ugly "missing views" error message
+    echo "all done";
+    exit;
+	}
+	
 }
