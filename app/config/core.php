@@ -302,4 +302,4 @@
  *
  */
 	Cache::config('default', array('engine' => 'File'));
-	//Configure::write('Config.language', 'chs');
+	Configure::write('Config.language', 'zh_cn');

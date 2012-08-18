@@ -1,0 +1,346 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-08-15 14:50+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /controllers/groups_controller.php:20;40
+msgid "Invalid group"
+msgstr ""
+
+#: /controllers/groups_controller.php:30;45
+msgid "The group has been saved"
+msgstr ""
+
+#: /controllers/groups_controller.php:33;48
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/groups_controller.php:58
+msgid "Invalid id for group"
+msgstr ""
+
+#: /controllers/groups_controller.php:62
+msgid "Group deleted"
+msgstr ""
+
+#: /controllers/groups_controller.php:65
+msgid "Group was not deleted"
+msgstr ""
+
+#: /controllers/users_controller.php:31;53
+msgid "Invalid user"
+msgstr ""
+
+#: /controllers/users_controller.php:41;58
+msgid "The user has been saved"
+msgstr ""
+
+#: /controllers/users_controller.php:44;61
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/users_controller.php:73
+msgid "Invalid id for user"
+msgstr ""
+
+#: /controllers/users_controller.php:77
+msgid "User deleted"
+msgstr ""
+
+#: /controllers/users_controller.php:80
+msgid "User was not deleted"
+msgstr ""
+
+#: /controllers/widgets_controller.php:13;33
+msgid "Invalid widget"
+msgstr ""
+
+#: /controllers/widgets_controller.php:23;38
+msgid "The widget has been saved"
+msgstr ""
+
+#: /controllers/widgets_controller.php:26;41
+msgid "The widget could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/widgets_controller.php:51
+msgid "Invalid id for widget"
+msgstr ""
+
+#: /controllers/widgets_controller.php:55
+msgid "Widget deleted"
+msgstr ""
+
+#: /controllers/widgets_controller.php:58
+msgid "Widget was not deleted"
+msgstr ""
+
+#: /views/groups/add.ctp:4
+msgid "Add Group"
+msgstr ""
+
+#: /views/groups/add.ctp:9
+#: /views/groups/edit.ctp:10
+#: /views/users/add.ctp:11
+#: /views/users/edit.ctp:12
+#: /views/widgets/add.ctp:11
+#: /views/widgets/edit.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: /views/groups/add.ctp:12
+#: /views/groups/edit.ctp:13
+#: /views/groups/index.ctp:9;47
+#: /views/groups/view.ctp:27;48
+#: /views/users/add.ctp:14
+#: /views/users/edit.ctp:15
+#: /views/users/index.ctp:11;53
+#: /views/users/view.ctp:37
+#: /views/widgets/add.ctp:14
+#: /views/widgets/edit.ctp:15
+#: /views/widgets/index.ctp:9;47
+#: /views/widgets/view.ctp:27
+msgid "Actions"
+msgstr ""
+
+#: /views/groups/add.ctp:15
+#: /views/groups/edit.ctp:17
+#: /views/groups/view.ctp:31
+#: /views/users/add.ctp:18
+#: /views/users/edit.ctp:20
+#: /views/users/index.ctp:56
+#: /views/users/view.ctp:43
+msgid "List Groups"
+msgstr ""
+
+#: /views/groups/add.ctp:16
+#: /views/groups/edit.ctp:18
+#: /views/groups/index.ctp:50
+#: /views/groups/view.ctp:33
+#: /views/users/add.ctp:17
+#: /views/users/edit.ctp:19
+#: /views/users/view.ctp:41
+msgid "List Users"
+msgstr ""
+
+#: /views/groups/add.ctp:17
+#: /views/groups/edit.ctp:19
+#: /views/groups/index.ctp:51
+#: /views/groups/view.ctp:34;77
+#: /views/users/index.ctp:55
+#: /views/users/view.ctp:42
+msgid "New User"
+msgstr ""
+
+#: /views/groups/edit.ctp:4
+#: /views/groups/view.ctp:29
+msgid "Edit Group"
+msgstr ""
+
+#: /views/groups/edit.ctp:16
+#: /views/groups/index.ctp:27
+#: /views/groups/view.ctp:68
+#: /views/users/edit.ctp:18
+#: /views/users/index.ctp:33
+#: /views/widgets/edit.ctp:18
+#: /views/widgets/index.ctp:27
+msgid "Delete"
+msgstr ""
+
+#: /views/groups/edit.ctp:16
+#: /views/groups/index.ctp:27
+#: /views/groups/view.ctp:30;68
+#: /views/users/edit.ctp:18
+#: /views/users/index.ctp:33
+#: /views/users/view.ctp:40
+#: /views/widgets/edit.ctp:18
+#: /views/widgets/index.ctp:27
+#: /views/widgets/view.ctp:30
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /views/groups/index.ctp:2
+msgid "Groups"
+msgstr ""
+
+#: /views/groups/index.ctp:25
+#: /views/groups/view.ctp:66
+#: /views/users/index.ctp:31
+#: /views/widgets/index.ctp:25
+msgid "View"
+msgstr ""
+
+#: /views/groups/index.ctp:26
+#: /views/groups/view.ctp:67
+#: /views/users/index.ctp:32
+#: /views/widgets/index.ctp:26
+msgid "Edit"
+msgstr ""
+
+#: /views/groups/index.ctp:35
+#: /views/users/index.ctp:41
+#: /views/widgets/index.ctp:35
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /views/groups/index.ctp:40
+#: /views/users/index.ctp:46
+#: /views/widgets/index.ctp:40
+msgid "previous"
+msgstr ""
+
+#: /views/groups/index.ctp:43
+#: /views/users/index.ctp:49
+#: /views/widgets/index.ctp:43
+msgid "next"
+msgstr ""
+
+#: /views/groups/index.ctp:49
+#: /views/groups/view.ctp:32
+#: /views/users/add.ctp:19
+#: /views/users/edit.ctp:21
+#: /views/users/index.ctp:57
+#: /views/users/view.ctp:44
+msgid "New Group"
+msgstr ""
+
+#: /views/groups/view.ctp:2
+#: /views/users/view.ctp:19
+msgid "Group"
+msgstr ""
+
+#: /views/groups/view.ctp:4;42
+#: /views/users/view.ctp:4
+#: /views/widgets/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: /views/groups/view.ctp:9
+#: /views/widgets/view.ctp:9
+msgid "Name"
+msgstr ""
+
+#: /views/groups/view.ctp:14;46
+#: /views/users/view.ctp:24
+msgid "Created"
+msgstr ""
+
+#: /views/groups/view.ctp:19;47
+#: /views/users/view.ctp:29
+msgid "Modified"
+msgstr ""
+
+#: /views/groups/view.ctp:30
+msgid "Delete Group"
+msgstr ""
+
+#: /views/groups/view.ctp:38
+msgid "Related Users"
+msgstr ""
+
+#: /views/groups/view.ctp:43
+#: /views/users/view.ctp:9
+msgid "Username"
+msgstr ""
+
+#: /views/groups/view.ctp:44
+#: /views/users/view.ctp:14
+msgid "Password"
+msgstr ""
+
+#: /views/groups/view.ctp:45
+msgid "Group Id"
+msgstr ""
+
+#: /views/layouts/default.ctp:25
+msgid "CakePHP: the rapid development php framework:"
+msgstr ""
+
+#: /views/layouts/default.ctp:39;50
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: /views/posts/index.ctp:2
+msgid "Blog posts"
+msgstr "博客文章"
+
+#: /views/users/add.ctp:4
+msgid "Add User"
+msgstr "添加用戶"
+
+#: /views/users/edit.ctp:4
+#: /views/users/view.ctp:39
+msgid "Edit User"
+msgstr ""
+
+#: /views/users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: /views/users/login.ctp:5
+msgid "Login"
+msgstr ""
+
+#: /views/users/view.ctp:2
+msgid "User"
+msgstr ""
+
+#: /views/users/view.ctp:40
+msgid "Delete User"
+msgstr ""
+
+#: /views/widgets/add.ctp:4
+msgid "Add Widget"
+msgstr ""
+
+#: /views/widgets/add.ctp:17
+#: /views/widgets/edit.ctp:19
+#: /views/widgets/view.ctp:31
+msgid "List Widgets"
+msgstr ""
+
+#: /views/widgets/edit.ctp:4
+#: /views/widgets/view.ctp:29
+msgid "Edit Widget"
+msgstr ""
+
+#: /views/widgets/index.ctp:2
+msgid "Widgets"
+msgstr ""
+
+#: /views/widgets/index.ctp:49
+#: /views/widgets/view.ctp:32
+msgid "New Widget"
+msgstr ""
+
+#: /views/widgets/view.ctp:2
+msgid "Widget"
+msgstr ""
+
+#: /views/widgets/view.ctp:14
+msgid "Part No"
+msgstr ""
+
+#: /views/widgets/view.ctp:19
+msgid "Quantity"
+msgstr ""
+
+#: /views/widgets/view.ctp:30
+msgid "Delete Widget"
+msgstr ""
+
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
