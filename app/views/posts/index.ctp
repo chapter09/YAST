@@ -1,5 +1,14 @@
 <!-- File: /app/View/Posts/index.ctp -->
 <h1><?php __('Blog posts'); ?></h1>
+
+<p>
+    <?php echo $html->link('English', array('language'=>'eng')); ?>
+</p>
+ 
+<p>
+    <?php echo $html->link('中文', array('language'=>'chi')); ?>
+</p>
+
 <p><?php echo $html->link("Add Post","/posts/add");?>
  
  
@@ -7,7 +16,7 @@
 <table>
     <?php 
 
-  echo $html->tableHeaders(array_keys($posts[0]['Post']));
+#echo $html->tableHeaders(array_keys($posts[0]['Post']));
 
   foreach ($posts as $post)
   {

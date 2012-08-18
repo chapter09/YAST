@@ -2,10 +2,11 @@
 
 class AppController extends Controller{
   
-  var $components = array('Auth', 'Acl', 'Session');
+  var $components = array('Auth', 'Acl', 'Session', 'Cookie');
   var $helpers = array('Html', 'Form', 'Session');
 
   function beforeFilter(){
+		$this->_setLanguage();
     $this->Auth->actionPath = 'controllers/';
 		$this->Auth->allowedActions = array('display');
     $this->Auth->authorize ='actions'; 
@@ -16,6 +17,28 @@ class AppController extends Controller{
     $this->Auth->loginRedirect= array('controller'=>'post', 
                                       'action'=>'add');
   }
+
+	function _setLanguage() {
+ 
+    if ($this->Cookie->read('lang') && 
+				!$this->Session->check('Config.language')) {
+    
+			$this->Session->write('Config.language', 
+														$this->Cookie->read('lang'));
+    } else if (isset($this->params['language']) && 
+								($this->params['language']
+ 								!=  $this->Session->read('Config.language'))) {
+ 
+        $this->Session->write('Config.language', 
+															$this->params['language']);
+        $this->Cookie->write('lang', 
+															$this->params['language'], 
+															false, 
+															'20 days');
+    }
+}
+
+
 
 	function build_acl() {
 		if (!Configure::read('debug')) {
