@@ -1,14 +1,15 @@
 <?php
 class SponsorsController extends AppController {
 
-	var $name = 'Sponsors';
+	var $name = 'Sponsors'; 
   var $helpers = array('Html', 'Form');
-  var $components = array('FileUpload');
+  var $components = array('FileUpload', 'DebugKit.Toolbar');
 
 
   function beforeFilter(){ 
     parent::beforeFilter();
-    $this->FileUpload->fields = array('img' => 'file_name', 
+    $this->FileUpload->fileModel = 'Sponsor';
+    $this->FileUpload->fields = array('name' => 'file_name', 
                                       'type' => 'file_type', 
                                       'size' => 'file_size'); 
   }
@@ -29,17 +30,13 @@ class SponsorsController extends AppController {
 
 	function add() {
 		if (!empty($this->data)) {
-			$this->Sponsor->create();
       if($this->FileUpload->success){ 
-        $this->set('photo', $this->FileUpload->finalFile); 
-			  if ($this->Sponsor->save($this->data)) {
-				  $this->Session->setFlash(__('The sponsor has been saved', true));
-				  $this->redirect(array('action' => 'index'));
-			  } else {
-				  $this->Session->setFlash(__('The sponsor could not be saved. Please, try again.', true));
-			  }
+        $this->set('image', $this->FileUpload->finalFile);	
+				$this->Session->setFlash(__('The sponsor has been saved', true));
+        $this->redirect(array('action' => 'index'));
       }else{
         $this->Session->setFlash($this->FileUpload->showErrors());
+				$this->Session->setFlash(__('The sponsor could not be saved. Please, try again.', true));
       }
 		}
 	}
@@ -51,18 +48,13 @@ class SponsorsController extends AppController {
 		}
 		if (!empty($this->data)) {
       if($this->FileUpload->success){ 
-        $this->set('photo', $this->FileUpload->finalFile); 
-      }else{ 
-        $this->Session->setFlash($this->FileUpload->showErrors());
-        return; 
-      }
-
-			if ($this->Sponsor->save($this->data)) {
-				$this->Session->setFlash(__('The sponsor has been saved', true));
+        $this->set('image', $this->FileUpload->finalFile);
+				$this->Session->setFlash(__('The sponsor has been saved', true)); 
 				$this->redirect(array('action' => 'index'));
-			} else {
+      }else{
+        $this->Session->setFlash($this->FileUpload->showErrors());
 				$this->Session->setFlash(__('The sponsor could not be saved. Please, try again.', true));
-			}
+      }
 		}
 		if (empty($this->data)) {
 			$this->data = $this->Sponsor->read(null, $id);

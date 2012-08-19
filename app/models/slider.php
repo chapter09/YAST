@@ -1,10 +1,20 @@
 <?php
-class Sponsor extends AppModel {
-	var $name = 'Sponsor';
+class Slider extends AppModel {
+	var $name = 'Slider';
 	var $validate = array(
-		'sponsor_name' => array(
+		'title' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'order' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -42,19 +52,6 @@ class Sponsor extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'url' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-			'website' => array(
-				'rule' => 'url',
-				'message' => 'This field must be a url.'
-			)
-		),
 	);
+	
 }

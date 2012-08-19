@@ -8,10 +8,10 @@ class GroupsController extends AppController {
 		$this->set('groups', $this->paginate());
 	}
 
-  	function beforeFilter() {
-    		parent::beforeFilter();
+  function beforeFilter() {
+    parent::beforeFilter();
 		$this->Auth->allowedActions = array('build_acl');
-    		$this->Auth->allow(array('*'));
+    $this->Auth->allow(array('*'));
  	}
   
 

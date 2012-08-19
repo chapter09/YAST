@@ -1,12 +1,11 @@
 <?php
 class Post extends AppModel{
-  var $name = 'Post';
-	
-	 var $actsAs = array(
-			 'Translate' => array(
+  var $name = 'Post';	
+	var $actsAs = array(
+			'Translate' => array(
 				 'body'  => 'bodyTranslation'
-				 )				 
-		);
+			)				 
+  );
 
 
   var $validate = array(

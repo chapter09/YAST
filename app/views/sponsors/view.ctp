@@ -6,31 +6,41 @@
 			<?php echo $sponsor['Sponsor']['id']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Name'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Sponsor Name'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $sponsor['Sponsor']['name']; ?>
+			<?php echo $sponsor['Sponsor']['sponsor_name']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Type'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('File Type'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $sponsor['Sponsor']['type']; ?>
+			<?php echo $sponsor['Sponsor']['file_type']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Size'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('File Size'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $sponsor['Sponsor']['size']; ?>
+			<?php echo $sponsor['Sponsor']['file_size']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Img'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('File Name'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $sponsor['Sponsor']['img']; ?>
+			<?php echo $sponsor['Sponsor']['file_name']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Url'); ?></dt>
+    
+    <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Url'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $sponsor['Sponsor']['url']; ?>
 			&nbsp;
 		</dd>
+    
+    <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Image'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+    <?php
+    if($sponsor['Sponsor']['file_name']){
+      echo $html->image('/files/'.$sponsor['Sponsor']['file_name']);
+    }?>
+    &nbsp;
+    </dd>
 	</dl>
 </div>
 <div class="actions">

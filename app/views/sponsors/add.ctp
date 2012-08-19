@@ -3,9 +3,10 @@
 	<fieldset>
 		<legend><?php __('Add Sponsor'); ?></legend>
 	<?php
-		echo $this->Form->input('name');
-		echo $this->Form->input('url');
-    echo $this->Form->input('file', array('type'=>'file'));
+		echo $this->Form->input('sponsor_name');
+    echo $this->Form->input('sponsor_description');
+		echo $this->Form->input('file', array('type'=>'file'));
+    echo $this->Form->input('url');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

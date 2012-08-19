@@ -3,10 +3,10 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
-			<th><?php echo $this->Paginator->sort('name');?></th>
-			<th><?php echo $this->Paginator->sort('type');?></th>
-			<th><?php echo $this->Paginator->sort('size');?></th>
-			<th><?php echo $this->Paginator->sort('img');?></th>
+			<th><?php echo $this->Paginator->sort('sponsor_name');?></th>
+			<th><?php echo $this->Paginator->sort('file_type');?></th>
+			<th><?php echo $this->Paginator->sort('file_size');?></th>
+			<th><?php echo $this->Paginator->sort('file_name');?></th>
 			<th><?php echo $this->Paginator->sort('url');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
@@ -20,10 +20,10 @@
 	?>
 	<tr<?php echo $class;?>>
 		<td><?php echo $sponsor['Sponsor']['id']; ?>&nbsp;</td>
-		<td><?php echo $sponsor['Sponsor']['name']; ?>&nbsp;</td>
-		<td><?php echo $sponsor['Sponsor']['type']; ?>&nbsp;</td>
-		<td><?php echo $sponsor['Sponsor']['size']; ?>&nbsp;</td>
-		<td><?php echo $sponsor['Sponsor']['img']; ?>&nbsp;</td>
+		<td><?php echo $sponsor['Sponsor']['sponsor_name']; ?>&nbsp;</td>
+		<td><?php echo $sponsor['Sponsor']['file_type']; ?>&nbsp;</td>
+		<td><?php echo $sponsor['Sponsor']['file_size']; ?>&nbsp;</td>
+		<td><?php echo $sponsor['Sponsor']['file_name']; ?>&nbsp;</td>
 		<td><?php echo $sponsor['Sponsor']['url']; ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $sponsor['Sponsor']['id'])); ?>

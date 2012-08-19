@@ -1,2 +1,4 @@
 app/tmp/
 app/config
+app/webroot/files/
+*.swp

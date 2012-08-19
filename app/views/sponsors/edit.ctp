@@ -4,9 +4,13 @@
 		<legend><?php __('Edit Sponsor'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-		echo $this->Form->input('url');
+		echo $this->Form->input('sponsor_name');
+		echo $this->Form->input('sponsor_description');
     echo $this->Form->input('file', array('type'=>'file'));
+    if($this->data['Sponsor']['file_name']){
+      echo $html->image('/files/'.$this->data['Sponsor']['file_name']);
+    }
+    echo $this->Form->input('url');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

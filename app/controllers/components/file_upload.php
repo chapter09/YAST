@@ -208,6 +208,12 @@ class FileUploadComponent extends Object{
      
     $save_data = array(); 
     if(move_uploaded_file($this->uploadedFile['tmp_name'], $target_path)){ 
+
+			foreach($this->data[$this->fileModel] as $field_name=>$field_value) { 
+        if ($field_name!="file") { 
+        	$save_data[$field_name] = $field_value; 
+      	} 
+      } 
       //Final File Name 
       $this->finalFile = basename($target_path); 
       $model =& $this->getModel(); 
