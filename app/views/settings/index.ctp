@@ -22,7 +22,6 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $setting['Setting']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $setting['Setting']['id'])); ?>
-			<?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $setting['Setting']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $setting['Setting']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -44,6 +43,5 @@
 <div class="actions">
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Setting', true), array('action' => 'add')); ?></li>
 	</ul>
 </div>
