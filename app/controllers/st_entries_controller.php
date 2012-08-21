@@ -2,6 +2,8 @@
 class StEntriesController extends AppController {
 
 	var $name = 'StEntries';
+  var $helpers = array('Html', 'Form', 'Cksource');
+  var $components = array('Session', 'DebugKit.Toolbar');
 
 	function index() {
 		$this->StEntry->recursive = 0;
@@ -13,10 +15,12 @@ class StEntriesController extends AppController {
 			$this->Session->setFlash(__('Invalid st entry', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->StEntry->setLocale($this->Session->read('Config.language'));
 		$this->set('stEntry', $this->StEntry->read(null, $id));
 	}
 
 	function add() {
+    $this->StEntry->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->StEntry->create();
 			if ($this->StEntry->save($this->data)) {
@@ -35,6 +39,10 @@ class StEntriesController extends AppController {
 			$this->Session->setFlash(__('Invalid st entry', true));
 			$this->redirect(array('action' => 'index'));
 		}
+
+    $this->StEntry->setLocale(array('eng','chi'));
+    $this->StEntry->multiTranslateOptions(array('validate'=>true,'find'=>true));
+ 
 		if (!empty($this->data)) {
 			if ($this->StEntry->save($this->data)) {
 				$this->Session->setFlash(__('The st entry has been saved', true));

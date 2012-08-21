@@ -2,10 +2,11 @@
  
 <?php
  
-  echo$form->create('Post', array('action'=>'edit'));
-  echo$form->input('title');
-  echo$form->input('body', array('rows'=>'3'));
-  echo$form->input('id', array('type'=>'hidden'));
-  echo $form->end('Save Post');
+  echo$cksource->create('Post', array('action'=>'edit'));
+  echo$cksource->input('title');
+  echo $cksource->ckeditor('body.eng', array('escape' => false)); 
+	echo $cksource->ckeditor('body.chi', array('escape' => false));   
+  echo $cksource->input('id', array('type'=>'hidden'));
+  echo $cksource->end('Save Post');
 
 ?>

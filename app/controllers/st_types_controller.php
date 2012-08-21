@@ -2,6 +2,7 @@
 class StTypesController extends AppController {
 
 	var $name = 'StTypes';
+  var $components = array('Session', 'DebugKit.Toolbar');
 
 	function index() {
 		$this->StType->recursive = 0;
@@ -9,7 +10,8 @@ class StTypesController extends AppController {
 	}
 
 	function view($id = null) {
-		if (!$id) {
+    $this->StType->setLocale($this->Session->read('Config.language'));
+    if (!$id) {
 			$this->Session->setFlash(__('Invalid st type', true));
 			$this->redirect(array('action' => 'index'));
 		}
@@ -17,9 +19,10 @@ class StTypesController extends AppController {
 	}
 
 	function add() {
+    $this->StType->setLocale(array('eng', 'chi'));
 		if (!empty($this->data)) {
 			$this->StType->create();
-			if ($this->StType->save($this->data)) {
+      if ($this->StType->save($this->data)) {
 				$this->Session->setFlash(__('The st type has been saved', true));
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -29,11 +32,15 @@ class StTypesController extends AppController {
 	}
 
 	function edit($id = null) {
-		if (!$id && empty($this->data)) {
+    if (!$id && empty($this->data)) {
 			$this->Session->setFlash(__('Invalid st type', true));
 			$this->redirect(array('action' => 'index'));
 		}
-		if (!empty($this->data)) {
+
+    $this->StType->setLocale(array('eng', 'chi'));
+    $this->StType->multiTranslateOptions(array('validate'=>true,'find'=>true)); 
+    if (!empty($this->data)) {
+		
 			if ($this->StType->save($this->data)) {
 				$this->Session->setFlash(__('The st type has been saved', true));
 				$this->redirect(array('action' => 'index'));

@@ -1,6 +1,11 @@
 <?php
 class StEntry extends AppModel {
 	var $name = 'StEntry';
+  var $actsAs = array(
+      'MulitiTranslate' => array(
+        'title', 'body'
+  ));
+
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

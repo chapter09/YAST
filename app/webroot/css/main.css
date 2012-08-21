@@ -1,0 +1,461 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small, strike,strong, sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none} blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none} del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+body {font: 0.75em Arial,Helvetica,Verdana; color:#58585a; background:#fff url(~/media/Images/U/United-Business-Media-Plc/Images/css/bg.jpg) no-repeat center top; line-height:1.3;	}
+a:focus {outline: 0px;}
+hr {border: 0 #ccc solid; border-top-width: 1px; clear: both; height: 0; }
+p{margin-bottom:10px; color:#58585a;}
+#TwoColRight p{margin-bottom:20px;}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+h1 {font-size: 1.833em; color: #00529c; margin-bottom:20px; font-weight:normal;}
+h2 {color: #00529c; font-size:1.167em; font-weight:bold; margin-bottom:7px;}
+h3 {font-size: 1.167em; color: #0071B8; font-weight:normal;}
+h4 {font-size: 19px; font-weight:normal;}
+h5 {font-size: 17px;}
+h6 {font-size: 15px;}
+h1.hide{display:none;}
+
+.ip3-investors h1{color:#EF8E21;}
+h2.people-h2{font-size: 1.5em;}
+h2.about-h2{font-size: 1.5em;}
+sub{font-size:1em; font-style: italic;}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+ol {list-style: none;}
+ul {list-style: none;margin-bottom:15px;}
+li {}
+img{ /*vertical-align:top;*/}
+a{color: #58585A; text-decoration: none; outline:0px;}
+a#skip{display:none;}
+#main-wrapper{width:970px; margin:0 auto; padding: 0px;}
+
+/*************** CSS for Sub Pages Start ********************/
+
+.ip3-people h1,.ip3-people h2,.ip3-people h3{color:#004759;}
+.ip3-about-ubm h1, .ip3-about-ubm h2, .ip3-about-ubm h3,.ip3-about-ubm h2 a{color:#00529C;} 
+.ip3-board #fieldContainer p{font-weight:normal; color:#58585A}
+#fieldContainer p{font-weight:bold;color:#004759;}
+.ip3-board #pattern_bod_1{color:#00529C;}
+#pattern_bod_1{float:left; color:#004759; width:100%;}
+.bod_1_textlink{ cursor:pointer; float:left; padding-bottom:13px; width:100%; font-size:1.2em;}
+bod_1_selected{border-bottom:1px solid #d4d4d4;}
+#containerBod{border-top:1px solid #d4d4d4; border-bottom:none; float:left; padding:13px 0 0; width:100%;}
+#pattern_bod_1 .bod_1_name{float:left; font-weight:bold; width:auto; padding:0; margin-right:5px;}
+.name{float:left; }
+#pattern_bod_1 .bod_1_role{float:left;}
+.sign.bod_1_showPlus{float:right; height:23px; width:23px; margin-right:8px;}
+.sign.bod_1_showMinus{float:right; height:23px; width:23px; margin-right:8px;}
+.bodSnap .sign.bod_1_showMinus{margin-right:24px;}
+.bodSnap .sign.bod_1_showPlus{margin-right:24px;}
+.bod_1_showPlus{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/show_plus.jpg) no-repeat right 0px;}
+.bod_1_showMinus{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/show_minus.jpg) no-repeat right 0px;}
+.bodSnap .bod_1_showPlus_snap{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/show_plus.jpg) no-repeat right 8px;}
+.bodSnap .bod_1_showMinus_snap{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/show_minus.jpg) no-repeat right 8px;}
+.bod_1_showPlus_small{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/plus_snap.jpg) no-repeat right 0px;}
+.bod_1_showMinus_small{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/minus_snap.jpg) no-repeat right 0px;}
+.sign.bod_1_showPlus_small{float:right; height:23px; width:23px; margin-right:23px;}
+.sign.bod_1_showMinus_small{float:right; height:23px; width:23px; margin-right:23px;}
+.bod_1_biography-container{float:left; padding-top:16px; padding-bottom:12px; }
+.bod_1_selected .bod_1_biography-container{border-top:1px solid #d4d4d4;}
+.bod_1_biography p{font-weight:normal !important; border:none !important; margin-bottom:0px !important; padding-bottom:0px !important;}
+.ip3-people .bod_1_biography p{ margin-bottom: 15px !important;}
+.bodImage{float:left;}
+.bodImage img{border:1px solid #9c9e9d; padding:9px;}
+.bod_1_biography{float:left; margin-left:20px; width:513px;}
+.bod_1_biography p {color:#58585A !important;}
+.bod_1_biography ul li{ color: #58585A;}
+.opentoolContainer{margin-left:15px;}
+.bod_1_contact {border-bottom:1px solid #d4d4d4; float:left; margin-bottom:40px; width:100%;}
+#people .bod_1_contact{margin-bottom:15px;}
+
+/**********cONTENT sNAP dOWN***************/
+.content{border-bottom:medium none; border-top:1px solid #D4D4D4; float:left; padding:13px 0 0; width:100%;}
+.lastContent{border-bottom:1px solid #D4D4D4; width:100%;}
+.content .sign.bod_1_showPlus{float:none; height:23px; margin-right:8px; width:auto;}
+.content .sign.bod_1_showMinus{float:none; height:23px; margin-right:8px; width:auto;}
+body.ie8 .content .sign.bod_1_showPlus{float:none; padding-bottom:7px; margin-right:8px; width:auto;}
+body.ie8 .content h2{margin-bottom:0;}
+body.ie8 .content .sign.bod_1_showMinus{float:none; padding-bottom:7px; margin-right:8px; width:auto;}
+.contentHR .sign.bod_1_showPlus{float:none; height:23px; margin-right:8px; width:auto;}/* hr Snap down*/
+.contentHR .sign.bod_1_showMinus{float:none; height:23px; margin-right:8px; width:auto;}/* hr Snap down*/
+.HRBox{float:left; clear:both; width:100%;}
+
+/************Snap in Snap************/
+.bodSnap h2 {height:23px; border-top:1px solid #d4d4d4; padding-top:8px; font-size:1.4em; float:left; width:100%;}
+
+/********************** Search ***************/
+#search-container{ text-align: right;}
+#SearchGeneralErrorContainer{display: none;}
+#SearchContainer{ float: right; height: 24px; width: 219px;  border: 1px solid #B4B6B7; padding: 6px 7px 5px; background-color:#ffffff;}
+#SearchTextBoxContainer{float: left; }
+#SearchTextBoxContainer input{border:none; color: #58585A; background-color:#fff; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/search-img.gif) no-repeat 6px center; height:22px;}
+#SearchmainContainer {clear: both; float: left; padding-bottom: 10px; width: 100%;}
+#SearchmainLabelContainer {font-weight: bold; padding-bottom: 10px;}
+#SearchmainTextBoxContainer {float: left; padding-right: 10px;}
+#SearchmainButtonContainer {  float: left; }
+#SearchmainButtonContainer input.SearchSubmitButton{font-size: 0.9em;}
+table#SearchResult { margin-bottom: 10px;}
+#SearchResultContainer table tr td{padding: 2px;}
+#SearchResultContainer table tr td a, #SearchResultContainer table tr.TableHeaderRow {font-weight: bold;}
+#SearchResultContainer table tr td.SearchResultScoreColumn{width: 80px;}
+#SearchResultBottomPaginationContainer ul {float: left;list-style: none outside none !important; margin: 0 !important;}
+#SearchResultBottomPaginationContainer ul li {float: left; padding-left: 5px !important;}
+#SearchResultBottomPaginationContainer ul li a{font-weight: bold;}
+#SearchContainerMain{float:left; padding-bottom:25px; width:100%;} 
+.lblTxt{float:left; padding-right:10px; padding-top:5px;}
+#SearchTextBoxContainerMain{float:left; padding-right:10px;}
+#SearchButtonContainerMain{display: block; float: left; margin-top: -1px;}
+.SearchResultHeaderText{font-size: 1.2em; font-weight: bold; padding-bottom:15px;}
+table.searchTable{width:100%;}
+table.searchTable tr th{padding-bottom: 15px;text-align: left;}
+table.searchTable tr th.score{width:15%;}
+table.searchTable tr th.links{}
+table.searchTable tr td{padding-bottom:10px;}
+.pagenav ul{list-style-type:none !important; padding-left: 0px !important;}
+#TwoColRight .pagenav ul li{float:left; padding-right:5px; background:none; padding-bottom:0px; padding-left:0px;}
+.pagenav ul li a{}
+
+/*************** Home **************/
+.bannerdesc{padding-top: 10px;}
+
+
+/*************** CSS for Sub Pages End ********************/
+
+
+/*************** header container ********************/
+#logo-container{padding:15px 0px 25px 15px; float:left;}
+#menu-container{float:right; margin-top:7px;position:relative; z-index:1000;}
+body.ie7 #menu-container, body.ie6 #menu-container{width:865px;}
+#menu-container ul{ border-top:1px solid #c5c7c8; position:relative; float:right; margin-bottom:0px;}
+#menu-container ul li ul{border-top:none;}
+#menu-container ul li.level1 a{text-indent:-9999px;}
+#menu-container ul li.level1{float:left;}
+#menu-container ul li#nav-about-ubm-level1 a{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/about.jpg) no-repeat; width:142px; height:48px; display:block; border-left:1px solid #c5c7c8; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-about-ubm-level1 a:hover{background-position:left center;}
+#menu-container ul li.selected a,#menu-container ul li.current a{background-position:left center !important;}
+#menu-container ul li#nav-about-ubm-level1.current span{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/about.jpg) no-repeat; background-position:left bottom; width:142px; height:48px; display:block; border-right:1px solid #c5c7c8; text-indent:-9999px; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-about-ubm-level1.current ul li span{ background: none; border: 0 none; height: auto; text-indent: 0; width: auto;}
+
+#menu-container ul li#nav-ubm-businesses-level1 a{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/business.jpg) no-repeat; width:183px; height:48px; display:block;  border-left:1px solid #c5c7c8; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-ubm-businesses-level1 a:hover{background-position:left center;}
+#menu-container ul li#nav-ubm-businesses-level1.current span{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/business.jpg) no-repeat; width:183px; height:48px; display:block;  border-right:1px solid #c5c7c8; background-position:left bottom; text-indent:-9999px; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-ubm-businesses-level1.current ul li span{ background: none; border: 0 none; height: auto; text-indent: 0; width: auto;}
+#menu-container ul li.current span{background-position:left center !important;}
+
+#menu-container ul li#nav-people-level1 a{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/people.jpg) no-repeat; width:114px; height:48px; display:block;  border-left:1px solid #c5c7c8; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-people-level1 a:hover{background-position:left center;}
+#menu-container ul li#nav-people-level1.current span{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/people.jpg) no-repeat; width:114px; height:48px; display:block;  border-left:1px solid #c5c7c8; background-position:left bottom; text-indent:-9999px; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-people-level1.current ul li span{ background: none; border: 0 none; height: auto; text-indent: 0; width: auto;}
+
+#menu-container ul li#nav-sustainability-level1 a{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/sustainability.jpg) no-repeat; width:156px; height:48px; display:block;  border-left:1px solid #c5c7c8; border-bottom:1px solid #c5c7c8;}
+
+#menu-container ul li#nav-sustainability-level1 a:hover{background-position:left center;}
+#menu-container ul li#nav-sustainability-level1.current span{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/sustainability.jpg) no-repeat; width:156px; height:48px; display:block;  border-right:1px solid #c5c7c8; background-position:left bottom; text-indent:-9999px; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-sustainability-level1.current ul li span{ background: none; border: 0 none; height: auto; text-indent: 0; width: auto;}
+
+#menu-container ul li#nav-investors-level1 a{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/investor.jpg) no-repeat; width:129px; height:48px; display:block;  border-left:1px solid #c5c7c8; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-investors-level1 a:hover{background-position:left center;}
+#menu-container ul li#nav-investors-level1.current span{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/investor.jpg) no-repeat; width:129px; height:48px; display:block;  border-left:1px solid #c5c7c8; background-position:left bottom; text-indent:-9999px; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-investors-level1.current ul li span{ background: none; border: 0 none; height: auto; text-indent: 0; width: auto;}
+
+#menu-container ul li#nav-media-level1 a{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/media.jpg) no-repeat; width:109px; height:48px; display:block; border-right:1px solid #c5c7c8; border-left:1px solid #c5c7c8; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-media-level1 a:hover{background-position:left center;}
+#menu-container ul li#nav-media-level1.current span{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/media.jpg) no-repeat; width:109px; height:48px; display:block; border-right:1px solid #c5c7c8; border-left:1px solid #c5c7c8; background-position:left bottom; text-indent:-9999px; border-bottom:1px solid #c5c7c8;}
+#menu-container ul li#nav-media-level1.current ul li span{ background: none; border: 0 none; height: auto; text-indent: 0; width: auto;}
+#menu-container ul li ul#section-media-level2{right:0;}
+ul#section-Homepage-level1 ul{display:none; position:absolute; background:#fff; border-left:1px solid #c5c7c8; border-right:1px solid #c5c7c8; opacity:0.8; top:49px; z-index:1000; }
+ul#section-Homepage-level1 ul{filter:alpha(opacity=80);}
+ul#section-Homepage-level1 li#nav-about-ubm-level1 ul li{border-bottom:1px solid #c5c7c8; display:block; width:180px; }
+ul#section-Homepage-level1 li#nav-about-ubm-level1 ul li a{background:none; text-indent:0px; display: block; width:163px; height:auto; padding:4px 11px 3px 6px; color:#003333; font-size:1.167em; border:none;  }
+ul#section-Homepage-level1 li#nav-about-ubm-level1 ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/about_child_hover.jpg) repeat-x; color:#fff;}
+
+ul#section-Homepage-level1 li#nav-ubm-businesses-level1 ul li{border-bottom:1px solid #c5c7c8; width:183px;}
+ul#section-Homepage-level1 li#nav-ubm-businesses-level1 ul li a{background:none; text-indent:0px; display: block; height:auto; width:166px; padding:4px 11px 3px 6px; color:#003333; font-size:1.167em; border:none; }
+ul#section-Homepage-level1 li#nav-ubm-businesses-level1 ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/business_child_hover.jpg) repeat-x; color:#fff;}
+
+ul#section-Homepage-level1 li#nav-people-level1 ul li{border-bottom:1px solid #c5c7c8; width:180px;}
+ul#section-Homepage-level1 li#nav-people-level1 ul li a{background:none; text-indent:0px; display: block; height:auto; width:163px; padding:4px 11px 3px 6px; color:#003333; font-size:1.167em; border:none; }
+ul#section-Homepage-level1 li#nav-people-level1 ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/people_child_hover.jpg) repeat-x; color:#fff;}
+
+ul#section-Homepage-level1 li#nav-sustainability-level1 ul li{border-bottom:1px solid #c5c7c8; width:180px;}
+ul#section-Homepage-level1 li#nav-sustainability-level1 ul li a{background:none; text-indent:0px; display: block; height:auto; width:163px; padding:4px 11px 3px 6px; color:#003333; font-size:1.167em; border:none; }
+ul#section-Homepage-level1 li#nav-sustainability-level1 ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/sustainability_child_hover.jpg) repeat-x; color:#fff;}
+
+ul#section-Homepage-level1 li#nav-investors-level1 ul li{border-bottom:1px solid #c5c7c8; width:180px;}
+ul#section-Homepage-level1 li#nav-investors-level1 ul li a{background:none; text-indent:0px; display: block; height:auto; width:163px; padding:4px 11px 3px 6px; color:#003333; font-size:1.167em; border:none; }
+ul#section-Homepage-level1 li#nav-investors-level1 ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/investor_child_hover.jpg) repeat-x; color:#fff;}
+
+ul#section-Homepage-level1 li#nav-media-level1 ul li{border-bottom:1px solid #c5c7c8; width:180px;}
+ul#section-Homepage-level1 li#nav-media-level1 ul li a{background:none; text-indent:0px; display: block; height:auto; width:163px; padding:4px 11px 3px 6px; color:#003333; font-size:1.167em; border:none; }
+ul#section-Homepage-level1 li#nav-media-level1 ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/media_child_hover.jpg) repeat-x; color:#fff;}
+
+
+#search-container{width:838px; height:35px; margin-top:12px; margin-bottom:15px; float:right; }
+
+.topLink{float:right; margin-top:7px;} 
+.topLink a{background: url(~/media/Images/U/United-Business-Media-Plc/Images/css/home-link.png) no-repeat right center; padding-right: 21px; display:block; height:17px; color:#003333;}
+.topLink a:hover{text-decoration:underline;}
+.ie6 #toplinkContainer{width:40px;}
+
+#homesharepriceContainer{overflow: hidden; width: 287px;}
+body.applemac-safari5#Homepage #homesharepriceContainer .homesharepriceExternalObject { /*overflow: hidden;*/ width: 297px; }
+
+/***************************** content-container **********************************************/
+
+#content-container{float:left; clear:both; }
+#home-bottom-content{margin-top:10px; border:1px solid #c5c7c8; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/home-bottom-content-bg.jpg) repeat-x #ececec; margin-bottom:20px; float:left; }
+#home-bottom-content p{margin-bottom:5px; clear:both;}
+
+#mediaNewsXmlContainer a:hover{text-decoration:underline;}
+
+#homebox1,#homebox2,#homebox3{padding:9px 12px 0px 10px; float:left; min-height:88px/*108px*/;}
+#mediaNewsXmlContainer{width:288px; float:left;}
+.ie6 #homebox1, .ie6 #homebox2,.ie6 #homebox3{height:108px;}
+#homebox3 p{margin-left: 1px;}
+#homebox1{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/home-bottom-content-sep.jpg) no-repeat right top; padding-right:27px; padding-bottom:10px;}
+#homebox2{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/home-bottom-content-sep.jpg) no-repeat right top; padding-right:27px; padding-bottom:10px;}
+a#ubm-news{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/ubm_news.jpg) no-repeat; width:288px; height:21px; display:block; text-indent:-9999px; margin-bottom:11px;} 
+a#ubm-news:hover{background-position:left bottom;}
+#ubm-events-cal{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/underline.jpg) repeat-x left bottom; float:left;  }
+#ubm-events-cal1{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/underline.jpg) repeat-x left bottom; clear:both; float:left; /*height:43px;*/  }
+#ubm-events-cal2{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/underline.jpg) repeat-x left bottom; clear:both; float:left;  height:42px;}
+
+#ubm-events-cal a#box2_link{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/ubm_events_cal.jpg) no-repeat; width:297px; height:21px; display:block; text-indent:-9999px; margin-bottom:8px;} 
+#ubm-events-cal a#box2_link:hover{background-position:left bottom;}
+
+#homebox2 a.green-arrow {
+    background: url("~/media/Images/U/United-Business-Media-Plc/Images/css/new-arrow-green.png") no-repeat scroll right 0 transparent;
+    float: left;
+    height: 21px;
+    margin-bottom: 11px;
+    width: 297px;
+	clear:both;
+	line-height:21px;
+}
+#homebox2 a.green-arrow1 {float:left !important; clear:both;}
+#homebox2 a.green-arrow:hover{background-position:right bottom;}
+
+
+a#featured{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/investor-day-webcast-1111.png) no-repeat; width:297px; height:21px; display:block; text-indent:-9999px; margin-top:6px; margin-bottom:8px; clear:both; float:left;}
+
+#Homepage #ubm-events-cal1 a#featured{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/hy-2012-result-releases.png) no-repeat; width:297px; height:21px; display:block; text-indent:-9999px; margin-top:6px; margin-bottom:8px; clear:both; float:left;}
+
+* +html #Homepage #ubm-events-cal1 a#featured, * +html #Homepage #ubm-events-cal2 a#featured {float:none;}
+
+#Homepage #ubm-events-cal1 a#featured:hover {background-position:left bottom;}
+
+#Homepage #ubm-events-cal2 a#featured{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/hy-2012-result-webcast.png) no-repeat; width:297px; height:21px; display:block; text-indent:-9999px; margin-top:6px; margin-bottom:6px; clear:both; float:left;}
+
+#Homepage #ubm-events-cal2 a#featured:hover {background-position:left bottom;}
+
+
+* +html a#featured{float:none;} 
+a#featured:hover{background-position:left bottom;}
+a#share-price{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/ubm_shareprice.jpg) no-repeat; width:285px; height:21px; display:block; text-indent:-9999px; margin-bottom:10px; margin-left: 2px;} 
+a#share-price:hover{background-position:left bottom;}
+
+table.graph{margin-bottom:10px;}
+table.graph tr td{width:50%;}
+
+/***************************** Breadcrumb ****************************************************/
+#BreadcrumbsContainer{float:left; width:930px; margin-bottom:16px;}
+#BreadcrumbsContainer a{color:#fff;}
+#BreadcrumbsContainer a:hover{text-decoration:underline;}
+.ip3-about-ubm #BreadcrumbsContainer,#about-ubm #BreadcrumbsContainer, .ip3-site-services #BreadcrumbsContainer{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/breadcrumb/about-bc.jpg) no-repeat; padding:14px 20px; color:#fff; font-size:1.33em;}
+.ip3-ubm-businesses #BreadcrumbsContainer,#ubm-businesses #BreadcrumbsContainer{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/breadcrumb/business-bc.jpg) no-repeat; padding:14px 20px; color:#fff; font-size:1.33em;}
+.ip3-people #BreadcrumbsContainer,#people #BreadcrumbsContainer{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/breadcrumb/people-bc.jpg) no-repeat; padding:14px 20px; color:#fff; font-size:1.33em;}
+.ip3-sustainability #BreadcrumbsContainer,#sustainability #BreadcrumbsContainer{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/breadcrumb/sustainability-bc.jpg) no-repeat; padding:14px 20px; color:#fff; font-size:1.33em;}
+.ip3-investors #BreadcrumbsContainer,#investors #BreadcrumbsContainer{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/breadcrumb/investor-bc.jpg) no-repeat; padding:14px 20px; color:#fff; font-size:1.33em;}
+.ip3-media #BreadcrumbsContainer, #media #BreadcrumbsContainer{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/breadcrumb/media-bc.jpg) no-repeat; padding:14px 20px; color:#fff; font-size:1.33em;}
+#BreadcrumbsContainer a,#BreadcrumbsContainer img{margin-right:10px;}
+
+/***************************** Two col Content *************************************************/
+#TwoColContainer{float:left; width:100%; background:#fff url(~/media/Images/U/United-Business-Media-Plc/Images/css/content-bottom-bg.jpg) repeat-x left bottom; padding-bottom:50px; border-top:1px solid #9c9e9f; margin-bottom:20px; }
+#jobshop #TwoColContainer table tr td{padding:5px; overflow:hidden; text-align:left; vertical-align:top;}
+#jobshop #TwoColContainer table{border:0 none; border-collapse:separate;}
+
+#ubm-businesses #TwoColContainer{border:none;}
+
+/*****************Brand Logo**********************/
+
+#TwoColRight .brandLogo table{padding-left: 0px; border-collapse: separate;}
+.brandLogo{float:left; width:752px;}
+.brandLogo table tr td{ cursor:pointer; height:70px; overflow:hidden; text-align:center; width:138px; padding-right:10px; padding-bottom:10px;   vertical-align: middle;} 
+.brandLogo table tr td img {vertical-align:middle; border:1px solid #C5C7C8;}
+.brandLogo p{float:left;}
+
+/***************************** Left Column *****************************************************/
+#TwoColLeft{float:left; width:186px; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/leftcol-bg.jpg) no-repeat right top; min-height:429px;}
+.sectionheader{font-weight:bold; }
+.ip3-about-ubm .sectionheader,#about-ubm .sectionheader{ background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/about-sh.jpg) repeat-y left center; padding:16px; color:#fff; font-size:1.33em;}
+.ip3-ubm-businesses .sectionheader,#ubm-businesses .sectionheader{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/business-sh.jpg) no-repeat; padding:15px 20px; color:#fff; font-size:1.33em;}
+.ip3-people .sectionheader,#people .sectionheader{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/people-sh.jpg) repeat-y left center; padding:16px; color:#fff; font-size:1.33em;}
+.ip3-sustainability .sectionheader,#sustainability .sectionheader{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/sustainability-sh.jpg) no-repeat; padding:15px 20px; color:#fff; font-size:1.33em;}
+.ip3-investors .sectionheader,#investors .sectionheader{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/investor-sh.jpg) no-repeat; padding:15px 20px; color:#fff; font-size:1.33em;}
+.ip3-media .sectionheader,#media .sectionheader{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/media-sh.jpg) no-repeat; padding:15px 20px; color:#fff; font-size:1.33em;}
+.ip3-site-services .sectionheader{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/about-sh.jpg) repeat-y left center; padding:16px; color:#fff; font-size:1.33em;}
+
+
+#leftnav{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/left-nav-bottom.jpg) no-repeat bottom left;}
+#leftnav ul{margin:5px 0 0 11px; padding:0;}
+/*#leftnav ul li{padding-bottom:10px;}*/
+#leftnav ul li a{padding:4px 5px 4px 22px; display: inline-block;}
+#leftnav ul li.current a {background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat 0px center; color: #003333; font-weight:bold; display:inline-block;}
+/*
+.ip3-people #leftnav ul li.selected a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat 0px center; color: #02465B; font-weight:bold; display:inline-block;}
+.ip3-people #leftnav ul li.selected ul li a{background:none; font-weight:normal; color:#58585A;}
+.ip3-people #leftnav ul li.selected ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat 0px center; color:#003333;}*/
+
+
+#leftnav ul li.current ul li a {background:none; font-weight:normal; color:#003333;}
+#leftnav ul li.current ul li{font-weight:normal !important;}
+#leftnav ul li ul li.current a {background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat 0px center; color:#003333; font-weight:bold; display:inline-block;}
+#leftnav ul li ul{padding-left: 10px;margin:0 0 0 11px;}
+/*#leftnav ul li.current ul {padding-left: 40px;}*/
+#leftnav ul li a:hover {background: url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat scroll 0px center transparent; display: inline-block;}
+#leftnav ul li ul li a:hover{ background: url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat scroll 0px center transparent; display: inline-block;}
+#leftnav ul li.level2.last{padding-bottom:10px;}
+
+.ip3-investors #leftnav ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-orange.jpg) no-repeat 0px center; color:#EF8E21;}
+.ip3-investors #leftnav ul li ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-orange.jpg) no-repeat 0px center; color:#EF8E21;}
+.ip3-investors #leftnav ul li.current ul li a{background:none; font-weight:normal; color:#003333;}
+.ip3-investors #leftnav ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-orange.jpg) no-repeat 0px center; color:#EF8E21;}
+.ip3-investors #leftnav ul li ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-orange.jpg) no-repeat 0px center; color:#EF8E21;}
+
+.ip3-site-services #leftnav ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+.ip3-site-services #leftnav ul li ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+.ip3-site-services #leftnav ul li.current ul li a{background:none; font-weight:normal; color:#003333;}
+.ip3-site-services #leftnav ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+.ip3-site-services #leftnav ul li ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+
+
+#about-ubm #leftnav ul li.current a,.ip3-about-ubm #leftnav ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+.ip3-about-ubm #leftnav ul li ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+.ip3-about-ubm #leftnav ul li.current ul li a{background:none; font-weight:normal; color:#58585A;}
+.ip3-about-ubm #leftnav ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+.ip3-about-ubm #leftnav ul li ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+#about-ubm #leftnav ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center;color: #00529C; }
+
+.ip3-people #leftnav ul li a:hover{color:#003333;}
+
+#sustainability #leftnav ul li a:hover {background: url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-green.jpg) no-repeat scroll 0px center; transparent; display:inline-block; color:#62843a;}
+
+#leftnav #section-Homepage-level2 ul{margin-bottom:0;}
+#leftnav ul li ul li a{padding-left:20px; display: inline-block;}
+
+#leftnav ul li ul li.last{padding-bottom:0px;}
+#leftnav ul li ul li.last span{padding-bottom:0 !important;}
+
+/*body.ie7 #leftnav ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat 18px 1px;}
+body.ie7 .ip3-investors #leftnav ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-orange.jpg) no-repeat 18px 1px;}*/
+
+
+/*
+#about-ubm #leftnav ul li.current a{color:#00529c;}
+#about-ubm #leftnav ul li a:hover,.ip3-about-ubm #leftnav ul li a:hover{color:#00529C; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center;}
+#about-ubm #leftnav ul li ul li a:hover,.ip3-about-ubm #leftnav ul li ul li a:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center;}
+
+.ip3-about-ubm #leftnav ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px center; color:#00529c;}
+
+.ip3-about-ubm #leftnav ul li ul li.current a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-blue.jpg) no-repeat 0px 0px;color:#00529c;}
+.ip3-about-ubm #leftnav ul li.current ul li a {background:none; font-weight:normal;}*/
+
+
+/*.ip3-about-ubm #leftnav ul li:hover a{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg.jpg) no-repeat 0 0;}
+.ip3-investors #leftnav ul li:hover{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/navigation/left-nav-bg-orange.jpg) no-repeat 0px 0px;color:#8a531a;}*/
+
+/*#leftnav ul#section-Homepage-level2 li.first span{padding-bottom:10px; float:left;}*/
+/*#leftnav ul#section-Homepage-level2 li ul li.first{margin-top:10px;}*/
+
+
+/****************************** Right Column **************************************************/
+#TwoColRight{float:left; width:752px; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/rightcol-bg.jpg) no-repeat left top; min-height:429px; padding-left:10px; paddding-right:12px; padding-top:9px;}
+.right{float:right; border:1px solid #9c9e9f; padding:8px; margin-left:10px; margin-bottom:10px;}
+div.right img{border:1px solid #9c9e9f;}
+.content-bottom{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/right-col-content-bottom-bg.png) no-repeat bottom left; padding-bottom:55px; clear:both; overflow:hidden;}
+
+
+#landingImage{border:none; float:none; margin-left:0px; padding:0px; margin-top:10px;}
+#landingImage img{border:none;}
+
+#TwoColRight ul{padding-left:25px; list-style:none;}
+
+#TwoColRight ul li{padding-bottom:15px; padding-left:20px; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/li-bullet.gif) no-repeat 0 0;}
+
+#TwoColRight a{text-decoration:underline;}
+#TwoColRight a:hover{text-decoration:none;}
+.ie7 #TwoColRight a:hover {display: inline-block;}
+#TwoColRight .ubmData a:hover{text-decoration:none;}
+#about-ubm #TwoColRight a, .ip3-about-ubm #TwoColRight a{color:#00529C; }
+#about-ubm.ie7 #TwoColRight a, .ip3-about-ubm.ie7 #TwoColRight a {display:inline-block;}
+.ip3-people #TwoColRight a{color:#02465B;}
+.ip3-site-services #TwoColRight a{color:#00529C;}
+/****************************** footwer-container *********************************************/
+
+#credential{float:left; font-size:0.9em; color:#3e3d40;}
+#footermenu{float:right;}
+#footermenu ul li{float:left; padding-left:7px; padding-right:9px; background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/footer-link-sep.jpg) no-repeat right 2px;}
+#footermenu ul li a{color:#003333; display:block; font-size:0.9em; text-decoration:none;} 
+#footermenu ul li a:hover{text-decoration:underline;}
+#footermenu li.last{background:none; padding-right:0px;}
+
+body.ie6#Homepage #footer-container,body.ie7#Homepage #footer-container,body.ie7#Homepage #footer-container{float:left; margin-top:20px;}
+
+
+/**************Financial Calendar************/
+
+table.dataTable{width:737px; border:1px solid #9d9d9d; float:left;}
+table.dataTable thead th{background:url(~/media/Images/U/United-Business-Media-Plc/Images/css/table-bg-orange.jpg) repeat-x 0 0; }
+table.dataTable thead th{padding:10px 0 10px 10px; text-align:left; color:#fff; font-weight:bold;}
+table.dataTable thead th.left{width:75%; border-right:2px solid #9d9d9d; }
+table.dataTable thead th.rightDate{width:25%}
+table.dataTable tr{background-color:#eceeed;}
+table.dataTable tr.alt{background-color:#fff;}
+table.dataTable tbody td{padding:9px 0 9px 10px;}
+table.dataTable td{border-right:2px solid #9d9d9d;}
+table.dataTable td.rightDate{border-right:1px solid #9d9d9d;}
+table.dataTable tbody td{border-top:1px solid #9d9d9d;}
+
+/**********************Search Content*******************/
+
+#TwoColRight #SearchResult-tabs ul{padding-left: 0px;}
+#TwoColRight #SearchResult-tabs ul li{float:left; list-style: none; padding:4px 10px 4px 8px; margin-right: 1px; background-color: #00529C; }
+#TwoColRight #SearchResult-tabs ul li.Selected {background-color: #026BCB;}
+#TwoColRight #SearchResult-tabs ul li a {text-decoration: none; font-weight:bold; color: #FFFFFF;}
+
+
+#SearchResult-tabs {clear:both; overflow: hidden; padding-bottom: 20px;}
+
+Table#SearchResult tr td{padding-bottom:10px;}
+
+
+/**********************HR Content*******************/
+
+
+.DetailsHR{float:left;}
+.hrImage{float:left; padding-right:10px;}
+.hrFields{float:left;}
+.DetailsHR{float:left;clear:both; padding-bottom:20px;}
+
+/*************** adobe ***********************************/
+.adobeContainer{margin-top:15px; width:100%; float:left;}
+.adobeContainer a{text-decoration:none !important; float:left; margin-right:10px;}
+.adobeContainer p a{float:none;}
+
+a.backtop{clear:both; margin-top:15px; display:block; float:left; width:90px;}
+body.ie7 a.backtop{clear:none; margin-top:0px;}
+
+* html img, * html div {behavior: url('~/media/Images/U/United-Business-Media-Plc/script/iepngfix.htc'); }
+
+*html .content-bottom{background:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, src='~/media/Images/U/United-Business-Media-Plc/Images/css/right-col-content-bottom-bg.png',sizingMethod='crop')};
+
+a.hh{display:none;}
+
+*html #logo-container img{background:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, src='~/media/Images/U/United-Business-Media-Plc/Images/content/logo.png',sizingMethod='crop')};
+
