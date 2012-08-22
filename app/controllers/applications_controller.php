@@ -3,6 +3,11 @@ class ApplicationsController extends AppController {
 
 	var $name = 'Applications';
 
+  function beforeFilter(){
+    parent::beforeFilter();
+    $this->Auth->allowedActions = array('apply');
+  }
+
 	function index() {
 		$this->Application->recursive = 0;
 		$this->set('applications', $this->paginate());
@@ -20,8 +25,8 @@ class ApplicationsController extends AppController {
 		if (!empty($this->data)) {
 			$this->Application->create();
 			if ($this->Application->save($this->data)) {
-				$this->Session->setFlash(__('The application has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$this->Session->setFlash(__('Thank you for application.', true));
+				$this->redirect(array('controller'=>'dashboards','action' => 'about'));
 			} else {
 				$this->Session->setFlash(__('The application could not be saved. Please, try again.', true));
 			}

@@ -1,7 +1,10 @@
 <?php
 class Contact extends AppModel {
 	var $name = 'Contact';
-	var $validate = array(
+	var $actsAs = array('MulitiTranslate'=>array(
+          'title', 'body'
+        ));
+  var $validate = array(
 		'title' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),

@@ -13,14 +13,32 @@ class SettingsController extends AppController {
 			$this->Session->setFlash(__('Invalid setting', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Contact->setLocale($this->Session->read('Config.language'));	
 		$this->set('setting', $this->Setting->read(null, $id));
 	}
+
+  function add(){
+    $this->Setting->setLocale(array('eng','chi'));
+		if (!empty($this->data)) {
+			$this->Setting->create();
+			if ($this->Setting->save($this->data)) {
+				$this->Session->setFlash(__('The setting has been saved', true));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The setting could not be saved. Please, try again.', true));
+			}
+		}
+  }
 
 	function edit($id = null) {
 		if (!$id && empty($this->data)) {
 			$this->Session->setFlash(__('Invalid setting', true));
 			$this->redirect(array('action' => 'index'));
 		}
+
+    $this->Contact->setLocale(array('eng','chi'));
+    $this->Contact->multiTranslateOptions(array('validate'=>true,'find'=>true));
+    
 		if (!empty($this->data)) {
 			if ($this->Setting->save($this->data)) {
 				$this->Session->setFlash(__('The setting has been saved', true));

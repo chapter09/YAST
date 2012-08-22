@@ -25,10 +25,12 @@ class SponsorsController extends AppController {
 			$this->Session->setFlash(__('Invalid sponsor', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Sponsor->setLocale($this->Session->read('Config.language'));
 		$this->set('sponsor', $this->Sponsor->read(null, $id));
 	}
 
 	function add() {
+    $this->Sponsor->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
       if($this->FileUpload->success){ 
         $this->set('image', $this->FileUpload->finalFile);	
@@ -46,6 +48,10 @@ class SponsorsController extends AppController {
 			$this->Session->setFlash(__('Invalid sponsor', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Sponsor->setLocale(array('eng','chi'));
+    $this->Sponsor->multiTranslateOptions(array('validate'=>true,'find'=>true));
+    
+
 		if (!empty($this->data)) {
       if($this->FileUpload->success){ 
         $this->set('image', $this->FileUpload->finalFile);

@@ -1,6 +1,10 @@
 <?php
 class Setting extends AppModel {
 	var $name = 'Setting';
+  var $actsAs = array(
+      'MulitiTranslate'=> array(
+        'value',
+       ));
 	var $validate = array(
 		'field' => array(
 			'notempty' => array(

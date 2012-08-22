@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-08-15 14:50+0800\n"
+"POT-Creation-Date: 2012-08-23 02:12+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -13,6 +13,102 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /controllers/abouts_controller.php:14;36
+msgid "Invalid about"
+msgstr ""
+
+#: /controllers/abouts_controller.php:26;43
+msgid "The about has been saved"
+msgstr ""
+
+#: /controllers/abouts_controller.php:29;46
+msgid "The about could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/abouts_controller.php:56
+msgid "Invalid id for about"
+msgstr ""
+
+#: /controllers/abouts_controller.php:60
+msgid "About deleted"
+msgstr ""
+
+#: /controllers/abouts_controller.php:63
+msgid "About was not deleted"
+msgstr ""
+
+#: /controllers/applications_controller.php:18
+msgid "Invalid application"
+msgstr ""
+
+#: /controllers/applications_controller.php:28
+msgid "Thank you for application."
+msgstr ""
+
+#: /controllers/applications_controller.php:31
+msgid "The application could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/applications_controller.php:38
+msgid "Invalid id for application"
+msgstr ""
+
+#: /controllers/applications_controller.php:42
+msgid "Application deleted"
+msgstr ""
+
+#: /controllers/applications_controller.php:45
+msgid "Application was not deleted"
+msgstr ""
+
+#: /controllers/contacts_controller.php:14;36
+msgid "Invalid contact"
+msgstr ""
+
+#: /controllers/contacts_controller.php:26;45
+msgid "The contact has been saved"
+msgstr ""
+
+#: /controllers/contacts_controller.php:29;48
+msgid "The contact could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/contacts_controller.php:58
+msgid "Invalid id for contact"
+msgstr ""
+
+#: /controllers/contacts_controller.php:62
+msgid "Contact deleted"
+msgstr ""
+
+#: /controllers/contacts_controller.php:65
+msgid "Contact was not deleted"
+msgstr ""
+
+#: /controllers/ec_sliders_controller.php:23;46
+msgid "Invalid ec slider"
+msgstr ""
+
+#: /controllers/ec_sliders_controller.php:35;55
+msgid "The ec slider has been saved"
+msgstr ""
+
+#: /controllers/ec_sliders_controller.php:39;59
+msgid "The ec slider could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/ec_sliders_controller.php:69
+msgid "Invalid id for ec slider"
+msgstr ""
+
+#: /controllers/ec_sliders_controller.php:73
+msgid "Ec slider deleted"
+msgstr ""
+
+#: /controllers/ec_sliders_controller.php:76
+msgid "Ec slider was not deleted"
+msgstr ""
 
 #: /controllers/groups_controller.php:20;40
 msgid "Invalid group"
@@ -36,6 +132,162 @@ msgstr ""
 
 #: /controllers/groups_controller.php:65
 msgid "Group was not deleted"
+msgstr ""
+
+#: /controllers/settings_controller.php:13;35
+msgid "Invalid setting"
+msgstr ""
+
+#: /controllers/settings_controller.php:25;44
+msgid "The setting has been saved"
+msgstr ""
+
+#: /controllers/settings_controller.php:28;47
+msgid "The setting could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/sliders_controller.php:23;46
+msgid "Invalid slider"
+msgstr ""
+
+#: /controllers/sliders_controller.php:35;55
+msgid "The slider has been saved"
+msgstr ""
+
+#: /controllers/sliders_controller.php:39;59
+msgid "The slider could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/sliders_controller.php:69
+msgid "Invalid id for slider"
+msgstr ""
+
+#: /controllers/sliders_controller.php:73
+msgid "Slider deleted"
+msgstr ""
+
+#: /controllers/sliders_controller.php:76
+msgid "Slider was not deleted"
+msgstr ""
+
+#: /controllers/sponsors_controller.php:25;48
+msgid "Invalid sponsor"
+msgstr ""
+
+#: /controllers/sponsors_controller.php:37;58
+msgid "The sponsor has been saved"
+msgstr ""
+
+#: /controllers/sponsors_controller.php:41;62
+msgid "The sponsor could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/sponsors_controller.php:72
+msgid "Invalid id for sponsor"
+msgstr ""
+
+#: /controllers/sponsors_controller.php:76
+msgid "Sponsor deleted"
+msgstr ""
+
+#: /controllers/sponsors_controller.php:79
+msgid "Sponsor was not deleted"
+msgstr ""
+
+#: /controllers/st_entries_controller.php:15;39
+msgid "Invalid st entry"
+msgstr ""
+
+#: /controllers/st_entries_controller.php:27;48
+msgid "The st entry has been saved"
+msgstr ""
+
+#: /controllers/st_entries_controller.php:30;51
+msgid "The st entry could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/st_entries_controller.php:63
+msgid "Invalid id for st entry"
+msgstr ""
+
+#: /controllers/st_entries_controller.php:67
+msgid "St entry deleted"
+msgstr ""
+
+#: /controllers/st_entries_controller.php:70
+msgid "St entry was not deleted"
+msgstr ""
+
+#: /controllers/st_sections_controller.php:14;38
+msgid "Invalid st section"
+msgstr ""
+
+#: /controllers/st_sections_controller.php:26;46
+msgid "The st section has been saved"
+msgstr ""
+
+#: /controllers/st_sections_controller.php:29;49
+msgid "The st section could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/st_sections_controller.php:61
+msgid "Invalid id for st section"
+msgstr ""
+
+#: /controllers/st_sections_controller.php:65
+msgid "St section deleted"
+msgstr ""
+
+#: /controllers/st_sections_controller.php:68
+msgid "St section was not deleted"
+msgstr ""
+
+#: /controllers/st_types_controller.php:15;36
+msgid "Invalid st type"
+msgstr ""
+
+#: /controllers/st_types_controller.php:26;45
+msgid "The st type has been saved"
+msgstr ""
+
+#: /controllers/st_types_controller.php:29;48
+msgid "The st type could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/st_types_controller.php:58
+msgid "Invalid id for st type"
+msgstr ""
+
+#: /controllers/st_types_controller.php:62
+msgid "St type deleted"
+msgstr ""
+
+#: /controllers/st_types_controller.php:65
+msgid "St type was not deleted"
+msgstr ""
+
+#: /controllers/text_sliders_controller.php:14;36
+msgid "Invalid text slider"
+msgstr ""
+
+#: /controllers/text_sliders_controller.php:26;45
+msgid "The text slider has been saved"
+msgstr ""
+
+#: /controllers/text_sliders_controller.php:29;48
+msgid "The text slider could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/text_sliders_controller.php:58
+msgid "Invalid id for text slider"
+msgstr ""
+
+#: /controllers/text_sliders_controller.php:62
+msgid "Text slider deleted"
+msgstr ""
+
+#: /controllers/text_sliders_controller.php:65
+msgid "Text slider was not deleted"
 msgstr ""
 
 #: /controllers/users_controller.php:31;53
@@ -86,23 +338,89 @@ msgstr ""
 msgid "Widget was not deleted"
 msgstr ""
 
-#: /views/groups/add.ctp:4
-msgid "Add Group"
+#: /views/abouts/add.ctp:4
+msgid "Add About"
 msgstr ""
 
+#: /views/abouts/add.ctp:17
+#: /views/abouts/edit.ctp:19
+#: /views/applications/add.ctp:17
+#: /views/applications/edit.ctp:18
+#: /views/contacts/add.ctp:22
+#: /views/contacts/edit.ctp:22
+#: /views/ec_sliders/add.ctp:15
+#: /views/ec_sliders/edit.ctp:19
 #: /views/groups/add.ctp:9
 #: /views/groups/edit.ctp:10
+#: /views/settings/add.ctp:11
+#: /views/settings/edit.ctp:12
+#: /views/sliders/add.ctp:17
+#: /views/sliders/edit.ctp:20
+#: /views/sponsors/add.ctp:14
+#: /views/sponsors/edit.ctp:19
+#: /views/st_entries/add.ctp:16
+#: /views/st_entries/edit.ctp:18
+#: /views/st_sections/add.ctp:17
+#: /views/st_sections/edit.ctp:18
+#: /views/st_types/add.ctp:11
+#: /views/st_types/edit.ctp:12
+#: /views/text_sliders/add.ctp:16
+#: /views/text_sliders/edit.ctp:17
 #: /views/users/add.ctp:11
 #: /views/users/edit.ctp:12
 #: /views/widgets/add.ctp:11
 #: /views/widgets/edit.ctp:12
 msgid "Submit"
-msgstr ""
+msgstr "提交"
 
+#: /views/abouts/add.ctp:20
+#: /views/abouts/edit.ctp:22
+#: /views/abouts/index.ctp:9;47
+#: /views/abouts/view.ctp:27
+#: /views/applications/add.ctp:20
+#: /views/applications/edit.ctp:21
+#: /views/applications/index.ctp:15;58
+#: /views/applications/view.ctp:57
+#: /views/contacts/add.ctp:25
+#: /views/contacts/edit.ctp:25
+#: /views/contacts/index.ctp:10;49
+#: /views/contacts/view.ctp:32
+#: /views/ec_sliders/add.ctp:18
+#: /views/ec_sliders/edit.ctp:22
+#: /views/ec_sliders/index.ctp:11;51
+#: /views/ec_sliders/view.ctp:46
 #: /views/groups/add.ctp:12
 #: /views/groups/edit.ctp:13
 #: /views/groups/index.ctp:9;47
 #: /views/groups/view.ctp:27;48
+#: /views/settings/add.ctp:14
+#: /views/settings/edit.ctp:15
+#: /views/settings/index.ctp:8;44
+#: /views/settings/view.ctp:22
+#: /views/sliders/add.ctp:20
+#: /views/sliders/edit.ctp:23
+#: /views/sliders/index.ctp:12;53
+#: /views/sliders/view.ctp:51
+#: /views/sponsors/add.ctp:17
+#: /views/sponsors/edit.ctp:22
+#: /views/sponsors/index.ctp:11;51
+#: /views/sponsors/view.ctp:47
+#: /views/st_entries/add.ctp:19
+#: /views/st_entries/edit.ctp:21
+#: /views/st_entries/index.ctp:10;51
+#: /views/st_entries/view.ctp:32;54
+#: /views/st_sections/add.ctp:20
+#: /views/st_sections/edit.ctp:21
+#: /views/st_sections/index.ctp:10;51
+#: /views/st_sections/view.ctp:32
+#: /views/st_types/add.ctp:14
+#: /views/st_types/edit.ctp:15
+#: /views/st_types/index.ctp:8;45
+#: /views/st_types/view.ctp:22;42
+#: /views/text_sliders/add.ctp:19
+#: /views/text_sliders/edit.ctp:20
+#: /views/text_sliders/index.ctp:9;47
+#: /views/text_sliders/view.ctp:28
 #: /views/users/add.ctp:14
 #: /views/users/edit.ctp:15
 #: /views/users/index.ctp:11;53
@@ -112,6 +430,462 @@ msgstr ""
 #: /views/widgets/index.ctp:9;47
 #: /views/widgets/view.ctp:27
 msgid "Actions"
+msgstr ""
+
+#: /views/abouts/add.ctp:23
+#: /views/abouts/edit.ctp:26
+#: /views/abouts/view.ctp:31
+msgid "List Abouts"
+msgstr ""
+
+#: /views/abouts/edit.ctp:4
+#: /views/abouts/view.ctp:29
+msgid "Edit About"
+msgstr ""
+
+#: /views/abouts/edit.ctp:25
+#: /views/abouts/index.ctp:27
+#: /views/applications/edit.ctp:24
+#: /views/applications/index.ctp:38
+#: /views/contacts/edit.ctp:28
+#: /views/contacts/index.ctp:29
+#: /views/ec_sliders/edit.ctp:25
+#: /views/ec_sliders/index.ctp:31
+#: /views/groups/edit.ctp:16
+#: /views/groups/index.ctp:27
+#: /views/groups/view.ctp:68
+#: /views/sliders/edit.ctp:26
+#: /views/sliders/index.ctp:33
+#: /views/sponsors/edit.ctp:25
+#: /views/sponsors/index.ctp:31
+#: /views/st_entries/edit.ctp:24
+#: /views/st_entries/index.ctp:31
+#: /views/st_entries/view.ctp:73
+#: /views/st_sections/edit.ctp:24
+#: /views/st_sections/index.ctp:31
+#: /views/st_types/edit.ctp:18
+#: /views/st_types/index.ctp:25
+#: /views/st_types/view.ctp:61
+#: /views/text_sliders/edit.ctp:23
+#: /views/text_sliders/index.ctp:27
+#: /views/users/edit.ctp:18
+#: /views/users/index.ctp:33
+#: /views/widgets/edit.ctp:18
+#: /views/widgets/index.ctp:27
+msgid "Delete"
+msgstr ""
+
+#: /views/abouts/edit.ctp:25
+#: /views/abouts/index.ctp:27
+#: /views/abouts/view.ctp:30
+#: /views/applications/edit.ctp:24
+#: /views/applications/index.ctp:38
+#: /views/applications/view.ctp:59
+#: /views/contacts/edit.ctp:28
+#: /views/contacts/index.ctp:29
+#: /views/contacts/view.ctp:35
+#: /views/ec_sliders/edit.ctp:25
+#: /views/ec_sliders/index.ctp:31
+#: /views/ec_sliders/view.ctp:49
+#: /views/groups/edit.ctp:16
+#: /views/groups/index.ctp:27
+#: /views/groups/view.ctp:30;68
+#: /views/sliders/edit.ctp:26
+#: /views/sliders/index.ctp:33
+#: /views/sliders/view.ctp:54
+#: /views/sponsors/edit.ctp:25
+#: /views/sponsors/index.ctp:31
+#: /views/sponsors/view.ctp:50
+#: /views/st_entries/edit.ctp:24
+#: /views/st_entries/index.ctp:31
+#: /views/st_entries/view.ctp:35;73
+#: /views/st_sections/edit.ctp:24
+#: /views/st_sections/index.ctp:31
+#: /views/st_sections/view.ctp:35
+#: /views/st_types/edit.ctp:18
+#: /views/st_types/index.ctp:25
+#: /views/st_types/view.ctp:25;61
+#: /views/text_sliders/edit.ctp:23
+#: /views/text_sliders/index.ctp:27
+#: /views/text_sliders/view.ctp:31
+#: /views/users/edit.ctp:18
+#: /views/users/index.ctp:33
+#: /views/users/view.ctp:40
+#: /views/widgets/edit.ctp:18
+#: /views/widgets/index.ctp:27
+#: /views/widgets/view.ctp:30
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /views/abouts/index.ctp:2
+msgid "Abouts"
+msgstr ""
+
+#: /views/abouts/index.ctp:25
+#: /views/applications/index.ctp:37
+#: /views/contacts/index.ctp:27
+#: /views/ec_sliders/index.ctp:29
+#: /views/groups/index.ctp:25
+#: /views/groups/view.ctp:66
+#: /views/settings/index.ctp:23
+#: /views/sliders/index.ctp:31
+#: /views/sponsors/index.ctp:29
+#: /views/st_entries/index.ctp:29
+#: /views/st_entries/view.ctp:71
+#: /views/st_sections/index.ctp:29
+#: /views/st_types/index.ctp:23
+#: /views/st_types/view.ctp:59
+#: /views/text_sliders/index.ctp:25
+#: /views/users/index.ctp:31
+#: /views/widgets/index.ctp:25
+msgid "View"
+msgstr ""
+
+#: /views/abouts/index.ctp:26
+#: /views/contacts/index.ctp:28
+#: /views/ec_sliders/index.ctp:30
+#: /views/groups/index.ctp:26
+#: /views/groups/view.ctp:67
+#: /views/settings/index.ctp:24
+#: /views/sliders/index.ctp:32
+#: /views/sponsors/index.ctp:30
+#: /views/st_entries/index.ctp:30
+#: /views/st_entries/view.ctp:72
+#: /views/st_sections/index.ctp:30
+#: /views/st_types/index.ctp:24
+#: /views/st_types/view.ctp:60
+#: /views/text_sliders/index.ctp:26
+#: /views/users/index.ctp:32
+#: /views/widgets/index.ctp:26
+msgid "Edit"
+msgstr ""
+
+#: /views/abouts/index.ctp:35
+#: /views/applications/index.ctp:46
+#: /views/contacts/index.ctp:37
+#: /views/ec_sliders/index.ctp:39
+#: /views/groups/index.ctp:35
+#: /views/settings/index.ctp:32
+#: /views/sliders/index.ctp:41
+#: /views/sponsors/index.ctp:39
+#: /views/st_entries/index.ctp:39
+#: /views/st_sections/index.ctp:39
+#: /views/st_types/index.ctp:33
+#: /views/text_sliders/index.ctp:35
+#: /views/users/index.ctp:41
+#: /views/widgets/index.ctp:35
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /views/abouts/index.ctp:40
+#: /views/applications/index.ctp:51
+#: /views/contacts/index.ctp:42
+#: /views/ec_sliders/index.ctp:44
+#: /views/groups/index.ctp:40
+#: /views/settings/index.ctp:37
+#: /views/sliders/index.ctp:46
+#: /views/sponsors/index.ctp:44
+#: /views/st_entries/index.ctp:44
+#: /views/st_sections/index.ctp:44
+#: /views/st_types/index.ctp:38
+#: /views/text_sliders/index.ctp:40
+#: /views/users/index.ctp:46
+#: /views/widgets/index.ctp:40
+msgid "previous"
+msgstr ""
+
+#: /views/abouts/index.ctp:43
+#: /views/applications/index.ctp:54
+#: /views/contacts/index.ctp:45
+#: /views/ec_sliders/index.ctp:47
+#: /views/groups/index.ctp:43
+#: /views/settings/index.ctp:40
+#: /views/sliders/index.ctp:49
+#: /views/sponsors/index.ctp:47
+#: /views/st_entries/index.ctp:47
+#: /views/st_sections/index.ctp:47
+#: /views/st_types/index.ctp:41
+#: /views/text_sliders/index.ctp:43
+#: /views/users/index.ctp:49
+#: /views/widgets/index.ctp:43
+msgid "next"
+msgstr ""
+
+#: /views/abouts/index.ctp:49
+#: /views/abouts/view.ctp:32
+msgid "New About"
+msgstr ""
+
+#: /views/abouts/view.ctp:2
+#: /views/layouts/yast.ctp:56;148
+msgid "About"
+msgstr "关于"
+
+#: /views/abouts/view.ctp:4
+#: /views/applications/view.ctp:4
+#: /views/contacts/view.ctp:4
+#: /views/ec_sliders/view.ctp:4
+#: /views/groups/view.ctp:4;42
+#: /views/settings/view.ctp:4
+#: /views/sliders/view.ctp:4
+#: /views/sponsors/view.ctp:4
+#: /views/st_entries/view.ctp:4;49
+#: /views/st_sections/view.ctp:4
+#: /views/st_types/view.ctp:4;37
+#: /views/text_sliders/view.ctp:4
+#: /views/users/view.ctp:4
+#: /views/widgets/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: /views/abouts/view.ctp:9
+#: /views/applications/view.ctp:49
+#: /views/contacts/view.ctp:9
+#: /views/sliders/view.ctp:9
+#: /views/st_entries/view.ctp:9;50
+#: /views/st_sections/view.ctp:9
+#: /views/st_types/view.ctp:9;38
+#: /views/text_sliders/view.ctp:9
+msgid "Title"
+msgstr ""
+
+#: /views/abouts/view.ctp:14
+#: /views/contacts/view.ctp:14
+#: /views/ec_sliders/view.ctp:9
+#: /views/sliders/view.ctp:14
+#: /views/st_entries/view.ctp:14;51
+#: /views/st_sections/view.ctp:14
+#: /views/st_types/view.ctp:39
+#: /views/text_sliders/view.ctp:14
+msgid "Body"
+msgstr ""
+
+#: /views/abouts/view.ctp:19
+#: /views/contacts/view.ctp:19
+#: /views/ec_sliders/view.ctp:14
+#: /views/sliders/view.ctp:19
+#: /views/st_entries/view.ctp:19;52
+#: /views/st_sections/view.ctp:19
+#: /views/st_types/view.ctp:14;40
+#: /views/text_sliders/view.ctp:19
+msgid "Order"
+msgstr ""
+
+#: /views/abouts/view.ctp:30
+msgid "Delete About"
+msgstr ""
+
+#: /views/applications/add.ctp:4
+msgid "Add Application"
+msgstr ""
+
+#: /views/applications/add.ctp:23
+#: /views/applications/edit.ctp:25
+#: /views/applications/view.ctp:60
+msgid "List Applications"
+msgstr ""
+
+#: /views/applications/edit.ctp:4
+msgid "Edit Application"
+msgstr ""
+
+#: /views/applications/index.ctp:2
+msgid "Applications"
+msgstr ""
+
+#: /views/applications/index.ctp:60
+#: /views/applications/view.ctp:61
+msgid "New Application"
+msgstr ""
+
+#: /views/applications/view.ctp:2
+msgid "Application"
+msgstr ""
+
+#: /views/applications/view.ctp:9
+#: /views/dashboards/apply.ctp:69
+msgid "First Name"
+msgstr "名字"
+
+#: /views/applications/view.ctp:14
+#: /views/dashboards/apply.ctp:76
+msgid "Last Name"
+msgstr "姓氏"
+
+#: /views/applications/view.ctp:19
+msgid "Email"
+msgstr ""
+
+#: /views/applications/view.ctp:24
+msgid "Phone"
+msgstr ""
+
+#: /views/applications/view.ctp:29
+msgid "Organization"
+msgstr ""
+
+#: /views/applications/view.ctp:34
+#: /views/dashboards/apply.ctp:145
+msgid "Learn More"
+msgstr "了解更多"
+
+#: /views/applications/view.ctp:39
+#: /views/contacts/view.ctp:24
+msgid "Position"
+msgstr ""
+
+#: /views/applications/view.ctp:44
+msgid "Department"
+msgstr ""
+
+#: /views/applications/view.ctp:59
+msgid "Delete Application"
+msgstr ""
+
+#: /views/contacts/add.ctp:4
+msgid "Add Contact"
+msgstr ""
+
+#: /views/contacts/add.ctp:28
+#: /views/contacts/edit.ctp:29
+#: /views/contacts/view.ctp:36
+msgid "List Contacts"
+msgstr ""
+
+#: /views/contacts/edit.ctp:4
+#: /views/contacts/view.ctp:34
+msgid "Edit Contact"
+msgstr ""
+
+#: /views/contacts/index.ctp:2
+msgid "Contacts"
+msgstr ""
+
+#: /views/contacts/index.ctp:51
+#: /views/contacts/view.ctp:37
+msgid "New Contact"
+msgstr ""
+
+#: /views/contacts/view.ctp:2
+#: /views/layouts/yast.ctp:157
+msgid "Contact"
+msgstr "联系我们"
+
+#: /views/contacts/view.ctp:35
+msgid "Delete Contact"
+msgstr ""
+
+#: /views/dashboards/about.ctp:21
+msgid "About Us"
+msgstr "关于我们"
+
+#: /views/dashboards/apply.ctp:21
+#: /views/dashboards/contact.ctp:19
+msgid "Contact Us"
+msgstr "联系我们"
+
+#: /views/dashboards/apply.ctp:29
+msgid "Thank you for your interest in YAST."
+msgstr "感谢您对YAST的关注."
+
+#: /views/dashboards/apply.ctp:31
+msgid "YAST is the leading member-based advisory company."
+msgstr "YAST是一个好公司"
+
+#: /views/dashboards/apply.ctp:66
+msgid "Contact Information"
+msgstr "联系信息"
+
+#: /views/dashboards/apply.ctp:83
+msgid "Business E-Mail Address"
+msgstr "工作邮箱"
+
+#: /views/dashboards/apply.ctp:89
+msgid "Business Phone Number"
+msgstr "工作电话"
+
+#: /views/dashboards/apply.ctp:95
+msgid "Organization Name"
+msgstr "组织名称"
+
+#: /views/dashboards/apply.ctp:109
+msgid "Professional Title"
+msgstr "职称"
+
+#: /views/dashboards/apply.ctp:152
+msgid "I am interested in receiving e-mail communications from CEB."
+msgstr "我愿意接受来自YAST的资讯邮件"
+
+#: /views/dashboards/contact.ctp:29
+msgid "Office Locations"
+msgstr "办公地点"
+
+#: /views/dashboards/contact.ctp:31
+msgid "Headquarters"
+msgstr "总部"
+
+#: /views/dashboards/enterprise.ctp:17
+msgid "Our Clients"
+msgstr "我们的客户"
+
+#: /views/ec_sliders/add.ctp:4
+msgid "Add Ec Slider"
+msgstr ""
+
+#: /views/ec_sliders/add.ctp:21
+#: /views/ec_sliders/edit.ctp:26
+#: /views/ec_sliders/view.ctp:50
+msgid "List Ec Sliders"
+msgstr ""
+
+#: /views/ec_sliders/edit.ctp:4
+#: /views/ec_sliders/view.ctp:48
+msgid "Edit Ec Slider"
+msgstr ""
+
+#: /views/ec_sliders/index.ctp:2
+msgid "Ec Sliders"
+msgstr ""
+
+#: /views/ec_sliders/index.ctp:53
+#: /views/ec_sliders/view.ctp:51
+msgid "New Ec Slider"
+msgstr ""
+
+#: /views/ec_sliders/view.ctp:2
+msgid "Ec Slider"
+msgstr ""
+
+#: /views/ec_sliders/view.ctp:19
+#: /views/sliders/view.ctp:24
+#: /views/sponsors/view.ctp:14
+msgid "File Type"
+msgstr ""
+
+#: /views/ec_sliders/view.ctp:24
+#: /views/sliders/view.ctp:29
+#: /views/sponsors/view.ctp:19
+msgid "File Size"
+msgstr ""
+
+#: /views/ec_sliders/view.ctp:29
+#: /views/sliders/view.ctp:34
+#: /views/sponsors/view.ctp:24
+msgid "File Name"
+msgstr ""
+
+#: /views/ec_sliders/view.ctp:35
+#: /views/sliders/view.ctp:40
+#: /views/sponsors/view.ctp:36
+msgid "Image"
+msgstr ""
+
+#: /views/ec_sliders/view.ctp:49
+msgid "Delete Ec Slider"
+msgstr ""
+
+#: /views/groups/add.ctp:4
+msgid "Add Group"
 msgstr ""
 
 #: /views/groups/add.ctp:15
@@ -148,62 +922,8 @@ msgstr ""
 msgid "Edit Group"
 msgstr ""
 
-#: /views/groups/edit.ctp:16
-#: /views/groups/index.ctp:27
-#: /views/groups/view.ctp:68
-#: /views/users/edit.ctp:18
-#: /views/users/index.ctp:33
-#: /views/widgets/edit.ctp:18
-#: /views/widgets/index.ctp:27
-msgid "Delete"
-msgstr ""
-
-#: /views/groups/edit.ctp:16
-#: /views/groups/index.ctp:27
-#: /views/groups/view.ctp:30;68
-#: /views/users/edit.ctp:18
-#: /views/users/index.ctp:33
-#: /views/users/view.ctp:40
-#: /views/widgets/edit.ctp:18
-#: /views/widgets/index.ctp:27
-#: /views/widgets/view.ctp:30
-msgid "Are you sure you want to delete # %s?"
-msgstr ""
-
 #: /views/groups/index.ctp:2
 msgid "Groups"
-msgstr ""
-
-#: /views/groups/index.ctp:25
-#: /views/groups/view.ctp:66
-#: /views/users/index.ctp:31
-#: /views/widgets/index.ctp:25
-msgid "View"
-msgstr ""
-
-#: /views/groups/index.ctp:26
-#: /views/groups/view.ctp:67
-#: /views/users/index.ctp:32
-#: /views/widgets/index.ctp:26
-msgid "Edit"
-msgstr ""
-
-#: /views/groups/index.ctp:35
-#: /views/users/index.ctp:41
-#: /views/widgets/index.ctp:35
-msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
-msgstr ""
-
-#: /views/groups/index.ctp:40
-#: /views/users/index.ctp:46
-#: /views/widgets/index.ctp:40
-msgid "previous"
-msgstr ""
-
-#: /views/groups/index.ctp:43
-#: /views/users/index.ctp:49
-#: /views/widgets/index.ctp:43
-msgid "next"
 msgstr ""
 
 #: /views/groups/index.ctp:49
@@ -218,12 +938,6 @@ msgstr ""
 #: /views/groups/view.ctp:2
 #: /views/users/view.ctp:19
 msgid "Group"
-msgstr ""
-
-#: /views/groups/view.ctp:4;42
-#: /views/users/view.ctp:4
-#: /views/widgets/view.ctp:4
-msgid "Id"
 msgstr ""
 
 #: /views/groups/view.ctp:9
@@ -263,42 +977,335 @@ msgstr ""
 msgid "Group Id"
 msgstr ""
 
-#: /views/layouts/default.ctp:25
-msgid "CakePHP: the rapid development php framework:"
+#: /views/layouts/default.ctp:25;39
+msgid "Dashboard Admin"
 msgstr ""
 
-#: /views/layouts/default.ctp:39;50
+#: /views/layouts/default.ctp:53
 msgid "CakePHP: the rapid development php framework"
 msgstr ""
 
+#: /views/layouts/yast.ctp:108
+msgid "Service Targets"
+msgstr "服务目标"
+
+#: /views/layouts/yast.ctp:138
+msgid "Enterprise Clients"
+msgstr "企业客户"
+
+#: /views/layouts/yast.ctp:167
+msgid "Apply for the conference"
+msgstr "与会注册"
+
 #: /views/posts/index.ctp:2
 msgid "Blog posts"
-msgstr "博客文章"
+msgstr ""
+
+#: /views/settings/add.ctp:4
+msgid "Add Setting"
+msgstr ""
+
+#: /views/settings/add.ctp:17
+#: /views/settings/edit.ctp:18
+#: /views/settings/view.ctp:25
+msgid "List Settings"
+msgstr ""
+
+#: /views/settings/edit.ctp:4
+#: /views/settings/view.ctp:24
+msgid "Edit Setting"
+msgstr ""
+
+#: /views/settings/index.ctp:2
+msgid "Settings"
+msgstr ""
+
+#: /views/settings/view.ctp:2
+msgid "Setting"
+msgstr ""
+
+#: /views/settings/view.ctp:9
+msgid "Field"
+msgstr ""
+
+#: /views/settings/view.ctp:14
+msgid "Value"
+msgstr ""
+
+#: /views/sliders/add.ctp:4
+msgid "Add Slider"
+msgstr ""
+
+#: /views/sliders/add.ctp:23
+#: /views/sliders/edit.ctp:27
+#: /views/sliders/view.ctp:55
+msgid "List Sliders"
+msgstr ""
+
+#: /views/sliders/edit.ctp:4
+#: /views/sliders/view.ctp:53
+msgid "Edit Slider"
+msgstr ""
+
+#: /views/sliders/index.ctp:2
+msgid "Sliders"
+msgstr ""
+
+#: /views/sliders/index.ctp:55
+#: /views/sliders/view.ctp:56
+msgid "New Slider"
+msgstr ""
+
+#: /views/sliders/view.ctp:2
+msgid "Slider"
+msgstr ""
+
+#: /views/sliders/view.ctp:54
+msgid "Delete Slider"
+msgstr ""
+
+#: /views/sponsors/add.ctp:4
+msgid "Add Sponsor"
+msgstr ""
+
+#: /views/sponsors/add.ctp:20
+#: /views/sponsors/edit.ctp:26
+#: /views/sponsors/view.ctp:51
+msgid "List Sponsors"
+msgstr ""
+
+#: /views/sponsors/edit.ctp:4
+#: /views/sponsors/view.ctp:49
+msgid "Edit Sponsor"
+msgstr ""
+
+#: /views/sponsors/index.ctp:2
+msgid "Sponsors"
+msgstr ""
+
+#: /views/sponsors/index.ctp:53
+#: /views/sponsors/view.ctp:52
+msgid "New Sponsor"
+msgstr ""
+
+#: /views/sponsors/view.ctp:2
+msgid "Sponsor"
+msgstr ""
+
+#: /views/sponsors/view.ctp:9
+msgid "Sponsor Name"
+msgstr ""
+
+#: /views/sponsors/view.ctp:30
+msgid "Url"
+msgstr ""
+
+#: /views/sponsors/view.ctp:50
+msgid "Delete Sponsor"
+msgstr ""
+
+#: /views/st_entries/add.ctp:4
+msgid "Add St Entry"
+msgstr ""
+
+#: /views/st_entries/add.ctp:22
+#: /views/st_entries/edit.ctp:25
+#: /views/st_entries/view.ctp:36
+#: /views/st_sections/add.ctp:24
+#: /views/st_sections/edit.ctp:26
+#: /views/st_sections/index.ctp:54
+#: /views/st_sections/view.ctp:38
+#: /views/st_types/add.ctp:18
+#: /views/st_types/edit.ctp:20
+#: /views/st_types/index.ctp:48
+#: /views/st_types/view.ctp:28
+msgid "List St Entries"
+msgstr ""
+
+#: /views/st_entries/add.ctp:23
+#: /views/st_entries/edit.ctp:26
+#: /views/st_entries/index.ctp:54
+#: /views/st_entries/view.ctp:38
+#: /views/st_types/add.ctp:17
+#: /views/st_types/edit.ctp:19
+#: /views/st_types/view.ctp:26
+msgid "List St Types"
+msgstr ""
+
+#: /views/st_entries/add.ctp:24
+#: /views/st_entries/edit.ctp:27
+#: /views/st_entries/index.ctp:55
+#: /views/st_entries/view.ctp:39
+#: /views/st_types/index.ctp:47
+#: /views/st_types/view.ctp:27
+msgid "New St Type"
+msgstr ""
+
+#: /views/st_entries/add.ctp:25
+#: /views/st_entries/edit.ctp:28
+#: /views/st_entries/index.ctp:56
+#: /views/st_entries/view.ctp:40
+#: /views/st_sections/add.ctp:23
+#: /views/st_sections/edit.ctp:25
+#: /views/st_sections/view.ctp:36
+msgid "List St Sections"
+msgstr ""
+
+#: /views/st_entries/add.ctp:26
+#: /views/st_entries/edit.ctp:29
+#: /views/st_entries/index.ctp:57
+#: /views/st_entries/view.ctp:41;82
+#: /views/st_sections/index.ctp:53
+#: /views/st_sections/view.ctp:37
+msgid "New St Section"
+msgstr ""
+
+#: /views/st_entries/edit.ctp:4
+#: /views/st_entries/view.ctp:34
+msgid "Edit St Entry"
+msgstr ""
+
+#: /views/st_entries/index.ctp:2
+msgid "St Entries"
+msgstr ""
+
+#: /views/st_entries/index.ctp:53
+#: /views/st_entries/view.ctp:37
+#: /views/st_sections/add.ctp:25
+#: /views/st_sections/edit.ctp:27
+#: /views/st_sections/index.ctp:55
+#: /views/st_sections/view.ctp:39
+#: /views/st_types/add.ctp:19
+#: /views/st_types/edit.ctp:21
+#: /views/st_types/index.ctp:49
+#: /views/st_types/view.ctp:29;70
+msgid "New St Entry"
+msgstr ""
+
+#: /views/st_entries/view.ctp:2
+#: /views/st_sections/view.ctp:24
+msgid "St Entry"
+msgstr ""
+
+#: /views/st_entries/view.ctp:24
+#: /views/st_types/view.ctp:2
+msgid "St Type"
+msgstr ""
+
+#: /views/st_entries/view.ctp:35
+msgid "Delete St Entry"
+msgstr ""
+
+#: /views/st_entries/view.ctp:45
+msgid "Related St Sections"
+msgstr ""
+
+#: /views/st_entries/view.ctp:53
+msgid "St Entry Id"
+msgstr ""
+
+#: /views/st_sections/add.ctp:4
+msgid "Add St Section"
+msgstr ""
+
+#: /views/st_sections/edit.ctp:4
+#: /views/st_sections/view.ctp:34
+msgid "Edit St Section"
+msgstr ""
+
+#: /views/st_sections/index.ctp:2
+msgid "St Sections"
+msgstr ""
+
+#: /views/st_sections/view.ctp:2
+msgid "St Section"
+msgstr ""
+
+#: /views/st_sections/view.ctp:35
+msgid "Delete St Section"
+msgstr ""
+
+#: /views/st_types/add.ctp:4
+msgid "Add St Type"
+msgstr ""
+
+#: /views/st_types/edit.ctp:4
+#: /views/st_types/view.ctp:24
+msgid "Edit St Type"
+msgstr ""
+
+#: /views/st_types/index.ctp:2
+msgid "St Types"
+msgstr ""
+
+#: /views/st_types/view.ctp:25
+msgid "Delete St Type"
+msgstr ""
+
+#: /views/st_types/view.ctp:33
+msgid "Related St Entries"
+msgstr ""
+
+#: /views/st_types/view.ctp:41
+msgid "St Type Id"
+msgstr ""
+
+#: /views/text_sliders/add.ctp:4
+msgid "Add Text Slider"
+msgstr ""
+
+#: /views/text_sliders/add.ctp:22
+#: /views/text_sliders/edit.ctp:24
+#: /views/text_sliders/view.ctp:32
+msgid "List Text Sliders"
+msgstr ""
+
+#: /views/text_sliders/edit.ctp:4
+#: /views/text_sliders/view.ctp:30
+msgid "Edit Text Slider"
+msgstr ""
+
+#: /views/text_sliders/index.ctp:2
+msgid "Text Sliders"
+msgstr ""
+
+#: /views/text_sliders/index.ctp:49
+#: /views/text_sliders/view.ctp:33
+msgid "New Text Slider"
+msgstr ""
+
+#: /views/text_sliders/view.ctp:2
+msgid "Text Slider"
+msgstr ""
+
+#: /views/text_sliders/view.ctp:31
+msgid "Delete Text Slider"
+msgstr ""
 
 #: /views/users/add.ctp:4
 msgid "Add User"
-msgstr "添加用戶"
+msgstr ""
 
 #: /views/users/edit.ctp:4
 #: /views/users/view.ctp:39
 msgid "Edit User"
-msgstr "修改用戶"
+msgstr ""
 
 #: /views/users/index.ctp:2
 msgid "Users"
-msgstr "用戶列表"
+msgstr ""
 
 #: /views/users/login.ctp:5
 msgid "Login"
-msgstr "登錄"
+msgstr ""
 
 #: /views/users/view.ctp:2
 msgid "User"
-msgstr "用戶信息"
+msgstr ""
 
 #: /views/users/view.ctp:40
 msgid "Delete User"
-msgstr "刪除用戶"
+msgstr ""
 
 #: /views/widgets/add.ctp:4
 msgid "Add Widget"
@@ -344,3 +1351,5 @@ msgstr ""
 msgid "Debug setting does not allow access to this url."
 msgstr ""
 
+msgid "Professional Information"
+msgstr "职业信息"

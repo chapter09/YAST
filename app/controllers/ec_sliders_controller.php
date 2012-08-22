@@ -23,11 +23,13 @@ class EcSlidersController extends AppController {
 			$this->Session->setFlash(__('Invalid ec slider', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->EcSlider->setLocale($this->Session->read('Config.language'));
 		$this->set('ecSlider', $this->EcSlider->read(null, $id));
 	}
 
 	function add() {
-		if (!empty($this->data)) {
+		$this->EcSlider->setLocale(array('eng','chi'));
+    if (!empty($this->data)) {
       if($this->FileUpload->success){ 
         $this->set('image', $this->FileUpload->finalFile);		
 				$this->Session->setFlash(__('The ec slider has been saved', true));
@@ -44,6 +46,9 @@ class EcSlidersController extends AppController {
 			$this->Session->setFlash(__('Invalid ec slider', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->EcSlider->setLocale(array('eng','chi'));
+    $this->EcSlider->multiTranslateOptions(array('validate'=>true,'find'=>true));
+    
 		if (!empty($this->data)) {
 		  if($this->FileUpload->success){ 
         $this->set('image', $this->FileUpload->finalFile);	

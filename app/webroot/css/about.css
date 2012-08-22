@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+#content-container {
+	background-color:#fff;
+	position: relative;
+}
+/*===BEGIN CONTENT CONTAINER STYLES====*/
+#content-container p {
+	line-height:17px;
+	font-size:12px;
+	padding: 10px 0px 5px 0;
+}
+#content-container a {
+	color:#0073bd;
+	text-decoration:none;
+}
+#content-container ul {
+	margin-left:15px;
+	margin-top:10px;
+}
+#content-container li {
+	line-height:15px;
+	font-size:12px;
+	list-style-type:square;
+	padding:5px 0;
+}
+#content-container .large-text {
+	font-size:14px;
+	line-height:18px;
+	font-weight:normal;
+}
+h1 {
+	padding:20px 15px 15px 0px;
+	font-size:28px;
+	font-weight: normal;
+	color:#000;
+	line-height:32px;
+}
+#content-container h4 {
+	font-size:15px;
+	line-height:19px;
+	font-weight:bold;
+	padding:15px 0 0 0;
+}
+.content {
+	padding: 0px 15px 15px 15px;
+	width: 595px;
+	float: left;
+	border: 1px solid #ccc;
+	margin: 15px 15px 0 -1px;
+	z-index:100;
+}
+.content-wide {
+	padding: 5px 15px 15px 15px;
+	width: 930px;
+	float: left;
+}
+.content-wide#banner {
+	padding: 5px 15px 15px 15px;
+	border-bottom:1px solid #eaeaea;
+	background:url("../img/banner-about.jpg") no-repeat top right;
+}
+.side {
+	width:303px;
+	padding:5px 15px 15px 0px;
+	float:left;
+}
+#banner h2 {
+	padding:5px 0px 0px 0px;
+	font-size:18px;
+	font-weight: normal;
+	color:#555;
+	line-height:24px;
+}
+.content h2 {
+	color: #222;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px 0px 5px 0px;
+}
+#tabs-nav {
+	padding-left:15px;
+	padding-right:0px;
+	padding-top:20px;
+	width:302px;
+	position:relative;
+	z-index:500;
+	margin:0px !important;
+}
+#tabs-nav li {
+	list-style:none;
+	font-size:15px;
+	line-height:15px;
+	padding:0px;
+	margin:0px;
+}
+#tabs-nav li a {
+	color:#0073bd;
+	text-decoration:none;
+	padding:10px 0px 10px 10px;
+	display:block;
+	border:1px solid #fff;
+	border-right-color:#ccc;
+}
+#tabs-nav li a.active {
+	color:#333;
+	border:1px solid #ccc;
+	border-right-color:#fff;
+	font-weight:bold;
+	background-color:#fff;
+}
+#tabs-nav li a:hover {
+	background-color:#eee;
+}
+#tabs-nav li a.active:hover {
+	background-color:#fff;
+}
+.services ul {
+	padding-right: 25px;
+	padding-left: 15px;
+	float:left;
+	width: 240px;
+}
+.challenges ul {
+	padding-right: 10px;
+	padding-left: 0px;
+	padding-top:10px;
+	float:left;
+	margin:0px !important;
+}
+.challenges ul li {
+	padding:0;
+	list-style:none;
+	list-style-type:none !important;
+}
+.challenges ul li strong {
+	color:#df7a00;
+}
+.challenges ul li img {
+	float:left; 
+	margin-right:6px; 
+	margin-bottom:35px;
+}
+.leadership {
+	padding: 20px 0px 5px 0px;
+}
+.leadership img {
+	float:left;
+	margin-right:15px;
+}
+.leadership .bio-container {
+	float:left;
+	padding-top:4px;
+}
+.bio-container h3 {
+	font-size: 16px;
+	line-height:19px;
+	color:#333;
+	font-weight:normal;
+}
+.bio-container h3 span {
+	font-size: 12px;
+	line-height:16px;
+	display:block;
+	color:#666;
+}
+.bio-container .bio-toggle {
+	font-size:10px;
+	line-height:17px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.mini-bio p {
+	padding:10px 0 0 0 !important;
+}
+.bio-container .mini-bio, .bio-container .full-bio {
+	width:460px;
+}
+#tabs-nested-nav {
+	margin-top:15px;
+	background:url("../img/locations-map-bg.png") no-repeat top left;
+	width:595px;
+	height: 51px;
+	margin-left:0px !important;
+	position: relative;
+	padding-top: 291px;
+}
+#tabs-nested-nav li {
+	list-style:none;
+	padding:0;
+	margin:0px;
+	float:left;
+}
+#tabs-nested-nav li a {
+	float:left;
+	margin-left: 11px;
+	margin-top: 3px;
+	padding: 4px 4px 3px 4px;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	display:block;
+}
+#tabs-nested-nav li a:hover, #tabs-nested-nav li a.active {
+	padding: 3px 3px 2px 3px;
+	border:1px solid #999;
+	background-color:#fff;
+}
+#tabs-nested-nav li.activeli .map-overlay {
+	width:595px;
+	height:290px;
+	background-image:url("../img/locations-offices.png");
+	background-position: 0px 0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#tabs-nested .locations {
+	position:relative;
+	padding-top: 15px;
+}
+.stats {
+	width:310px;
+	float:left;
+	height: 109px;
+	overflow: hidden;
+}
+#content-container .stats p {
+	font-size:14px;
+	line-height:20px;
+}
+#content-container .stats p span {
+	font-size:39px;
+	line-height: 39px;
+	font-weight:bold;
+}

@@ -4,8 +4,9 @@
 		<legend><?php __('Add Setting'); ?></legend>
 	<?php
 		echo $this->Form->input('field');
-		echo $this->Form->input('value');
-	?>
+		echo $this->Form->input('value.eng');
+    echo $this->Form->input('value.chi');
+  ?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>
 </div>

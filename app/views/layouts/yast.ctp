@@ -9,29 +9,23 @@
   
   <?php
     echo $this->Html->meta('icon');
-    echo $this->Html->css('E'); 
-    echo $this->Html->css('main');
+     
     echo $this->Html->css('home-banner');
     echo $this->Html->css('styles');
-    echo $this->Html->css('home');
     
     echo $javascript->link('jquery.min');
 
     echo $javascript->link('ieversion');
     echo $javascript->link('menu');
-    echo $javascript->link('ieversion');
-
-    
-    echo $javascript->link('jquery.easing.1.3');
-    echo $javascript->link('jquery.xfade');
-    echo $javascript->link('jquery.bxSlider');
-    echo $javascript->link('initializations-home-global');
-    echo $javascript->link('exbd-sitewide');
 
     echo $scripts_for_layout;
+    
+    echo $javascript->link('exbd-sitewide');
   ?>
 </head>
 <body>
+  
+  <?php echo $this->Session->flash(); ?>
   <div class="ls-canvas" id="ls-canvas">
     <div class="ls-row" id="masthead">
       <div class="ls-fxr" id="ls-gen4963707-ls-fxr">
@@ -44,13 +38,13 @@
                     <div class="ls-cmp-wrap ls-1st" id="w1336412673846">
                       <!--ls:begin[component-1336412673846]-->
                       <div class="iw_component" id="1336412673846">
-                      <div>
+                        <div>
                         <div class="wrap group">
                           <?php
                             echo $this->Html->image('logo-ceb.png', array(
                               'title' => "Logo",
                               'url' => array('controller' => 'dashboards', 
-                                             'action' => 'home')
+                                             'action' => 'index')
                             ));
                           ?>
                           <div class="float-right">
@@ -59,7 +53,7 @@
                               
                               <ul><li class="first">
                                 <?php
-                                  echo $this->Html->link("About", array(
+                                  echo $this->Html->link(__("About", true), array(
                                     'controller' => 'dashboards',
                                     'action' => 'about',
                                   ));
@@ -69,7 +63,7 @@
                               
                               <ul><li class="">
                                 <?php
-                                echo $this->Html->link("Chinese", array(
+                                echo $this->Html->link("中文", array(
                                   'language' => 'chi'
                                 ));
                                 ?>
@@ -90,7 +84,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                      </div>
                       <!--ls:end[component-1337291993346]-->
                     </div>
                   </div>                    
@@ -111,7 +105,7 @@
                       <ul id="nav-dropdown">
                         <li class="service-toggle">
                           <?php
-                            echo $this->Html->link("Service Targets", array(
+                            echo $this->Html->link(__("Service Targets", true), array(
                               'controller' => 'dashboards',
                               'action' => 'service',
                             ));
@@ -122,9 +116,17 @@
                             <?php echo $stType['StType']['title']; ?>
                             </a></li>
                             <?php foreach($stType['StEntry'] as $stEntry): ?>
-                            <li><a target="_self" href="#">
-                              <?php echo $stEntry['StEntry']['title'];?>
-                            </a></li>
+                            <li><?php echo $this->Html->link($stEntry['StEntry']['title'],
+                            array(
+                              'controller'=>'dashboards',
+                              'action'=> 'service',
+                              $stEntry['StEntry']['id']
+                            ),
+                            array(
+                              'escape'=>false
+                            )
+                            
+                            );?></li>
                             <?php endforeach; ?>
                             <?php endforeach; ?> 
                           </ul>
@@ -133,7 +135,7 @@
           
                         <li>
                           <?php
-                            echo $this->Html->link("Enterprise Clients", array(
+                            echo $this->Html->link(__("Enterprise Clients", true), array(
                               'controller' => 'dashboards',
                               'action' => 'enterprise',
                             ));
@@ -143,7 +145,7 @@
                         <li>
                           
                           <?php
-                            echo $this->Html->link("About", array(
+                            echo $this->Html->link(__("About", true), array(
                               'controller' => 'dashboards',
                               'action' => 'about',
                             ));
@@ -152,7 +154,7 @@
                         
                         <li>
                           <?php
-                            echo $this->Html->link("Contact", array(
+                            echo $this->Html->link(__("Contact", true), array(
                               'controller' => 'dashboards',
                               'action' => 'contact',
                             ));
@@ -162,7 +164,7 @@
                         <li class="membership-btn">
                           <?php
                             echo $this->Html->link(
-                            "<span>"."Apply for the conference"."<span>", 
+                            "<span>".__("Apply for the conference", true)."<span>", 
                               array(
                                 'controller' => 'dashboards',
                                 'action' => 'apply',
@@ -174,8 +176,8 @@
                     </div>
                   </div>
                   <!--ls:end[component-1336412673847]-->
+                  </div>
                 </div>
-                
               </div>
             </div>
             <div class="ls-row-clr" ></div>
@@ -195,6 +197,53 @@
         <div class="ls-row-clr" ></div>
       </div>
     </div>
+    <?php if($setFooter):?>
+    <div class="ls-row" id="footer">
+      <div class="ls-fxr" id="ls-gen53925404-ls-fxr">
+        <div class="ls-area wrap group" id="ls-row-3-area-1">
+          <div class="ls-area-body" id="ls-gen53925405-ls-area-body">
+            <div class="ls-cmp-wrap ls-1st" id="w1337291993353">
+              <!--ls:begin[component-1337291993353]-->
+              <div class="iw_component" id="1337291993353">
+                <div xmlns:cal="xalan://java.util.GregorianCalendar" class="wrap group">
+                  <div class="float-left">
+                    <ul>
+                      <li class="first">
+                        <a href="#" target="_self">Terms of Service</a>
+                      </li>
+                      <li class="">
+                        <a href="#" target="_self">Privacy Statement</a>
+                      </li>
+                      <li class="">
+                        <a href="#" target="_self">Copyright Inquiries</a>
+                      </li>
+                      <li class="">
+                        <a href="#" target="_self">Site Map</a>
+                      </li>
+                    </ul>
+                    <p>©&nbsp;2012&nbsp;The Corporate Executive Board Company. All Rights Reserved.</p>
+                  </div>
+                  
+                  <div id="safe-harbor">
+                    <p><a href="#" target="_blank">We self-certify compliance with</a></p>
+                    <a href="#" target="_blank">
+                      <?php echo $this->Html->image('footer-safe-harbor.gif',
+                        array(
+                          'class'=>'logo',
+                          'height'=>'39',
+                          'width'=>'104',
+                        )
+                      );?>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endif; ?>
   </div>
 <!--ls:end[body]-->
 </body>

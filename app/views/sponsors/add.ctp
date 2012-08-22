@@ -3,9 +3,11 @@
 	<fieldset>
 		<legend><?php __('Add Sponsor'); ?></legend>
 	<?php
-		echo $this->Form->input('sponsor_name');
-    echo $this->Form->input('sponsor_description');
-		echo $this->Form->input('file', array('type'=>'file'));
+		echo $this->Form->input('sponsor_name.eng', array('label'=>'Name'));
+    echo $this->Form->input('sponsor_name.chi', array('label'=>'名称')); 
+    echo $this->Form->input('sponsor_description.eng', array('label'=>'Description'));
+		echo $this->Form->input('sponsor_description.chi', array('label'=>'描述'));
+    echo $this->Form->input('file', array('type'=>'file'));
     echo $this->Form->input('url');
 	?>
 	</fieldset>

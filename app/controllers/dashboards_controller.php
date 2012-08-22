@@ -2,14 +2,29 @@
 class DashboardsController extends AppController
 {
   var $name = "Dashboards";
-  var $uses = array('StType', 'StEntry', 'Slider', 'TextSlider');
+  var $uses = array(
+      'StType', 
+      'StEntry',
+      'StSection',
+      'Slider', 
+      'TextSlider', 
+      'About',
+      'EcSlider',
+      'Sponsor',
+      'Contact',
+      'Application',
+      'Setting');
   var $helpers = array('Html', 'Javascript');
-  var $components = array('Session', 'DebugKit.Toolbar');
+  var $components = array('Session');
 
   function _setLocale(){
     foreach($this->uses as $model_name){
       $this->$model_name->setLocale($this->Session->read('Config.language'));
     } 
+  }
+
+  function _getSetting($field){
+    return $this->Setting->findByField($field);
   }
 
   function _queryMenu(){
@@ -21,17 +36,27 @@ class DashboardsController extends AppController
       $stType['StEntry'] = $this->StEntry->findAllByStTypeId($stType['StType']['id'], array('id', 'title'),array('StEntry.order'=>'ASC'));
     }
     $this->set('stTypes', $stTypes);
+  }
 
+  function _queryFooter($bool){
+    $this->set('setFooter', $bool);
   }
 
   function beforeFilter() {
     parent::beforeFilter();
-		$this->Auth->allowedActions = array('home'); 
+		$this->Auth->allowedActions = array('index',
+                                        'about',
+                                        'enterprise',
+                                        'contact',
+                                        'service',
+                                        'apply'); 
     $this->_setLocale();
     $this->_queryMenu();
+    $this->_queryFooter(true);
+    
   }
 
-  function index(){
+  function admin(){
     $this->set('items', array(
           'About' => 'abouts',
           'Application' => 'applications',
@@ -47,9 +72,10 @@ class DashboardsController extends AppController
           'Users' => 'users',));
   }
 
-  function home(){
+  function index(){
     $this->set('title_for_layout', 'HOME');
     $this->layout = 'yast';
+    $this->_queryFooter(false);
     $this->set('sliders', $this->Slider->find('all', array(
             'order'=>array(
               'Slider.order'=> 'ASC',
@@ -67,4 +93,64 @@ class DashboardsController extends AppController
             'media_active.jpg'=>'contact',
           ));
   }
+
+  function about(){
+      $this->set('title_for_layout', 'About');
+      $this->layout = 'yast';
+      $this->set('abouts', $this->About->find('all', array(
+            'order'=>array(
+              'About.order'=>'ASC',
+              ))));
+      $this->set('banner', $this->_getSetting('about.body'));
+  }
+
+  function enterprise(){
+    $this->set('title_for_layout', 'Enterprise Client');
+    $this->layout = 'yast';
+    $this->set('sliders', $this->EcSlider->find('all', array(
+            'order'=>array(
+              'EcSlider.order'=>'ASC',
+              ))));
+    $this->set('sponsors', $this->Sponsor->find('all'));
+    $this->set('banner', $this->_getSetting('enterprise.body'));
+  }
+
+  function contact(){
+    $this->set('title_for_layout', 'Contact');
+    $this->layout = 'yast';
+    $this->set('lcontacts', 
+        $this->Contact->findAllByPosition("0",array(),
+          array(
+              'Contact.order'=>'ASC'
+              )));
+    $this->set('rcontacts', 
+        $this->Contact->findAllByPosition("1",array(),
+          array(
+              'Contact.order'=>'ASC'
+              )));
+  }
+
+  function service($entry_id=null){
+    $this->set('title_for_layout', 'Service Targets');
+    $this->layout = 'yast';
+    $entry = null;
+    if(!$entry_id){
+      $entry = $this->StEntry->find('first');
+    }else{
+      $entry = $this->StEntry->read(null, $entry_id);
+    }
+    $this->set('type', $this->StType->findById($entry['StEntry']['st_type_id']));
+    $this->set('entry', $entry);
+    $this->StSection->recursive = 0;
+    $this->set('sections', 
+        $this->StSection->findAllByStEntryId($entry['StEntry']['id'], 
+          array(), 
+          array('StSection.order'=>'ASC')));
+  }
+
+  function apply(){
+    $this->set('title_for_layout', 'Apply');
+    $this->layout = 'yast';
+    $this->set('banner', $this->_getSetting('apply.body'));
+  }     
 }

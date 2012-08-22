@@ -14,10 +14,12 @@ class ContactsController extends AppController {
 			$this->Session->setFlash(__('Invalid contact', true));
 			$this->redirect(array('action' => 'index'));
 		}
+		$this->Contact->setLocale($this->Session->read('Config.language'));
 		$this->set('contact', $this->Contact->read(null, $id));
 	}
 
 	function add() {
+    $this->Contact->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->Contact->create();
 			if ($this->Contact->save($this->data)) {
@@ -34,6 +36,10 @@ class ContactsController extends AppController {
 			$this->Session->setFlash(__('Invalid contact', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Contact->setLocale(array('eng','chi'));
+    $this->Contact->multiTranslateOptions(array('validate'=>true,'find'=>true));
+    
+
 		if (!empty($this->data)) {
 			if ($this->Contact->save($this->data)) {
 				$this->Session->setFlash(__('The contact has been saved', true));

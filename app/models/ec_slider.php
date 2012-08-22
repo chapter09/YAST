@@ -1,7 +1,11 @@
 <?php
 class EcSlider extends AppModel {
 	var $name = 'EcSlider';
-	var $validate = array(
+	var $actsAs = array('MulitiTranslate'=>array(
+          'body'
+        ));
+
+  var $validate = array(
 		'order' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),

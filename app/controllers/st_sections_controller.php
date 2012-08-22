@@ -14,10 +14,12 @@ class StSectionsController extends AppController {
 			$this->Session->setFlash(__('Invalid st section', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->StSection->setLocale($this->Session->read('Config.language'));
 		$this->set('stSection', $this->StSection->read(null, $id));
 	}
 
 	function add() {
+    $this->StSection->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->StSection->create();
 			if ($this->StSection->save($this->data)) {
@@ -36,6 +38,9 @@ class StSectionsController extends AppController {
 			$this->Session->setFlash(__('Invalid st section', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->StSection->setLocale(array('eng','chi'));
+    $this->StSection->multiTranslateOptions(array('validate'=>true,'find'=>true));
+
 		if (!empty($this->data)) {
 			if ($this->StSection->save($this->data)) {
 				$this->Session->setFlash(__('The st section has been saved', true));

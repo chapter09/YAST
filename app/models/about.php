@@ -2,8 +2,8 @@
 class About extends AppModel {
 	var $name = 'About';
   var $actsAs = array(
-			'Translate' => array(
-				 'title'
+			'MulitiTranslate' => array(
+				 'title', 'body'
 			)				 
   );
 

@@ -1,6 +1,9 @@
 <?php
 class Application extends AppModel {
 	var $name = 'Application';
+  var $actsAs = array(
+      'MulitiTranslate',
+      );
 	var $validate = array(
 		'first_name' => array(
 			'notempty' => array(

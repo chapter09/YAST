@@ -1,6 +1,10 @@
 <?php
 class StSection extends AppModel {
 	var $name = 'StSection';
+  var $actsAs = array(
+      "MulitiTranslate" => array(
+        'title', 'body'
+        ));
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

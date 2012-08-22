@@ -160,7 +160,10 @@ class MulitiTranslateBehavior extends TranslateBehavior {
     public function setLocale(Model $model,$locale = null) {
         if ( !$locale ) {
             $locale = Configure::read('Config.language'); 
-        } 
+        }
+        if (!class_exists('I18n')) {
+				  App::import('Core', 'i18n');
+			  }
         $I18n = I18n::getInstance();
         if ( is_array( $locale ) ){
             foreach($locale as $key =>  $_locale){

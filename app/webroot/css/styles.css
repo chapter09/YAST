@@ -555,3 +555,14 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 .ls-canvas {
 	margin: 0 auto;
 }
+
+#flashMessage {
+    display: block;
+    position: fixed;
+    margin: 0 auto;
+    background-color: rgb(230, 110, 110);
+    color: #fff;
+    padding: 5px;
+    top: 0;
+    left: 400px;
+}

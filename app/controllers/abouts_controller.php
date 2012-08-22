@@ -14,10 +14,12 @@ class AboutsController extends AppController {
 			$this->Session->setFlash(__('Invalid about', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->About->setLocale($this->Session->read('Config.language'));
 		$this->set('about', $this->About->read(null, $id));
 	}
 
 	function add() {
+    $this->About->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->About->create();
 			if ($this->About->save($this->data)) {
@@ -34,6 +36,8 @@ class AboutsController extends AppController {
 			$this->Session->setFlash(__('Invalid about', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->About->setLocale(array('eng','chi'));
+    $this->About->multiTranslateOptions(array('validate'=>true,'find'=>true));
 		if (!empty($this->data)) {
 			if ($this->About->save($this->data)) {
 				$this->Session->setFlash(__('The about has been saved', true));

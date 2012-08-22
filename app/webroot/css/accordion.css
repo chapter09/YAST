@@ -1,0 +1,92 @@
+/*Accordion Menu CSS*/
+#accordion-container {
+	padding-top: 3px;
+}
+.expand_all,
+.collapse_all {
+	cursor: pointer;
+}
+#accordion {
+	margin: 0;
+}
+#container #accordion-container ul li {
+	background:none;
+	padding:0;
+}
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+	.menu ul {
+		display: none;
+		list-style: none;
+		margin: 0 0 15px 25px;
+		padding: 0;
+	}
+	#accordion li,
+	.menu li {
+		background-image: none;
+		margin: 0;
+		padding: 0;
+	}
+	.menu ul ul {
+		margin:0px;
+		padding:0px;
+	}
+	#container #left-nav .menu ul li a {
+		width: 111px;
+	}
+#container .menu span {
+	color: #000;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	margin: 0px;
+	width: 385px;
+}
+	#container .menu span.expanded {
+		background: url("/exbd-resources/images/design-elements/buttons-controls/collapse.gif") no-repeat 3px 4px;
+		padding:3px 3px 3px 22px;
+		color:#666;
+		margin:0px 0px 0px 0px;
+	}
+	#container .menu span.collapsed {
+		background: url("/exbd-resources/images/design-elements/buttons-controls/expand.gif") no-repeat 3px 4px;
+		padding:3px 3px 3px 22px;
+		color:#666;
+		margin:0px 0px 0px 0px;
+	}
+	#container .menu span:hover {
+		background-color:#ddd;
+	}
+.menu a:hover {
+	text-decoration: none;
+}
+.menu ul a {
+	color: #0073BD;
+}
+#container #accordion-container ul li.multiple-location { /*used in list item, when more than one location under accordion*/
+	float:left;
+	margin-right: 20px;
+	width: 172px;
+	padding-bottom:10px;
+}
+	/*.menu ul a:link {
+		font-weight: normal;
+	}
+	.menu ul a:hover {
+		background : #ddd;
+	}
+	.menu li a.active {
+		background: #fff;
+	}
+	.menu li.active li a {
+		background: #f5f5f5;
+	}
+	#container #left-nav #accordion li {
+		padding:0px;
+	}*/
+h4 {padding-top:15px;}
+h4.first {padding-top:0px;}
