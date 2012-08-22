@@ -40,8 +40,8 @@
     <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Image'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
     <?php
-    if($sponsor['Sponsor']['file_name']){
-      echo $html->image('/files/'.$sponsor['Sponsor']['file_name']);
+    if($slider['Slider']['file_name']){
+      echo $html->image('/files/'.$slider['Slider']['file_name']);
     }?>
     &nbsp;
     </dd>

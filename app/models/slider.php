@@ -1,6 +1,10 @@
 <?php
 class Slider extends AppModel {
 	var $name = 'Slider';
+  var $actsAs = array(
+    'MulitiTranslate'=>array(
+      'title', 'body'      
+ ));
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

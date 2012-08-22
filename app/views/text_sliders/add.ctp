@@ -3,8 +3,13 @@
 	<fieldset>
 		<legend><?php __('Add Text Slider'); ?></legend>
 	<?php
-		echo $this->Form->input('title');
-		echo $cksource->ckeditor('body', array('escape' => false));	
+    echo $this->Form->input('title.eng', array('label'=>'Title'));
+		echo $this->Form->input('title.chi', array('label'=>'標題'));
+    echo $this->Form->label('body.eng', 'Body');
+    echo $cksource->ckeditor('body.eng', array('escape'=>false));
+    echo $this->Form->label('body.chi', '正文');
+		echo $cksource->ckeditor('body.chi', array('escape'=>false));	
+   
     echo $this->Form->input('order');
 	?>
 	</fieldset>

@@ -2,17 +2,23 @@
 class DashboardsController extends AppController
 {
   var $name = "Dashboards";
-  var $uses = array('StType', 'StEntry');
+  var $uses = array('StType', 'StEntry', 'Slider', 'TextSlider');
   var $helpers = array('Html', 'Javascript');
   var $components = array('Session', 'DebugKit.Toolbar');
 
+  function _setLocale(){
+    foreach($this->uses as $model_name){
+      $this->$model_name->setLocale($this->Session->read('Config.language'));
+    } 
+  }
+
   function _queryMenu(){
-    $this->StType->setLocale($this->Session->read('Config.language'));
-    $this->StEntry->setLocale($this->Session->read('Config.language'));
     $this->StType->recursive = 0;
-    $stTypes = $this->StType->find('all');
+    $stTypes = $this->StType->find('all', array('order'=>array(
+              'StType.order' => 'ASC',
+            )));
     foreach($stTypes as &$stType){
-      $stType['StEntry'] = $this->StEntry->findAllByStTypeId($stType['StType']['id']);
+      $stType['StEntry'] = $this->StEntry->findAllByStTypeId($stType['StType']['id'], array('id', 'title'),array('StEntry.order'=>'ASC'));
     }
     $this->set('stTypes', $stTypes);
 
@@ -21,6 +27,7 @@ class DashboardsController extends AppController
   function beforeFilter() {
     parent::beforeFilter();
 		$this->Auth->allowedActions = array('home'); 
+    $this->_setLocale();
     $this->_queryMenu();
   }
 
@@ -41,7 +48,23 @@ class DashboardsController extends AppController
   }
 
   function home(){
-    $this->pageTitle = 'YAST';
+    $this->set('title_for_layout', 'HOME');
     $this->layout = 'yast';
+    $this->set('sliders', $this->Slider->find('all', array(
+            'order'=>array(
+              'Slider.order'=> 'ASC',
+              ))));
+    $this->set('textSliders', $this->TextSlider->find('all', array(
+            'order'=>array(
+              'TextSlider.order'=>'ASC',
+              ))));
+    $this->set('sliderShows', array(
+            'about_active.jpg'=>'about',
+            'businesses_active.jpg'=>'about',
+            'people_active.jpg'=>'enterprise',
+            'sustainability_active.jpg'=>'about',
+            'investor_active.jpg'=>'service',
+            'media_active.jpg'=>'contact',
+          ));
   }
 }

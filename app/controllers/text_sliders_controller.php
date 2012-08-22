@@ -14,10 +14,12 @@ class TextSlidersController extends AppController {
 			$this->Session->setFlash(__('Invalid text slider', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->TextSlider->setLocale($this->Session->read('Config.language'));
 		$this->set('textSlider', $this->TextSlider->read(null, $id));
 	}
 
 	function add() {
+    $this->TextSlider->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->TextSlider->create();
 			if ($this->TextSlider->save($this->data)) {
@@ -34,6 +36,10 @@ class TextSlidersController extends AppController {
 			$this->Session->setFlash(__('Invalid text slider', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    
+    $this->TextSlider->setLocale(array('eng','chi'));
+    $this->TextSlider->multiTranslateOptions(array('validate'=>true,'find'=>true));
+ 
 		if (!empty($this->data)) {
 			if ($this->TextSlider->save($this->data)) {
 				$this->Session->setFlash(__('The text slider has been saved', true));

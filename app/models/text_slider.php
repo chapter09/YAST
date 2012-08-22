@@ -1,6 +1,9 @@
 <?php
 class TextSlider extends AppModel {
 	var $name = 'TextSlider';
+  var $actsAs = array(
+      'MulitiTranslate'=>array('title','body')
+  );
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

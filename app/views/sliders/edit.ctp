@@ -4,9 +4,12 @@
 		<legend><?php __('Edit Slider'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('title');
-		echo $this->Form->input('body');
-		echo $this->Form->input('order');
+		echo $this->Form->input('title.eng', array('label'=>'Title'));
+		echo $this->Form->input('title.chi', array('label'=>'標題'));
+    echo $this->Form->label('body.eng', 'Body');
+    echo $cksource->ckeditor('body.eng', array('escape'=>false));
+    echo $this->Form->label('body.chi', '正文');	
+    echo $this->Form->input('order');
 		echo $this->Form->input('file', array('type'=>'file'));
     if($this->data['Slider']['file_name']){
       echo $html->image('/files/'.$this->data['Slider']['file_name']);

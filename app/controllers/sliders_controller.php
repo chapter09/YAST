@@ -2,7 +2,8 @@
 class SlidersController extends AppController {
 
 	var $name = 'Sliders';
-  var $components = array('FileUpload');
+  var $helpers = array('Html', 'Form', 'Cksource'); 
+  var $components = array('FileUpload', 'Session', 'DebugKit.Toolbar');
   
   function beforeFilter(){ 
     parent::beforeFilter();
@@ -22,10 +23,12 @@ class SlidersController extends AppController {
 			$this->Session->setFlash(__('Invalid slider', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Slider->setLocale($this->Session->read('Config.language'));
 		$this->set('slider', $this->Slider->read(null, $id));
 	}
 
 	function add() {
+    $this->Slider->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
       if($this->FileUpload->success){ 
         $this->set('image', $this->FileUpload->finalFile);		
@@ -43,6 +46,9 @@ class SlidersController extends AppController {
 			$this->Session->setFlash(__('Invalid slider', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Slider->setLocale(array('eng','chi'));
+    $this->Slider->multiTranslateOptions(array('validate'=>true,'find'=>true));
+    
 		if (!empty($this->data)) {
       if($this->FileUpload->success){ 
         $this->set('image', $this->FileUpload->finalFile);	
