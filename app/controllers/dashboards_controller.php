@@ -13,6 +13,9 @@ class DashboardsController extends AppController
       'Sponsor',
       'Contact',
       'Application',
+      'News',
+      'Category',
+      'Career',
       'Setting');
   var $helpers = array('Html', 'Javascript');
   var $components = array('Session');
@@ -49,7 +52,10 @@ class DashboardsController extends AppController
                                         'enterprise',
                                         'contact',
                                         'service',
-                                        'apply'); 
+                                        'apply',
+                                        'news',
+                                        'cotegory',
+                                        'career'); 
     $this->_setLocale();
     $this->_queryMenu();
     $this->_queryFooter(true);
@@ -152,5 +158,50 @@ class DashboardsController extends AppController
     $this->set('title_for_layout', 'Apply');
     $this->layout = 'yast';
     $this->set('banner', $this->_getSetting('apply.body'));
-  }     
+  }
+
+  function news($id=null)
+  {
+    if($id){
+      $this->set('title_for_layout', 'News');
+      $this->layout = 'yast';
+      $entry = $this->StEntry->read(null, $id)
+      $this->set('news', $entry);
+      $this->set('category', $this->Category->read(null, $entry['News']['category_id']));
+      $this->set('categories', $this->Category->find('all'), array(
+            'order'=>array(
+                'Category.order'=>'ASC',
+              )));
+    }else{
+      $this->redirect(array(
+            'action'=>'category',
+            ));
+    }
+  }
+
+  function category($category_id=null){
+    $this->set('title_for_layout', 'News');
+    $this->layout = 'yast';
+    $categories = $this->Category->find('all', array(
+          'order' => array(
+            'Category.order' => 'ASC',
+            )));
+    if($category_id){
+      
+    }else{
+      $category_id = $categories['Category'][0]['id'];
+    }
+    $news = $this->News->paginate('News', array(
+            'News.category_id' => $category_id ));
+ 
+    $this->set('news', $news);
+  }
+
+  function career(){
+    $this->set('title_for_layout', 'Career');
+    $this->layout = 'yast';
+    $this->set('career', $this->Career->find('all'));
+  }
+
+    
 }
