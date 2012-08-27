@@ -4,6 +4,11 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('title');?></th>
+			<th><?php echo $this->Paginator->sort('file_type');?></th>
+			<th><?php echo $this->Paginator->sort('file_size');?></th>
+			<th><?php echo $this->Paginator->sort('file_name');?></th>
+			<th><?php echo $this->Paginator->sort('place');?></th>
+			<th><?php echo $this->Paginator->sort('date');?></th>
 			<th><?php echo $this->Paginator->sort('description');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
@@ -18,6 +23,11 @@
 	<tr<?php echo $class;?>>
 		<td><?php echo $event['Event']['id']; ?>&nbsp;</td>
 		<td><?php echo $event['Event']['title']; ?>&nbsp;</td>
+		<td><?php echo $event['Event']['file_type']; ?>&nbsp;</td>
+		<td><?php echo $event['Event']['file_size']; ?>&nbsp;</td>
+		<td><?php echo $event['Event']['file_name']; ?>&nbsp;</td>
+		<td><?php echo $event['Event']['place']; ?>&nbsp;</td>
+		<td><?php echo $event['Event']['date']; ?>&nbsp;</td>
 		<td><?php echo $event['Event']['description']; ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $event['Event']['id'])); ?>
@@ -46,9 +56,7 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('New Event', true), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Applications', true), array('controller' => 'applications', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Application', true), array('controller' => 'applications', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Event Applies', true), array('controller' => 'event_applies', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Event Apply', true), array('controller' => 'event_applies', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Pages', true), array('controller' => 'pages', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Page', true), array('controller' => 'pages', 'action' => 'add')); ?> </li>
 	</ul>

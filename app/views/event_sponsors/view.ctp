@@ -46,6 +46,16 @@
 			<?php echo $this->Html->link($eventSponsor['Event']['title'], array('controller' => 'events', 'action' => 'view', $eventSponsor['Event']['id'])); ?>
 			&nbsp;
 		</dd>
+    
+    <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Image'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+    <?php
+    if($eventSlider['EventSlider']['file_name']){
+      echo $html->image('/files/'.$eventSlider['EventSlider']['file_name']);
+    }?>
+    &nbsp;
+    </dd>
+
 	</dl>
 </div>
 <div class="actions">

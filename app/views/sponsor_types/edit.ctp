@@ -4,7 +4,9 @@
 		<legend><?php __('Edit Sponsor Type'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('title');
+    echo $this->Form->input('title.eng', array('label'=>'Title'));
+		echo $this->Form->input('title.chi', array('label'=>'標題'));
+    
 		echo $this->Form->input('order');
 	?>
 	</fieldset>

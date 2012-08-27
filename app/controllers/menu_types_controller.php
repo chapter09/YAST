@@ -13,10 +13,12 @@ class MenuTypesController extends AppController {
 			$this->Session->setFlash(__('Invalid menu type', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->MenuType->setLocale($this->Session->read('Config.language'));
 		$this->set('menuType', $this->MenuType->read(null, $id));
 	}
 
 	function add() {
+    $this->MenuType->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->MenuType->create();
 			if ($this->MenuType->save($this->data)) {
@@ -33,6 +35,9 @@ class MenuTypesController extends AppController {
 			$this->Session->setFlash(__('Invalid menu type', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->MenuType->setLocale(array('eng','chi'));
+    $this->MenuType->multiTranslateOptions(array('validate'=>true,'find'=>true));
+ 
 		if (!empty($this->data)) {
 			if ($this->MenuType->save($this->data)) {
 				$this->Session->setFlash(__('The menu type has been saved', true));

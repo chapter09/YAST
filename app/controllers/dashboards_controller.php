@@ -16,6 +16,7 @@ class DashboardsController extends AppController
       'News',
       'Category',
       'Career',
+      'Event',
       'Setting');
   var $helpers = array('Html', 'Javascript');
   var $components = array('Session');
@@ -55,7 +56,8 @@ class DashboardsController extends AppController
                                         'apply',
                                         'news',
                                         'cotegory',
-                                        'career'); 
+                                        'career',
+                                        'event'); 
     $this->_setLocale();
     $this->_queryMenu();
     $this->_queryFooter(true);
@@ -64,8 +66,8 @@ class DashboardsController extends AppController
 
   function admin(){
     $this->set('items', array(
+      'Main Site' => array(
           'About' => 'abouts',
-          'Application' => 'applications',
           'Contact' => 'contacts',
           'Enterpress Clients' => 'ec_sliders',
           'Settings' => 'settings',
@@ -74,8 +76,23 @@ class DashboardsController extends AppController
           'Service target entries' => 'st_entries',
           'Service target sections' =>'st_sections',
           'Service target types' => 'st_types',
-          'Text sliders' => 'text_sliders',
-          'Users' => 'users',));
+          'Careers' => 'careers',
+          'News Categoies' => 'categories',
+          'News' => 'news',
+          'Events' => 'events',
+          'Users' => 'users',),
+      'Event Site' => array(
+          'Event Sponsors' => 'event_sponsors',
+          'Menu Types' => 'menu_types',
+          'Sponsor types' => 'sponsor_types',
+          'Pages' => 'pages', 
+        ),
+      'Forms' => array(
+          'Applications' => 'applications',
+          'Contact Forms' => 'contact_forms',
+          'Event Applications' => 'event_applies',
+        )
+      ));
   }
 
   function index(){
@@ -165,7 +182,7 @@ class DashboardsController extends AppController
     if($id){
       $this->set('title_for_layout', 'News');
       $this->layout = 'yast';
-      $entry = $this->StEntry->read(null, $id)
+      $entry = $this->StEntry->read(null, $id);
       $this->set('news', $entry);
       $this->set('category', $this->Category->read(null, $entry['News']['category_id']));
       $this->set('categories', $this->Category->find('all'), array(
@@ -191,7 +208,7 @@ class DashboardsController extends AppController
     }else{
       $category_id = $categories['Category'][0]['id'];
     }
-    $news = $this->News->paginate('News', array(
+    $news = $this->paginate('News', array(
             'News.category_id' => $category_id ));
  
     $this->set('news', $news);
@@ -200,8 +217,13 @@ class DashboardsController extends AppController
   function career(){
     $this->set('title_for_layout', 'Career');
     $this->layout = 'yast';
-    $this->set('career', $this->Career->find('all'));
+    $this->set('careers', $this->Career->find('all'));
   }
 
+  function event(){
+    $this->set('title_for_layout', 'Event');
+    $this->layout = 'yast';
+    $this->set('events', $this->Event->find('all')); 
+  }
     
 }

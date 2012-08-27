@@ -2,6 +2,15 @@
 class EventSponsorsController extends AppController {
 
 	var $name = 'EventSponsors';
+  var $components = array('FileUpload', 'Session', 'DebugKit.Toolbar');
+ 
+  function beforeFilter(){ 
+    parent::beforeFilter();
+    $this->FileUpload->fileModel = 'EventSponsor';
+    $this->FileUpload->fields = array('name' => 'file_name', 
+                                      'type' => 'file_type', 
+                                      'size' => 'file_size'); 
+  } 
 
 	function index() {
 		$this->EventSponsor->recursive = 0;
@@ -18,11 +27,12 @@ class EventSponsorsController extends AppController {
 
 	function add() {
 		if (!empty($this->data)) {
-			$this->EventSponsor->create();
-			if ($this->EventSponsor->save($this->data)) {
+      if($this->FileUpload->success){ 
+        $this->set('image', $this->FileUpload->finalFile);
 				$this->Session->setFlash(__('The event sponsor has been saved', true));
 				$this->redirect(array('action' => 'index'));
 			} else {
+        $this->Session->setFlash($this->FileUpload->showErrors());
 				$this->Session->setFlash(__('The event sponsor could not be saved. Please, try again.', true));
 			}
 		}
@@ -36,11 +46,14 @@ class EventSponsorsController extends AppController {
 			$this->Session->setFlash(__('Invalid event sponsor', true));
 			$this->redirect(array('action' => 'index'));
 		}
+
 		if (!empty($this->data)) {
-			if ($this->EventSponsor->save($this->data)) {
+      if($this->FileUpload->success){ 
+        $this->set('image', $this->FileUpload->finalFile);
 				$this->Session->setFlash(__('The event sponsor has been saved', true));
 				$this->redirect(array('action' => 'index'));
 			} else {
+        $this->Session->setFlash($this->FileUpload->showErrors());
 				$this->Session->setFlash(__('The event sponsor could not be saved. Please, try again.', true));
 			}
 		}

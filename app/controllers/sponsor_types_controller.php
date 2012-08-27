@@ -13,10 +13,12 @@ class SponsorTypesController extends AppController {
 			$this->Session->setFlash(__('Invalid sponsor type', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->SponsorType->setLocale($this->Session->read('Config.language'));
 		$this->set('sponsorType', $this->SponsorType->read(null, $id));
 	}
 
 	function add() {
+    $this->SponsorType->setLocale(array('eng','chi')); 
 		if (!empty($this->data)) {
 			$this->SponsorType->create();
 			if ($this->SponsorType->save($this->data)) {
@@ -33,6 +35,9 @@ class SponsorTypesController extends AppController {
 			$this->Session->setFlash(__('Invalid sponsor type', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->SponsorType->setLocale(array('eng','chi'));
+    $this->SponsorType->multiTranslateOptions(array('validate'=>true,'find'=>true));
+ 
 		if (!empty($this->data)) {
 			if ($this->SponsorType->save($this->data)) {
 				$this->Session->setFlash(__('The sponsor type has been saved', true));

@@ -1,16 +1,15 @@
 <div class="eventSponsors form">
-<?php echo $this->Form->create('EventSponsor');?>
+<?php echo $this->Form->create('EventSponsor', array('type'=>'file'));?>
 	<fieldset>
 		<legend><?php __('Add Event Sponsor'); ?></legend>
 	<?php
 		echo $this->Form->input('title');
 		echo $this->Form->input('sponsor_type_id');
 		echo $this->Form->input('order');
-		echo $this->Form->input('file_type');
-		echo $this->Form->input('file_size');
-		echo $this->Form->input('file_name');
 		echo $this->Form->input('url');
 		echo $this->Form->input('event_id');
+    
+    echo $this->Form->input('file', array('type' => 'file'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

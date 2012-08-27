@@ -3,7 +3,7 @@ class Category extends AppModel {
 	var $name = 'Category';
 	var $actsAs = array(
       'MulitiTranslate' => array(
-        'text'
+        'title'
         ));
   var $validate = array(
 		'title' => array(

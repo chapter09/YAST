@@ -1,6 +1,10 @@
 <?php
 class SponsorType extends AppModel {
 	var $name = 'SponsorType';
+  var $actsAs = array(
+      'MulitiTranslate' => array(
+        'title'
+        ));
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

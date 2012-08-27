@@ -2,6 +2,8 @@
 class PagesController extends AppController {
 
 	var $name = 'Pages';
+  var $helpers = array('Html', 'Form', 'Cksource'); 
+  var $components = array('Session', 'DebugKit.Toolbar');
 
 	function index() {
 		$this->Page->recursive = 0;
@@ -13,10 +15,12 @@ class PagesController extends AppController {
 			$this->Session->setFlash(__('Invalid page', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Page->setLocale($this->Session->read('Config.language'));
 		$this->set('page', $this->Page->read(null, $id));
 	}
 
 	function add() {
+    $this->Page->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->Page->create();
 			if ($this->Page->save($this->data)) {
@@ -36,6 +40,9 @@ class PagesController extends AppController {
 			$this->Session->setFlash(__('Invalid page', true));
 			$this->redirect(array('action' => 'index'));
 		}
+    $this->Page->setLocale(array('eng','chi'));
+    $this->Page->multiTranslateOptions(array('validate'=>true,'find'=>true));
+
 		if (!empty($this->data)) {
 			if ($this->Page->save($this->data)) {
 				$this->Session->setFlash(__('The page has been saved', true));

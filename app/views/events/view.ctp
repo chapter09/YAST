@@ -11,11 +11,45 @@
 			<?php echo $event['Event']['title']; ?>
 			&nbsp;
 		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('File Type'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $event['Event']['file_type']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('File Size'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $event['Event']['file_size']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('File Name'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $event['Event']['file_name']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Place'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $event['Event']['place']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Date'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $event['Event']['date']; ?>
+			&nbsp;
+		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Description'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $event['Event']['description']; ?>
 			&nbsp;
 		</dd>
+    
+    <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Image'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+    <?php
+    if($event['Event']['file_name']){
+      echo $html->image('/files/'.$event['Event']['file_name']);
+    }?>
+    &nbsp;
+    </dd>
 	</dl>
 </div>
 <div class="actions">

@@ -1,6 +1,9 @@
 <?php
 class EventSponsor extends AppModel {
 	var $name = 'EventSponsor';
+  var $actsAs = array(
+      'MulitiTranslate'
+      );
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

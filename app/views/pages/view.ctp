@@ -31,11 +31,6 @@
 			<?php echo $page['Page']['order']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('In Front'); ?></dt>
-		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $page['Page']['in_front']; ?>
-			&nbsp;
-		</dd>
 	</dl>
 </div>
 <div class="actions">

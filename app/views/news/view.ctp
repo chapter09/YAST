@@ -21,9 +21,9 @@
 			<?php echo $this->Html->link($news['Category']['title'], array('controller' => 'categories', 'action' => 'view', $news['Category']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Order'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Datetime'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $news['News']['order']; ?>
+			<?php echo $news['News']['datetime']; ?>
 			&nbsp;
 		</dd>
 	</dl>

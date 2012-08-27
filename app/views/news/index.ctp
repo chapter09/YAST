@@ -6,7 +6,7 @@
 			<th><?php echo $this->Paginator->sort('title');?></th>
 			<th><?php echo $this->Paginator->sort('body');?></th>
 			<th><?php echo $this->Paginator->sort('category_id');?></th>
-			<th><?php echo $this->Paginator->sort('order');?></th>
+			<th><?php echo $this->Paginator->sort('datetime');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
@@ -24,7 +24,7 @@
 		<td>
 			<?php echo $this->Html->link($news['Category']['title'], array('controller' => 'categories', 'action' => 'view', $news['Category']['id'])); ?>
 		</td>
-		<td><?php echo $news['News']['order']; ?>&nbsp;</td>
+		<td><?php echo $news['News']['datetime']; ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $news['News']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $news['News']['id'])); ?>

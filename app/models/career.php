@@ -3,7 +3,7 @@ class Career extends AppModel {
 	var $name = 'Career';
   var $actsAs = array(
     'MulitiTranslate' => array(
-      'text', 'body'
+      'title', 'body'
       )    
   );
 

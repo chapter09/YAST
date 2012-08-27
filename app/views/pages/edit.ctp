@@ -4,12 +4,16 @@
 		<legend><?php __('Edit Page'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('title');
-		echo $this->Form->input('text');
-		echo $this->Form->input('event_id');
+		echo $this->Form->input('title.eng', array('label'=>'Title'));
+		echo $this->Form->input('title.chi', array('label'=>'標題'));
+    echo $this->Form->label('text.eng', 'Body');
+    echo $cksource->ckeditor('text.eng', array('escape'=>false));
+    echo $this->Form->label('text.chi', '正文');
+		echo $cksource->ckeditor('text.chi', array('escape'=>false));	
+
+    echo $this->Form->input('event_id');
 		echo $this->Form->input('menu_type_id');
 		echo $this->Form->input('order');
-		echo $this->Form->input('in_front');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

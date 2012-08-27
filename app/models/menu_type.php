@@ -1,6 +1,10 @@
 <?php
 class MenuType extends AppModel {
 	var $name = 'MenuType';
+  var $actsAs = array(
+      'MulitiTranslate'=> array(
+        'title',
+        ));
 	var $validate = array(
 		'title' => array(
 			'notempty' => array(

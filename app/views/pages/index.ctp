@@ -8,7 +8,6 @@
 			<th><?php echo $this->Paginator->sort('event_id');?></th>
 			<th><?php echo $this->Paginator->sort('menu_type_id');?></th>
 			<th><?php echo $this->Paginator->sort('order');?></th>
-			<th><?php echo $this->Paginator->sort('in_front');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
