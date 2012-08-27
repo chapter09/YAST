@@ -995,7 +995,7 @@ msgstr "企业客户"
 
 #: /views/layouts/yast.ctp:167
 msgid "Apply for the conference"
-msgstr "与会注册"
+msgstr "活动注册"
 
 #: /views/posts/index.ctp:2
 msgid "Blog posts"
@@ -1366,7 +1366,7 @@ msgstr "招聘"
 msgid "Career_"
 msgstr "招聘信息"
 
-msgid "Contact us"
+msgid "Contact"
 msgstr "联系"
 
 msgid "Contact_"

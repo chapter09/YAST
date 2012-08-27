@@ -16,7 +16,20 @@ class News extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+      
 		),
+
+    'description' => array(
+      'notempty' => array(
+				'rule' => array('notempty'),
+			),
+      
+
+      'maxLength' => array(
+        'rule' => array('maxLength', 140),
+        'message'=>'no longer than 140 characters'
+        )
+      ),
 
 		'category_id' => array(
 			'numeric' => array(

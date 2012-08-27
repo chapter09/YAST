@@ -325,7 +325,7 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 	background:url("../img/util-nav-bg.gif") 0 0 repeat-x;
 	float:right;
 	height:38px;
-	width:360px; /*changed from 491px for migration*/
+	width: 388px; /*changed from 491px for migration*/
 }
 	
 	#utility-bar ul {
@@ -569,7 +569,7 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 }
 
 li #home {
-    background: url("/img/home.png") no-repeat 2px;
+    background: url("../img/home.png") no-repeat 2px;
     width:8px;
     height:10px;
 }

@@ -93,24 +93,21 @@
                           <div class="iw_component" id="1337292009458">
                             <div>
                               <div id="sidebar" style="padding:20px 0px 0px 20px">
-                                <a id="btn-offices" title="Our Global Offices and Member Locations" href="http://www.executiveboard.com/exbd/about/index.page?tabs=8">
-                                  <span>Our Global Offices and Member Locations</span>
-                                </a> 
-                                
-                                <a id="btn-careers" title="CEB Careers" href="http://www.executiveboard.com/exbd/careers/index.page?"> 
-                                  <span>CEB Careers</span>
-                                </a>
-                                
-                                <!-- #BeginLibraryItem "/Library/Btn - Connect With CEB.lbi" -->
+                                <a id="btn-offices" title="#" href="#"><span>Our Global Offices and Member Locations</span></a> 
+                                 <?php echo $this->Html->link("<span>ATA Careers</span>",array(
+                                    'controller'=>'dashboards',
+                                    'action'=>'career'
+                                  ), array(
+                                    'id'=>'btn-careers',
+                                    'escape'=>false
+                                  ))?>
                                 <div id="btn-connect-bg">
-                                  <a id="btn-facebook" href="#" target="_blank">
+                                  <a id="btn-facebook" href="#" target="_blank">    
                                     <span>Facebook</span>
                                   </a> 
-                                  
-                                  <a id="btn-twitter" href="#"> 
+                                  <a id="btn-twitter" href=""> 
                                     <span>Twitter</span>
                                   </a>
-                                  
                                   <a id="btn-youtube" href="#" target="_blank">     
                                     <span>YouTube</span>
                                   </a>

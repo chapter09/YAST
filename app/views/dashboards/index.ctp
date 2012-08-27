@@ -50,7 +50,7 @@
           <div class="wrap">
             <div id="insight-navigation-container" class="group">
               <div id="insight-navigation">
-                <h2>YAST</h2>
+                <h4><?php echo __('News_'); ?></h4>
               </div>
               <div style="clear:both;"></div>
               <div id="go-prev">
@@ -62,9 +62,13 @@
             </div>
             <div id="insight-content">
               <ul id="insights">
-                <?php foreach($textSliders as $textSlider):?>
-                <li><?php echo $textSlider['TextSlider']['title']; ?><br/>
-                  <?php echo $textSlider['TextSlider']['body']; ?>
+                <?php foreach($news as $n):?>
+                <li><?php echo $n['News']['title']; ?><br/>
+                  <?php echo $this->Html->link($n['News']['description'],array(
+                    'controller'=>'dashboards',
+                    'action'=>'news',
+                    $n['News']['id']
+                  ))?>
                   <br/>
                 </li>
                 <?php endforeach; ?>

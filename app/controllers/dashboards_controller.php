@@ -103,13 +103,18 @@ class DashboardsController extends AppController
               'TextSlider.order'=>'ASC',
               ))));
     $this->set('sliderShows', array(
-            'about_active.jpg'=>'about',
-            'businesses_active.jpg'=>'about',
-            'people_active.jpg'=>'enterprise',
+            'about_active.jpg'=>'service',
+            'businesses_active.jpg'=>'enterprise',
+            'people_active.jpg'=>'news',
             'sustainability_active.jpg'=>'about',
-            'investor_active.jpg'=>'service',
-            'media_active.jpg'=>'contact',
+            'investor_active.jpg'=>'contact',
+            'media_active.jpg'=>'career',
           ));
+    $this->set('news', $this->News->find('all', array(
+            'fileds'=>array('title','id','description'),
+            'order'=>array('News.datetime'=>'DESC'),
+            'limit'=>5,
+            )));
   }
 
   function about(){

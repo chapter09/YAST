@@ -97,9 +97,14 @@
               
               <div id="sidebar">
                 <a id="btn-offices" title="#" href="#"><span>Our Global Offices and Member Locations</span></a> 
-                <a id="btn-careers" title="CEB Careers" href="#"> 
-                  <span>CEB Careers</span>
-                </a>
+               
+                <?php echo $this->Html->link("<span>ATA Careers</span>",array(
+                  'controller'=>'dashboards',
+                  'action'=>'career'
+                ), array(
+                  'id'=>'btn-careers',
+                  'escape'=>false
+                ))?>
                 <div id="btn-connect-bg">
                   <a id="btn-facebook" href="#" target="_blank">    
                     <span>Facebook</span>

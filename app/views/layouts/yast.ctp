@@ -63,7 +63,7 @@
                               
                               <ul><li class="first">
                                 <?php
-                                  echo $this->Html->link(__("About", true), array(
+                                  echo $this->Html->link(__("Career", true), array(
                                     'controller' => 'dashboards',
                                     'action' => 'about',
                                   ));
@@ -73,7 +73,7 @@
                              
                               <ul><li class="first">
                                 <?php
-                                  echo $this->Html->link(__("About", true), array(
+                                  echo $this->Html->link(__("Contact", true), array(
                                     'controller' => 'dashboards',
                                     'action' => 'about',
                                   ));
@@ -100,7 +100,12 @@
                               </li></ul>
                               
                               <ul><li class="">
-                                <a id="home" href="/">
+                                <?php echo $this->Html->link('', array(
+                                  'controller'=>'dashboards',
+                                  'action'=>'index',
+                                ), array(
+                                  'id'=>'home',
+                                ))?>
 				</a>
 				<ul></ul>
                               </li></ul>
@@ -136,11 +141,7 @@
                             ));
                             ?>
                           <ul class="services-dropdown">
-                            <?php foreach($stTypes as $stType): ?>
-                            <li class="heading"><a target="_self">
-                            <?php echo $stType['StType']['title']; ?>
-                            </a></li>
-                            <?php foreach($stType['StEntry'] as $stEntry): ?>
+                            <?php foreach($stEntries as $stEntry): ?>
                             <li><?php echo $this->Html->link($stEntry['StEntry']['title'],
                             array(
                               'controller'=>'dashboards',
@@ -152,7 +153,6 @@
                             )
                             
                             );?></li>
-                            <?php endforeach; ?>
                             <?php endforeach; ?> 
                           </ul>
 
@@ -169,7 +169,7 @@
                         
                         <li>
                           <?php
-                            echo $this->Html->link(__("News", true), array(
+                            echo $this->Html->link(__("News_", true), array(
                               'controller' => 'dashboards',
                               'action' => 'news',
                             ));
@@ -179,7 +179,7 @@
                         <li>
                           
                           <?php
-                            echo $this->Html->link(__("About", true), array(
+                            echo $this->Html->link(__("About_", true), array(
                               'controller' => 'dashboards',
                               'action' => 'about',
                             ));
@@ -190,7 +190,7 @@
                         
                         <li>
                           <?php
-                            echo $this->Html->link(__("Contact", true), array(
+                            echo $this->Html->link(__("Contact_", true), array(
                               'controller' => 'dashboards',
                               'action' => 'contact',
                             ));
@@ -200,7 +200,7 @@
                         
                         <li>
                           <?php
-                            echo $this->Html->link(__("Career", true), array(
+                            echo $this->Html->link(__("Career_", true), array(
                               'controller' => 'dashboards',
                               'action' => 'career',
                             ));
@@ -214,7 +214,7 @@
                             "<span>".__("Apply for the conference", true)."<span>", 
                               array(
                                 'controller' => 'dashboards',
-                                'action' => 'apply',
+                                'action' => 'event',
                             ),
                             array('escape'=>false));
                             ?> 
@@ -268,10 +268,10 @@
                         <a href="#" target="_self">Site Map</a>
                       </li>
                     </ul>
-                    <p>©&nbsp;2012&nbsp;The Corporate Executive Board Company. All Rights Reserved.</p>
+                    <p>©&nbsp;2012&nbsp;The ATA. All Rights Reserved.</p>
                   </div>
                   
-                  <div id="safe-harbor">
+                  <div id="safe-harbor" style="display:none;">
                     <p><a href="#" target="_blank">We self-certify compliance with</a></p>
                     <a href="#" target="_blank">
                       <?php echo $this->Html->image('footer-safe-harbor.gif',
