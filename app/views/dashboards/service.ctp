@@ -21,9 +21,6 @@
                       <div class="ls-area-body" id="ls-gen26936989-ls-area-body">
                         <div class="ls-cmp-wrap ls-1st" id="w1337292009454">
                           <!--ls:begin[component-1337292009454]-->
-                          <div class="iw_component" id="1337292009454">
-                            <div id="breadcrumbs"><?php echo $type['StType']['title'];?></div>
-                          </div>
                           <!--ls:end[component-1337292009454]-->
                         </div>
                         

@@ -32,14 +32,9 @@ class DashboardsController extends AppController
   }
 
   function _queryMenu(){
-    $this->StType->recursive = 0;
-    $stTypes = $this->StType->find('all', array('order'=>array(
-              'StType.order' => 'ASC',
-            )));
-    foreach($stTypes as &$stType){
-      $stType['StEntry'] = $this->StEntry->findAllByStTypeId($stType['StType']['id'], array('id', 'title'),array('StEntry.order'=>'ASC'));
-    }
-    $this->set('stTypes', $stTypes);
+    $this->set('stEntries', $this->StEntry->find('all',array(
+            'fields'=>array('id', 'title'),
+            'order'=>array('StEntry.order'=>'ASC'))));
   }
 
   function _queryFooter($bool){
@@ -162,7 +157,6 @@ class DashboardsController extends AppController
     }else{
       $entry = $this->StEntry->read(null, $entry_id);
     }
-    $this->set('type', $this->StType->findById($entry['StEntry']['st_type_id']));
     $this->set('entry', $entry);
     $this->StSection->recursive = 0;
     $this->set('sections', 
@@ -203,15 +197,19 @@ class DashboardsController extends AppController
           'order' => array(
             'Category.order' => 'ASC',
             )));
+    $category = null;
     if($category_id){
-      
+      $category = $this->Category->read(null, $category_id);
     }else{
-      $category_id = $categories['Category'][0]['id'];
+      $category = $categories[0];
+      $category_id = $category['Category']['id'];
     }
     $news = $this->paginate('News', array(
             'News.category_id' => $category_id ));
  
     $this->set('news', $news);
+    $this->set('category', $category);
+    $this->set('categories', $categories);
   }
 
   function career(){
