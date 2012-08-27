@@ -5,7 +5,7 @@ class ApplicationsController extends AppController {
 
   function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allowedActions = array('apply');
+    $this->Auth->allowedActions = array('add');
   }
 
 	function index() {

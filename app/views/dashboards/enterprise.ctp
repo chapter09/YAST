@@ -59,8 +59,9 @@
                     "width"=>"97",
                     "height"=>"46"
                   ));?>
+                  <!--
                   <?php echo $sponsor['Sponsor']['sponsor_description']; ?><br>
-                  <strong><?php echo $sponsor['Sponsor']['sponsor_name']; ?></strong>
+                  <strong><?php echo $sponsor['Sponsor']['sponsor_name']; ?></strong-->
                 </a>
               </li>
               <?php endforeach; ?>

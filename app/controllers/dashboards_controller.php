@@ -176,7 +176,7 @@ class DashboardsController extends AppController
     if($id){
       $this->set('title_for_layout', 'News');
       $this->layout = 'yast';
-      $entry = $this->StEntry->read(null, $id);
+      $entry = $this->News->read(null, $id);
       $this->set('news', $entry);
       $this->set('category', $this->Category->read(null, $entry['News']['category_id']));
       $this->set('categories', $this->Category->find('all'), array(

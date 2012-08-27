@@ -2,6 +2,11 @@
 class ContactFormsController extends AppController {
 
 	var $name = 'ContactForms';
+  
+  function beforeFilter(){
+    parent::beforeFilter();
+    $this->Auth->allowedActions = array('add');
+  }
 
 	function index() {
 		$this->ContactForm->recursive = 0;
@@ -20,8 +25,10 @@ class ContactFormsController extends AppController {
 		if (!empty($this->data)) {
 			$this->ContactForm->create();
 			if ($this->ContactForm->save($this->data)) {
-				$this->Session->setFlash(__('The contact form has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$this->Session->setFlash(__('Thank you for your submit.', true));
+				$this->redirect(array(
+              'controller' => 'dashboards',
+              'action' => 'contact'));
 			} else {
 				$this->Session->setFlash(__('The contact form could not be saved. Please, try again.', true));
 			}

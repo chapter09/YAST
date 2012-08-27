@@ -126,9 +126,10 @@
 }
 /*===BEGIN CONTENT CONTAINER STYLES====*/
 .content {
-	padding: 5px 25px 15px 15px;
-	width: 602px;
+	padding: 5px 25px 15px 35px;
+	width: 90%;
 	float: left;
+	min-height: 390px;
 }
 .content-wide {
 	padding: 5px 5px 15px 15px;
@@ -138,7 +139,7 @@
 #content-container p {
 	line-height:17px;
 	font-size:12px;
-	padding: 10px 0px 5px 0;
+	padding: 20px 0px 5px 15px;
 }
 #content-container .large-text {
 	font-size:14px;
@@ -337,9 +338,8 @@ ul#filtered-list li a {
 	float:left;
 	margin:0 10px 10px 0;
 	display:block;
-	
-	padding: 10px;
-	width: 150px;
+	padding:10px 5px 10px 7px;
+	width: 289px;
 	border:1px #e5e5e5 solid;
 	font-size:11px;
 	line-height:14px;
@@ -356,7 +356,7 @@ ul#filtered-list li a span {
 }
 ul#filtered-list li a img {
 	float:left;
-	margin: 0 10px 0 25px;
+	margin: 0 10px 0 0;
 }
 ul#filtered-list.side, .side {
 	width: 303px;
@@ -365,4 +365,60 @@ ul#filtered-list.side, .side {
 }
 ul#filtered-list.side li a {
 	margin:15px 0 0 0;
+}
+
+
+#content-container .datetime {
+    padding: 0 0 0 15px;
+    font-size: 10px;
+    color: #AAA;
+    margin-bottom: 20px;
+}
+
+/** Tables **/
+table {
+	background: #fff;
+	border-right:0;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+}
+th {
+	border:0;
+	border-bottom:2px solid #555;
+	text-align: left;
+	padding:4px;
+}
+th a {
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+th a.asc:after {
+	content: ' ⇣';
+}
+th a.desc:after {
+	content: ' ⇡';
+}
+table tr td {
+	background: #fff;
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom:1px solid #ddd;
+}
+table tr:nth-child(2n) td {
+	background: #f5f5f5;
+}
+table .altrow td {
+	background: #f5f5f5;
+}
+td.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+table td.actions a {
+	margin: 0px 6px;
+	padding:2px 5px;
 }

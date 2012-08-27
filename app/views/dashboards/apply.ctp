@@ -149,7 +149,7 @@
             'id'=>'OptIn',
             'type'=>'checkbox'
           ));?>
-          <label for="OptIn" class="checkbox"><?php echo __("I am interested in receiving e-mail communications from CEB.",true);?></label>
+          <label for="OptIn" class="checkbox"><?php echo __("I am interested in receiving e-mail communications from ATA.",true);?></label>
         </p>
       </div>
       <!--fields group--> 

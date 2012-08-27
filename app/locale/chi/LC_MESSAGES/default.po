@@ -768,7 +768,7 @@ msgstr ""
 
 #: /views/contacts/view.ctp:2
 #: /views/layouts/yast.ctp:157
-msgid "Contact"
+msgid "Contact us"
 msgstr "联系我们"
 
 #: /views/contacts/view.ctp:35
@@ -813,8 +813,8 @@ msgid "Professional Title"
 msgstr "职称"
 
 #: /views/dashboards/apply.ctp:152
-msgid "I am interested in receiving e-mail communications from CEB."
-msgstr "我愿意接受来自YAST的资讯邮件"
+msgid "I am interested in receiving e-mail communications from ATA."
+msgstr "我愿意接受来自ATA的资讯邮件"
 
 #: /views/dashboards/contact.ctp:29
 msgid "Office Locations"
@@ -1353,3 +1353,27 @@ msgstr ""
 
 msgid "Professional Information"
 msgstr "职业信息"
+
+msgid "Industry News"
+msgstr "产业信息"
+
+msgid "About ATA"
+msgstr "关于联盟"
+
+msgid "Career"
+msgstr "招聘"
+
+msgid "Career_"
+msgstr "招聘信息"
+
+msgid "Contact us"
+msgstr "联系"
+
+msgid "Contact_"
+msgstr "联系我们"
+
+msgid "About_"
+msgstr "关于联盟"
+
+msgid "News_"
+msgstr "产业新闻"
