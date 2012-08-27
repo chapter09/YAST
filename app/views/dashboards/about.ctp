@@ -1,6 +1,6 @@
 <?php
   
-  echo $this->Html->css('about');
+  echo $this->Html->css('about', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('7355', false);
   echo $javascript->link('insight.min', false);

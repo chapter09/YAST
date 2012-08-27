@@ -1,7 +1,7 @@
 <?php
-  echo $this->Html->css('E');
-  echo $this->Html->css('two-column-form');
-  echo $this->Html->css('stylesheet.v2');
+  echo $this->Html->css('E', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('two-column-form', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('stylesheet.v2', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('widget', false);
   echo $javascript->link('jquery.selectBox', false);

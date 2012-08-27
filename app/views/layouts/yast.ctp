@@ -143,6 +143,15 @@
                         </li>
                         
                         <li>
+                          <?php
+                            echo $this->Html->link(__("News", true), array(
+                              'controller' => 'dashboards',
+                              'action' => 'news',
+                            ));
+                            ?>
+                        </li>
+                        
+                        <li>
                           
                           <?php
                             echo $this->Html->link(__("About", true), array(
@@ -152,6 +161,8 @@
                             ?>
                         </li>
                         
+                        
+                        
                         <li>
                           <?php
                             echo $this->Html->link(__("Contact", true), array(
@@ -160,6 +171,17 @@
                             ));
                             ?>
                         </li>
+                        
+                        
+                        <li>
+                          <?php
+                            echo $this->Html->link(__("Career", true), array(
+                              'controller' => 'dashboards',
+                              'action' => 'career',
+                            ));
+                            ?>
+                        </li>
+                        
                         
                         <li class="membership-btn">
                           <?php

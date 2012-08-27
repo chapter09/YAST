@@ -1,8 +1,8 @@
 <?php
 
-  echo $this->Html->css('nbrr');
-  echo $this->Html->css('migrated-global');
-  echo $this->Html->css('default+en');
+  echo $this->Html->css('nbrr', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('migrated-global', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('default+en', null, array("media"=>"all", 'inline'=>false));
 
   echo $javascript->link('ga-global', false);
 ?>

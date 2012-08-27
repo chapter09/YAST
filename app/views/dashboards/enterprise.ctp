@@ -1,5 +1,5 @@
 <?php
-  echo $this->Html->css('clients');
+  echo $this->Html->css('clients', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('7355', false);
   echo $javascript->link('insight.min', false);

@@ -1,7 +1,7 @@
 <?php
-  echo $this->Html->css('E');
-  echo $this->Html->css('migrated-global');
-  echo $this->Html->css('accordion');
+  echo $this->Html->css('E', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('migrated-global', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('accordion', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('jquery.accordion', false);
   echo $javascript->link('accordion-menu', false);
