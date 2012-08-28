@@ -13,7 +13,12 @@
           
           <div class="content group">
            <table class="events">
-             <tr><th>Logo</th><th>Name</th><th>Date</th><th>Place</th></tr>
+             <tr>
+               <th>Logo</th>
+               <th><?php echo __('Name',true);?></th>
+               <th><?php echo __('Date',true);?></th>
+               <th><?php echo __('Place',true);?></th>
+             </tr>
              <?php $count = 0;?>
              <?php foreach($events as $e):?>
                <tr"<?php echo ($count++ %2 ==0)?' class="altrow"':'';?>">

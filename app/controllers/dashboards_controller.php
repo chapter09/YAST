@@ -50,7 +50,7 @@ class DashboardsController extends AppController
                                         'service',
                                         'apply',
                                         'news',
-                                        'cotegory',
+                                        'category',
                                         'career',
                                         'event'); 
     $this->_setLocale();

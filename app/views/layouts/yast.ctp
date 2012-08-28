@@ -211,7 +211,7 @@
                         <li class="membership-btn">
                           <?php
                             echo $this->Html->link(
-                            "<span>".__("Apply for the conference", true)."<span>", 
+                            "<span>".__("Apply for the conference", true)."</span>", 
                               array(
                                 'controller' => 'dashboards',
                                 'action' => 'event',

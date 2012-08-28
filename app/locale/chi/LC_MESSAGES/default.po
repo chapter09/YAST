@@ -943,7 +943,7 @@ msgstr ""
 #: /views/groups/view.ctp:9
 #: /views/widgets/view.ctp:9
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: /views/groups/view.ctp:14;46
 #: /views/users/view.ctp:24
@@ -987,7 +987,7 @@ msgstr ""
 
 #: /views/layouts/yast.ctp:108
 msgid "Service Targets"
-msgstr "服务目标"
+msgstr "服务领域"
 
 #: /views/layouts/yast.ctp:138
 msgid "Enterprise Clients"
@@ -1377,3 +1377,10 @@ msgstr "关于联盟"
 
 msgid "News_"
 msgstr "产业新闻"
+
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Place"
+msgstr "地点"
