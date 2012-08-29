@@ -1,0 +1,7 @@
+#sidbar {
+float: right;
+position: absolute;
+width: 200px;
+right: 92px;
+top: 162px;
+z-index: 9999;

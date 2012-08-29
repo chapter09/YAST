@@ -26,7 +26,10 @@ class ApplicationsController extends AppController {
 			$this->Application->create();
 			if ($this->Application->save($this->data)) {
 				$this->Session->setFlash(__('Thank you for application.', true));
-				$this->redirect(array('controller'=>'dashboards','action' => 'about'));
+        $this->redirect(array(
+              'event_id' => $this->data['Application']['event_id'],
+              'controller'=>'sites',
+              'action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The application could not be saved. Please, try again.', true));
 			}

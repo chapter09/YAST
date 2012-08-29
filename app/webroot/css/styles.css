@@ -523,6 +523,7 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 #content-container {
 	background:url("../img/bg-main-container.gif") repeat-x #fff;
 	/*height: 950px;*/
+	min-height:400px;
 	padding-bottom: 120px;
 }
 #container {

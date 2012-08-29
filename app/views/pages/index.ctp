@@ -59,6 +59,5 @@
 		<li><?php echo $this->Html->link(__('List Events', true), array('controller' => 'events', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Event', true), array('controller' => 'events', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Menu Types', true), array('controller' => 'menu_types', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Menu Type', true), array('controller' => 'menu_types', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

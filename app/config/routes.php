@@ -33,6 +33,19 @@
 /*
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 */
+  Router::connect('/:event_id/:action/*', 
+                      array('controller' => 'sites',
+                            'action' =>'index'),
+                      array('event_id' => '[0-9]+'));
+
+
+  Router::connect('/:language/:event_id/:action/*', 
+                        array('controller' => 'sites',
+                          'action'=>'index'),
+                        array('language' => '[a-z]{3}',
+                              'event_id' => '[0-9]+'));
+
+                                         
   Router::connect('/:language/:controller/:action/*',
                        array(),
                        array('language' => '[a-z]{3}'));

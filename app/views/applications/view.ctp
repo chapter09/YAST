@@ -51,6 +51,12 @@
 			<?php echo $application['Application']['title']; ?>
 			&nbsp;
 		</dd>
+
+    <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Event'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Html->link($application['Event']['title'], array('controller' => 'events', 'action' => 'view', $application['Event']['id'])); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
