@@ -139,11 +139,13 @@
                               echo $this->Html->link($menu['name'], 
                                                      $plink);}
                               else if (count($menu['items'])>1): ?>
-                              <ul class="dropdown">
+                              <?php echo $this->Html->link($menu['name'], '#');?>
+                              <ul class="dropdown" style="display:none;">
+                              
                               <?php foreach($menu['items'] as $item):?>
                                 <li>
-                                  <?php $this->Html->link($item['name'], 
-                                                          $item['item']);?>
+                                  <?php echo $this->Html->link($item['name'], 
+                                                               $item['item']);?>
                                 </li>
                               <?php endforeach; ?>
                               </ul>
@@ -174,9 +176,32 @@
             
             <?php if($withSidebar==true):?>
               <div id="sidbar">
+                <div id="subscribe-form">
+                  <h2><?php echo __('Subscribe Enews Here', true);?></h2>
+                  <?php echo $this->Form->create('EventApply');?>
+                  <?php echo $this->Form->input('event_id',array(
+                    'type'=>'hidden',
+                    'default'=>$event['Event']['id']
+                  ));?>
+                  <?php echo $this->Form->input('email', array(
+                    'label'=>__('your email address.',true)
+                  ))?>
+                  <?php echo $this->Form->end(__('Subscribe', true));?>
+                </div>
+                
+                <div id="register-now">
+                  <?php echo $this->Html->image('register-now.gif', array(
+                    'url' => array(
+                      'event_id'=>$event['Event']['id'],
+                      'action'=>'register'
+                    )
+                  )); ?>
+                </div>
+                
                 <?php foreach($sponsorTypes as $st):?>
                 <h3><?php echo $st['SponsorType']['title']; ?></h3>
                 <ul class="group sidebar">
+                  
                   <?php foreach($st['Sponsors'] as $sponsor):?>
                   <li>
                     <a class="group" href="<?php echo $sponsor['Sponsor']['url']; ?>">

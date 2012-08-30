@@ -1,6 +1,6 @@
 <?php
   
-  echo $this->Html->css('about', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('page', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('7355', false);
   echo $javascript->link('insight.min', false);
@@ -17,8 +17,8 @@
     <div>
       <div>
         <div id="content-container" class="wrap">
-         <div>
-           <?php echo $content; ?>
+         <div class="content-body">
+           <?php echo $content['Page']['text']; ?>
          </div>
          
         </div>

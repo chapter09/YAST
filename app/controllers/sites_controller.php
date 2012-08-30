@@ -123,7 +123,17 @@ class SitesController extends AppController{
 	}
 
 	function page($page_id=null){
-		$this->layout = 'sites';	
+		$this->layout = 'sites';
+		if(!$page_id){
+			$this->redirect(array(
+						'event_id'=>$event['Event']['id'],
+						'action'=>'index',
+						));
+		}else{
+			$page = $this->Page->read(null, $page_id);
+			$this->set('page', $page);
+			$this->set('title_for_layout', $page['Page']['title']);
+		}
 	}
 
 	function sponsors(){

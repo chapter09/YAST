@@ -4,8 +4,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('title');?></th>
-			<th><?php echo $this->Paginator->sort('text');?></th>
-			<th><?php echo $this->Paginator->sort('event_id');?></th>
+		  <th><?php echo $this->Paginator->sort('event_id');?></th>
 			<th><?php echo $this->Paginator->sort('menu_type_id');?></th>
 			<th><?php echo $this->Paginator->sort('order');?></th>
 			<th class="actions"><?php __('Actions');?></th>
@@ -21,7 +20,6 @@
 	<tr<?php echo $class;?>>
 		<td><?php echo $page['Page']['id']; ?>&nbsp;</td>
 		<td><?php echo $page['Page']['title']; ?>&nbsp;</td>
-		<td><?php echo $page['Page']['text']; ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($page['Event']['title'], array('controller' => 'events', 'action' => 'view', $page['Event']['id'])); ?>
 		</td>
@@ -29,8 +27,7 @@
 			<?php echo $this->Html->link($page['MenuType']['title'], array('controller' => 'menu_types', 'action' => 'view', $page['MenuType']['id'])); ?>
 		</td>
 		<td><?php echo $page['Page']['order']; ?>&nbsp;</td>
-		<td><?php echo $page['Page']['in_front']; ?>&nbsp;</td>
-		<td class="actions">
+	  <td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $page['Page']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $page['Page']['id'])); ?>
 			<?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $page['Page']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $page['Page']['id'])); ?>

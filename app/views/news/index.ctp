@@ -4,7 +4,6 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('title');?></th>
-			<th><?php echo $this->Paginator->sort('body');?></th>
 			<th><?php echo $this->Paginator->sort('category_id');?></th>
 			<th><?php echo $this->Paginator->sort('datetime');?></th>
 			<th class="actions"><?php __('Actions');?></th>
@@ -20,7 +19,6 @@
 	<tr<?php echo $class;?>>
 		<td><?php echo $news['News']['id']; ?>&nbsp;</td>
 		<td><?php echo $news['News']['title']; ?>&nbsp;</td>
-		<td><?php echo $news['News']['body']; ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($news['Category']['title'], array('controller' => 'categories', 'action' => 'view', $news['Category']['id'])); ?>
 		</td>
