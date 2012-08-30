@@ -36,7 +36,6 @@
 	<tr>
 		<th><?php __('Id'); ?></th>
 		<th><?php __('Title'); ?></th>
-		<th><?php __('Body'); ?></th>
 		<th><?php __('Category Id'); ?></th>
 		<th><?php __('Order'); ?></th>
 		<th class="actions"><?php __('Actions');?></th>
@@ -52,7 +51,6 @@
 		<tr<?php echo $class;?>>
 			<td><?php echo $news['id'];?></td>
 			<td><?php echo $news['title'];?></td>
-			<td><?php echo $news['body'];?></td>
 			<td><?php echo $news['category_id'];?></td>
 			<td><?php echo $news['order'];?></td>
 			<td class="actions">

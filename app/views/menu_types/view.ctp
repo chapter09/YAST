@@ -34,11 +34,9 @@
 	<tr>
 		<th><?php __('Id'); ?></th>
 		<th><?php __('Title'); ?></th>
-		<th><?php __('Text'); ?></th>
 		<th><?php __('Event Id'); ?></th>
 		<th><?php __('Menu Type Id'); ?></th>
 		<th><?php __('Order'); ?></th>
-		<th><?php __('In Front'); ?></th>
 		<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
@@ -52,11 +50,9 @@
 		<tr<?php echo $class;?>>
 			<td><?php echo $page['id'];?></td>
 			<td><?php echo $page['title'];?></td>
-			<td><?php echo $page['text'];?></td>
 			<td><?php echo $page['event_id'];?></td>
 			<td><?php echo $page['menu_type_id'];?></td>
 			<td><?php echo $page['order'];?></td>
-			<td><?php echo $page['in_front'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View', true), array('controller' => 'pages', 'action' => 'view', $page['id'])); ?>
 				<?php echo $this->Html->link(__('Edit', true), array('controller' => 'pages', 'action' => 'edit', $page['id'])); ?>

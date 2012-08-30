@@ -55,6 +55,8 @@ class SitesController extends AppController{
 			$st['Sponsors'] = $this->EventSponsor->findAllBySponsorTypeId(
 					$st['SponsorType']['id']);
 		}
+		$agenda = $this->Page->findByMenuTypeId(6);
+		$this->set('agenda_id', $agenda['Page']['id']);
 		$this->set('sponsorTypes', $sts);
 	}
 

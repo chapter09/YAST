@@ -139,7 +139,7 @@
                               echo $this->Html->link($menu['name'], 
                                                      $plink);}
                               else if (count($menu['items'])>1): ?>
-                              <?php echo $this->Html->link($menu['name'], '#');?>
+                              <?php echo $this->Html->link($menu['name'], '');?>
                               <ul class="dropdown" style="display:none;">
                               
                               <?php foreach($menu['items'] as $item):?>
@@ -175,7 +175,7 @@
             <?php echo $content_for_layout; ?>
             
             <?php if($withSidebar==true):?>
-              <div id="sidbar">
+              <div id="sidebar">
                 <div id="subscribe-form">
                   <h2><?php echo __('Subscribe Enews Here', true);?></h2>
                   <?php echo $this->Form->create('EventApply');?>
@@ -184,36 +184,48 @@
                     'default'=>$event['Event']['id']
                   ));?>
                   <?php echo $this->Form->input('email', array(
-                    'label'=>__('your email address.',true)
+                    'label'=>"",
+                    'onfocus'=>"if (this.value=='your email address.') this.value = ''",
+                    'default'=>'your email address.'
                   ))?>
                   <?php echo $this->Form->end(__('Subscribe', true));?>
                 </div>
                 
-                <div id="register-now">
+                <div id="register-now" class="sidebar-item">
                   <?php echo $this->Html->image('register-now.gif', array(
                     'url' => array(
                       'event_id'=>$event['Event']['id'],
                       'action'=>'register'
-                    )
+                    ),
+                    'width'=>'180'
+                  )); ?>
+                </div>
+                
+                <div id="agenda-download" class="sidebar-item">
+                  <?php echo $this->Html->image('agenda.gif', array(
+                    'url' => array(
+                      'event_id'=>$event['Event']['id'],
+                      'action'=>'page',
+                      $agenda_id
+                    ),
+                    'width'=>'180'
                   )); ?>
                 </div>
                 
                 <?php foreach($sponsorTypes as $st):?>
-                <h3><?php echo $st['SponsorType']['title']; ?></h3>
-                <ul class="group sidebar">
+                <table class="sidebar-sponsors sidebar-item" >
+                <tr><th><?php echo $st['SponsorType']['title']; ?></th></tr>
                   
                   <?php foreach($st['Sponsors'] as $sponsor):?>
-                  <li>
-                    <a class="group" href="<?php echo $sponsor['Sponsor']['url']; ?>">
-                      <?php echo $this->Html->image("../files/".$sponsor['Sponsor']['file_name'], array(
-                        "width"=>"97",
-                        "height"=>"46"
+                    <tr><td>
+                      <?php echo $this->Html->image("../files/".$sponsor['EventSponsor']['file_name'], array(
+                        "width"=>"180",
+                        'url'=>$sponsor['EventSponsor']['url']
                       ));?>
-
-                    </a>
-                  </li>
+                    </td></tr>
+                  
                   <?php endforeach; ?>
-                </ul>
+                </table>
                 <?php endforeach; ?>
               </div>
             <?php endif;?>

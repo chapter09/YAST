@@ -18,6 +18,7 @@
       <div>
         <div id="content-container" class="wrap">
          <div class="content-body">
+           <h2><?php echo $page['Page']['title']; ?></h2>
            <?php echo $page['Page']['text']; ?>
          </div>
          

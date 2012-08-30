@@ -25,10 +25,9 @@
             <ul class="group testimonials">
               <?php foreach($st['Sponsors'] as $sponsor):?>
               <li>
-                <a class="group" href="<?php echo $sponsor['Sponsor']['url']; ?>">
-                  <?php echo $this->Html->image("../files/".$sponsor['Sponsor']['file_name'], array(
-                    "width"=>"97",
-                    "height"=>"46"
+                <a class="group" href="<?php echo $sponsor['EventSponsor']['url']; ?>">
+                  <?php echo $this->Html->image("../files/".$sponsor['EventSponsor']['file_name'], array(
+                    "width"=>"160",
                   ));?>
                   
                 </a>
