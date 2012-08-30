@@ -8,7 +8,7 @@ class SitesController extends AppController{
       'Page',
       'Setting');
   var $helpers = array('Html', 'Javascript');
-  var $components = array('Session', 'DebugKit.Toolbar');
+  var $components = array('Session');
   var $event = null;
 
   function beforeFilter(){

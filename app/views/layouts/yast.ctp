@@ -61,7 +61,7 @@
                                 <ul></ul>
                               </li></ul>
                               
-                              <ul><li class="first">
+                              <ul><li>
                                 <?php
                                   echo $this->Html->link(__("Career", true), array(
                                     'controller' => 'dashboards',
@@ -71,7 +71,7 @@
                                 <ul></ul>
                               </li></ul>
                              
-                              <ul><li class="first">
+                              <ul><li>
                                 <?php
                                   echo $this->Html->link(__("Contact", true), array(
                                     'controller' => 'dashboards',

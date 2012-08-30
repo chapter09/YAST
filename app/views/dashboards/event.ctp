@@ -23,7 +23,11 @@
              <?php foreach($events as $e):?>
                <tr"<?php echo ($count++ %2 ==0)?' class="altrow"':'';?>">
                  <td><?php echo $this->Html->image('/files/'.$e['Event']['file_name']);?></td>
-                 <td><?php echo $e['Event']['title']; ?></td>
+                 <td><?php echo $this->Html->link($e['Event']['title'],
+                     array(
+                       'event_id'=>$e['Event']['id'],
+                       'controller'=>'sites',
+                       'action'=>'index')); ?></td>
                  <td><?php echo $e['Event']['date'];?></td>
                  <td><?php echo $e['Event']['place'];?></td>
                 </tr>

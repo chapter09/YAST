@@ -34,7 +34,7 @@
               <?php $count = 0; ?>
               <?php foreach($careers as $career): ?>
               <?php $count ++;?>
-              <div id="tab<?php echo $count; ?>" class="tab" style="height: 450px; display: block; <?php echo ($count==1)?"display: block;": "display: none;"?>">
+              <div id="tab<?php echo $count; ?>" class="tab" style="display: block; <?php echo ($count==1)?"display: block;": "display: none;"?>">
                 <h2><?php echo $career['Career']['title']?></h2>
                 <?php echo $career['Career']['body']?>
               </div>

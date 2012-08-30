@@ -38,7 +38,7 @@
               <?php $count = 0; ?>
               <?php foreach($abouts as $about): ?>
               <?php $count ++;?>
-              <div id="tab<?php echo $count; ?>" class="tab" style="height: 450px; display: block; <?php echo ($count==1)?"display: block;": "display: none;"?>">
+              <div id="tab<?php echo $count; ?>" class="tab" style="display: block; <?php echo ($count==1)?"display: block;": "display: none;"?>">
                 <h2><?php echo $about['About']['title']?></h2>
                 <?php echo $about['About']['body']?>
               </div>

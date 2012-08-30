@@ -3,6 +3,8 @@
 #content-container {
 	background-color:#fff;
 	position: relative;
+	overflow: auto;
+	zoom:1;
 }
 /*===BEGIN CONTENT CONTAINER STYLES====*/
 #content-container p {
@@ -47,8 +49,9 @@ h1 {
 	width: 595px;
 	float: left;
 	border: 1px solid #ccc;
-	margin: 15px 15px 0 -1px;
+	margin: 15px 2px 0 -1px;
 	z-index:100;
+	overflow: auto;
 }
 .content-wide {
 	padding: 5px 15px 15px 15px;

@@ -52,7 +52,7 @@
               <?php foreach($categories as $c): ?>
               <?php $count ++;
               if ($c['Category']['id']==$category['Category']['id']): ?>
-              <div id="tab<?php echo $count; ?>" class="tab" style="height: 450px; display: block;">
+              <div id="tab<?php echo $count; ?>" class="tab" style="display: block;">
                 <h2><?php echo $c['Category']['title']?></h2>
                 <ul>
                 <?php foreach($news as $n):?>

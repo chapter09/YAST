@@ -525,6 +525,8 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 	/*height: 950px;*/
 	min-height:400px;
 	padding-bottom: 120px;
+	overflow:auto;
+	zoom:1;
 }
 #container {
 	background:url("../img/bg-main-container.gif") repeat-x #fff;
@@ -544,7 +546,7 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 }
 
 .ls-canvas .ls-col-body {
-    overflow: inherit !important;
+    /*overflow: inherit !important;*/
 }
 
 .ls-canvas .ls-area {

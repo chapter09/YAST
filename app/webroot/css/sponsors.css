@@ -3,6 +3,8 @@
 #content-container {
 	background-color:#fff;
 	position: relative;
+	overflow: auto;
+	zoom: 1;
 }
 /*==HERO ROTATING SPACE=======================================*/
 #hero-text-container {
