@@ -9,6 +9,8 @@
     echo $this->Form->label('body.eng', 'Body');
     echo $cksource->ckeditor('body.eng', array('escape'=>false));
     echo $this->Form->label('body.chi', '正文');	
+    echo $cksource->ckeditor('body.chi', array('escape'=>false));
+    
     echo $this->Form->input('order');
 		echo $this->Form->input('file', array('type'=>'file'));
     if($this->data['Slider']['file_name']){

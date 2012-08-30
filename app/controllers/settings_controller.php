@@ -13,7 +13,7 @@ class SettingsController extends AppController {
 			$this->Session->setFlash(__('Invalid setting', true));
 			$this->redirect(array('action' => 'index'));
 		}
-    $this->Contact->setLocale($this->Session->read('Config.language'));	
+    $this->Setting->setLocale($this->Session->read('Config.language'));	
 		$this->set('setting', $this->Setting->read(null, $id));
 	}
 
@@ -36,8 +36,8 @@ class SettingsController extends AppController {
 			$this->redirect(array('action' => 'index'));
 		}
 
-    $this->Contact->setLocale(array('eng','chi'));
-    $this->Contact->multiTranslateOptions(array('validate'=>true,'find'=>true));
+    $this->Setting->setLocale(array('eng','chi'));
+    $this->Setting->multiTranslateOptions(array('validate'=>true,'find'=>true));
     
 		if (!empty($this->data)) {
 			if ($this->Setting->save($this->data)) {

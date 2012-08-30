@@ -35,7 +35,7 @@ class SlidersController extends AppController {
 				$this->Session->setFlash(__('The slider has been saved', true));
 				$this->redirect(array('action' => 'index'));
 			} else {
-        $this->Session->setFlash($this->FileUpload->showErrors());	
+        $this->log($this->FileUpload->showErrors(), 'debug');
 				$this->Session->setFlash(__('The slider could not be saved. Please, try again.', true));
 			}
 		}
