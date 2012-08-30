@@ -20,8 +20,12 @@ class EventAppliesController extends AppController {
 		if (!empty($this->data)) {
 			$this->EventApply->create();
 			if ($this->EventApply->save($this->data)) {
-				$this->Session->setFlash(__('The event apply has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$this->Session->setFlash(__('Thank you for your subscription.', true));
+				$this->redirect(array(
+              'controller' => 'sites',
+              'event_id' => $this->data['EventApply']['event_id'],
+              'action' => 'index'
+            ));
 			} else {
 				$this->Session->setFlash(__('The event apply could not be saved. Please, try again.', true));
 			}

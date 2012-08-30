@@ -32,9 +32,9 @@ a:hover {
 	height:34px;/*used together w/ overflow to limit character counts*/
 	margin-bottom:10px;
 	overflow:hidden;
-	width:613px;
+	width:940px;
 }
-h2 {
+#content-container h2 {
 	font-size:22px;
 	font-weight:normal;
 	line-height:28px;
@@ -86,12 +86,13 @@ hr {
  	background:url(/exbd-resources/images/design-elements/backgrounds-banners/campaigns/banner-bg-campaign.gif) repeat-x #fff;
 	border-bottom:1px solid #df7a00;
 	height: 154px;
-	zoom: 1; /*need zoom to trigger hasLayout in IE for bg gradient*/
+	overflow: hidden;
+	zoom: 0; /*need zoom to trigger hasLayout in IE for bg gradient*/
 }
 #banner #text-container {
 	float:left;
 	padding: 20px 20px 0px;
-	width:613px;
+	width:940px;
 }
 #banner #image-container {
 	float:right;
@@ -112,7 +113,7 @@ h2.subtitle {
 	height:55px; /*used together w/ overflow to limit character counts*/
 	margin-bottom:0;
 	overflow:hidden;
-	width:613px;
+	width:900px;
 }
 /*===BEGIN FORM STYLES====*/
 form {

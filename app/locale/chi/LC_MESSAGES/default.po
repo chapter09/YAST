@@ -1387,3 +1387,21 @@ msgstr "地点"
 
 msgid "logo\_en.jpg"
 msgstr "logo\_cn.jpg"
+
+msgid "Register"
+msgstr "注册参会"
+
+msgid "Subscribe Enews Here"
+msgstr "新闻订阅"
+
+msgid "subscribe"
+msgstr "订阅"
+
+msgid "Sponsors"
+msgstr "赞助商"
+
+msgid "Thank you for your interest in "
+msgstr "感谢您关注"
+
+msgid "Thank you for your subscription."
+msgstr "感谢您的订阅。"

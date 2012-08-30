@@ -193,7 +193,8 @@
               <div id="sidebar">
                 <div id="subscribe-form">
                   <h2><?php echo __('Subscribe Enews Here', true);?></h2>
-                  <?php echo $this->Form->create('EventApply');?>
+                  <?php echo $this->Form->create('EventApply',array(
+                                                             'action'=>'add'));?>
                   <?php echo $this->Form->input('event_id',array(
                     'type'=>'hidden',
                     'default'=>$event['Event']['id']
