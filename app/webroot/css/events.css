@@ -422,3 +422,9 @@ table td.actions a {
 	margin: 0px 6px;
 	padding:2px 5px;
 }
+
+table.events a,
+table.events a:visited{
+  color: #379EE0;
+  text-decoration: none;
+}
