@@ -1,18 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head><script id="f5_cspm">//<![CDATA[
-(function() { var f5_cspm = {
- pass_params: '1231208179_4070800906_3459421402_283998446_0_0_4294901760_3056740476_0', src_uuid: 0, transaction_num: 6,
-get_rot13hash:function(str){var hash=2;var _int;for(i=0;i<str.length;i++){_int=str.charCodeAt(i);hash=(hash)+(_int)-((((hash)+(_int))<<13)|(((hash)+(_int))>>>19));}
-return hash&0x7fffffff;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;var cookie_val=f5_cspm.pass_params+'_'+res+'_'+f5_cspm.src_uuid+'_'+f5_cspm.transaction_num;cookie_val=cookie_val+'_'+f5_cspm.get_rot13hash(cookie_val);window.document.cookie='cspm='+encodeURIComponent(cookie_val)+';path=/';return;}}
-catch(err){return;}
-setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='srv_resp_indication'){if(pair[1]=='1234'){var d=new Date();d.setTime(d.getTime()-1);window.document.cookie='srv_resp_indication=;expires='+d.toUTCString()+';path=/';setTimeout(f5_cspm.wait_perf_data,100);}}}}}
-f5_cspm.go();}());
-//]]></script>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<title>404 - File or directory not found.</title>
-<style type="text/css">
-<!--
 body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
 fieldset{padding:0 15px 10px 15px;} 
 h1{font-size:2.4em;margin:0;color:#222;}
@@ -22,16 +7,6 @@ h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;}
 background-color:#555555;}
 #content{margin:0 0 0 2%;position:relative;}
 .content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
--->
-</style>
-</head>
-<body>
-<div id="header"><h1>Server Error</h1></div>
-<div id="content">
- <div class="content-container"><fieldset>
-  <h2>404 - File or directory not found.</h2>
-  <h3>The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.</h3>
- </fieldset></div>
-</div>
-</body>
-</html>
+#content-container h3{
+  margin-top:5px;
+}

@@ -92,7 +92,7 @@
                           <!--ls:begin[component-1337292009458]-->
                           <div class="iw_component" id="1337292009458">
                             <div>
-                              <div id="sidebar" style="padding:20px 0px 0px 20px">
+                              <div>
                                 <a id="btn-offices" title="#" href="#"><span>Our Global Offices and Member Locations</span></a> 
                                  <?php echo $this->Html->link("<span>ATA Careers</span>",array(
                                     'controller'=>'dashboards',

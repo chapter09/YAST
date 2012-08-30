@@ -41,7 +41,7 @@
                         <div>
                         <div class="wrap group">
                           <?php
-                            echo $this->Html->image('logo-ceb.png', array(
+                            echo $this->Html->image(__('logo_en.jpg',true), array(
                               'title' => "Logo",
                               'url' => array('controller' => 'dashboards', 
                                              'action' => 'index')
@@ -65,7 +65,7 @@
                                 <?php
                                   echo $this->Html->link(__("Career", true), array(
                                     'controller' => 'dashboards',
-                                    'action' => 'about',
+                                    'action' => 'career',
                                   ));
                                   ?>
                                 <ul></ul>
@@ -75,7 +75,7 @@
                                 <?php
                                   echo $this->Html->link(__("Contact", true), array(
                                     'controller' => 'dashboards',
-                                    'action' => 'about',
+                                    'action' => 'contact',
                                   ));
                                   ?>
                                 <ul></ul>

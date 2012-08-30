@@ -1384,3 +1384,6 @@ msgstr "日期"
 
 msgid "Place"
 msgstr "地点"
+
+msgid "logo\_en.jpg"
+msgstr "logo\_cn.jpg"
