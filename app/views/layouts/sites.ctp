@@ -47,6 +47,10 @@
                                              'action' => 'index')
                             ));
                           ?>
+                          <h2 id="event-title"><?php echo $this->Html->link($event['Event']['title'], array(
+                            'event_id'=>$event['Event']['id'], 
+                            'action' => 'index'
+                          ))?></h2>
                           <div class="float-right">
                             <div id="utility-bar">
                               <div id="corner-right"></div>
@@ -143,7 +147,7 @@
                               echo $this->Html->link($menu['name'], 
                                                      $plink);}
                               else if (count($menu['items'])>1): ?>
-                              <?php echo $this->Html->link($menu['name'], '');?>
+                              <?php echo $this->Html->link($menu['name'], '#');?>
                               <ul class="dropdown" style="display:none;">
                               
                               <?php foreach($menu['items'] as $item):?>
@@ -176,9 +180,16 @@
       <div class="ls-fxr" id="ls-gen4963713-ls-fxr">
         <div class="ls-area" id="ls-row-2-area-1">
           <div class="ls-area-body" id="ls-gen4963714-ls-area-body">
-            <?php echo $content_for_layout; ?>
+            <div class="ls-cmp-wrap ls-1st" id="w1337291993388">
+              <!--ls:begin[component-1337291993388]-->
+              <div class="iw_component" id="1337291993388">
+                <div>
+                  <div>
+                    <div id="content-container" class="wrap">
+                      <?php echo $content_for_layout; ?>
+                  
             
-            <?php if($withSidebar==true):?>
+                      <?php if($withSidebar==true):?>
               <div id="sidebar">
                 <div id="subscribe-form">
                   <h2><?php echo __('Subscribe Enews Here', true);?></h2>
@@ -231,8 +242,16 @@
                   <?php endforeach; ?>
                 </table>
                 <?php endforeach; ?>
+                
+                <div class="clear"></div>
               </div>
             <?php endif;?>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="ls-row-clr" ></div>

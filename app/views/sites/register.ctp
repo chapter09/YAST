@@ -20,10 +20,11 @@
           <div id="text-container">
             <div id="breadcrumbs"><?php echo $this->Html->link(__('Contact Us',true),
               array(
-                'controller'=>'dashboards',
-                'action'=>'about',
+                'event_id'=>$event['Event']['id'],
+                'action'=>'pages',
+                $contact_id
               )
-            )?> / Interested in Membership?
+            )?> / Interested in Event?
             </div>
             
             <h1><?php echo __("Thank you for your interest in ", true).$event['Event']['title'];?></h1>

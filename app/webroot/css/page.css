@@ -3,6 +3,8 @@
 #content-container {
 	background-color:#fff;
 	position: relative;
+	overflow: auto;
+	zoom: 1;
 }
 /*===BEGIN CONTENT CONTAINER STYLES====*/
 #content-container p {

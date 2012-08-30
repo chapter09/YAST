@@ -2,7 +2,7 @@
 /* CSS Document */
 /*===BEGIN LAYOUT STYLES====*/
 #main-container {
-  min-height: 800px;
+  min-height: 700px;
 }
 #content-container {
 	background-color:#fff;
@@ -24,10 +24,11 @@ a {
 a:hover {
 	text-decoration:underline;
 }
-h1 {
+#content-container h1 {
 	color:#df7a00;
 	font-size:30px;
 	font-weight:bold;
+	background: none;
 	height:34px;/*used together w/ overflow to limit character counts*/
 	margin-bottom:10px;
 	overflow:hidden;

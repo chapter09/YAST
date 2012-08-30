@@ -6,14 +6,7 @@
   echo $javascript->link('jquery.xfade', false);
   echo $javascript->link('initializations-clients', false);
 ?>
-<div class="ls-cmp-wrap ls-1st" id="w1336775876651">
-<!--ls:begin[component-1336775876651]-->
-<div class="iw_component" id="1336775876651">
-  <div>
-    <div>
-      <div id="main-container">
-        <div id="content-container" class="wrap group">
-          
+
     
           <div class="content group">
             <p class="large-text"><?php echo __('Sponsors', true);?></p>
@@ -36,10 +29,3 @@
             </ul>
             <?php endforeach; ?>
           </div>
-        </div>
-        <!--.wrap-->
-      </div>
-    </div>
-  </div>
-</div>
-</div>

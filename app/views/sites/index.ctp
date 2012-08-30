@@ -11,18 +11,8 @@
   echo $javascript->link('ga-global', false);
 ?>
 
-<div class="ls-cmp-wrap ls-1st" id="w1337291993388">
-  <!--ls:begin[component-1337291993388]-->
-  <div class="iw_component" id="1337291993388">
-    <div>
-      <div>
-        <div id="content-container" class="wrap">
-         <div class="content-body">
-           <?php echo $content['Page']['text']; ?>
-         </div>
+
+ <div class="content-body">
+   <?php echo $content['Page']['text']; ?>
+ </div>
          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
