@@ -52,21 +52,33 @@ class SitesController extends AppController{
 					'order' => array(
 						'SponsorType.order'=>'ASC')));
 		foreach($sts as &$st){
-			$st['Sponsors'] = $this->EventSponsor->findAllBySponsorTypeId(
-					$st['SponsorType']['id']);
+			$st['Sponsors'] = $this->EventSponsor->find('all',
+					array(
+						'conditions'=>array(
+							'EventSponsor.event_id'=>$this->event['Event']['id'],
+							'EventSponsor.sponsor_type_id'=>$st['SponsorType']['id'])
+						));
 		}
-		$agenda = $this->Page->findByMenuTypeId(6);
+		$agenda = $this->Page->find('first',array(
+					'conditions'=>array(
+						'Page.menu_type_id'=>6,
+						'Page.event_id'=>$this->event['Event']['id'])));
 		$this->set('agenda_id', $agenda['Page']['id']);
 		$this->set('sponsorTypes', $sts);
 	}
 
   function _queryPagesByMenuType($mt_id, $addition=null){
     $menu = $this->MenuType->read(null, $mt_id);
-    $pages = $this->Page->findAllByMenuTypeId($mt_id, array(
+    $pages = $this->Page->find('all',array(
+				'conditions'=>array(
+					'Page.menu_type_id'=>$mt_id,
+					'Page.event_id'=>$this->event['Event']['id']), 
+				'fields'=>array(
               'title', 'id'  
-            ),array(
+            ),
+				'order'=>array(
               'Page.order' => 'ASC',
-            ));
+            )));
     $items = array();
     foreach($pages as $page){
       $items[] = array(
@@ -109,13 +121,21 @@ class SitesController extends AppController{
          $this->_queryPagesByMenuType(9),
          $this->_queryPagesByMenuType(10)
 	 ));
+		$contact = $this->Page->find('first',array(
+								'conditions'=>array(
+								'Page.event_id'=>$this->event['Event']['id'],
+								'Page.menu_type_id'=>9)));
+		$this->set('contact_id', $contact['Page']['id']);
   }
 
 
   function index(){
     $this->set('title_for_layout', $this->event['Event']['title']);
     $this->layout = 'sites';
-    $this->set('content', $this->Page->findByMenuTypeId(5));
+    $this->set('content', $this->Page->find('first',array(
+						'conditions'=>array(
+							'Page.menu_type_id'=>5,
+							'Page.event_id'=>$this->event['Event']['id']))));
   }
 
 	function register(){
@@ -128,7 +148,7 @@ class SitesController extends AppController{
 		$this->layout = 'sites';
 		if(!$page_id){
 			$this->redirect(array(
-						'event_id'=>$event['Event']['id'],
+						'event_id'=>$this->event['Event']['id'],
 						'action'=>'index',
 						));
 		}else{

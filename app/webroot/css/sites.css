@@ -42,3 +42,25 @@ input[type="submit"] {
     border:1px solid #AAA;
     display: inline;
 }
+
+#content-container h1 {
+    height: 10px;
+    background: #44464A;
+    background: -webkit-gradient(linear, left top, right top, from(#44464A), to(#FFF));
+    background: -moz-linear-gradient(left top, #44464A, #FFF);
+    /* IE 5.5–7 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44464A', endColorstr='#ffffff', GradientType=1);
+    /* IE 8–9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#44464A', endColorstr='#ffffff', GradientType=1)";
+    /* IE 10 */
+    -ms-linear-gradient(left, #44464A 0%, #ffffff 100%);
+    
+    color: #EEE;
+    padding: 2px;
+    font-size: 16px;
+    height: 26px;
+}
+
+#utility-bar {
+  width: 250px;
+}

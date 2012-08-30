@@ -1,5 +1,5 @@
 <?php
-  echo $this->Html->css('clients', null, array("media"=>"all", 'inline'=>false));
+  echo $this->Html->css('sponsors', null, array("media"=>"all", 'inline'=>false));
   
   echo $javascript->link('7355', false);
   echo $javascript->link('insight.min', false);
@@ -19,9 +19,9 @@
             <p class="large-text"><?php echo __('Sponsors', true);?></p>
           </div>
           
-          <div class="content-wide group">
+          <div class="content-wide group ">
             <?php foreach($sponsorTypes as $st):?>
-            <h2><?php echo $st['SponsorType']['title']; ?></h2>
+            <h1><?php echo $st['SponsorType']['title']; ?></h1>
             <ul class="group testimonials">
               <?php foreach($st['Sponsors'] as $sponsor):?>
               <li>

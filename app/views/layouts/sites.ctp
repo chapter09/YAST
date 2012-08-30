@@ -53,9 +53,11 @@
                               
                               <ul><li class="first">
                                 <?php
-                                  echo $this->Html->link(__("About", true), array(
-                                    'controller' => 'dashboards',
-                                    'action' => 'about',
+                                  echo $this->Html->link(__("Contact", true), 
+                                  array(
+                                    'event_id' => $event['Event']['id'],
+                                    'action' => 'page',
+                                    $contact_id,
                                   ));
                                   ?>
                                 <ul></ul>
@@ -64,7 +66,8 @@
                              <ul><li class="">
                                 <?php
                                 echo $this->Html->link("中文", array(
-                                  'language' => 'chi'
+                                  'language' => 'chi',
+                                  'event_id' => $event['Event']['id']
                                 ));
                                 ?>
                                 <ul></ul>
@@ -73,7 +76,8 @@
                               <ul><li class="">
                                  <?php
                                   echo $this->Html->link("English", array(
-                                    'language' => 'eng'
+                                    'language' => 'eng',
+                                    'event_id' => $event['Event']['id']
                                   ));
                                   ?>
                                 <ul></ul>

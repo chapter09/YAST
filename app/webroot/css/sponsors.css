@@ -329,39 +329,39 @@ p.quote span {
 	z-index: 5003; /*bring the nav to the front on pages with innerfade and/or flash*/
 	padding-bottom: 10px;
 }
-ul#filtered-list li,
+
 ul.testimonials li {
 	list-style:none;
 	display: inline;
 }
-ul#filtered-list li a,
+
 ul.testimonials li a {
 	float:left;
-	margin:0 10px 10px 0;
+	margin:10px 10px 10px 0;
 	display:block;
 	
 	padding: 10px;
-	width: 150px;
+	width: 160px;
 	border:1px #e5e5e5 solid;
 	font-size:11px;
 	line-height:14px;
 	text-decoration: none;
 	color: #7f7f7f;
 }
-ul#filtered-list li a:hover,
+
 ul.testimonials li a:hover {
 	border:1px #d1d1d1 solid;
 	color: #666666;
 	background-color:#f0f0f0;
 }
-ul#filtered-list li a span,
+
 ul.testimonials li a span {
 	text-transform:uppercase;
 }
-ul#filtered-list li a img,
+
 ul.testimonials li a img {
 	float:left;
-	margin: 0 10px 0 25px;
+	/*margin: 0 10px 0 25px;*/
 }
 ul#filtered-list.side, .side {
 	width: 303px;
