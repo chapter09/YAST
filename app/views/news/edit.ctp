@@ -15,7 +15,7 @@
     echo $this->Form->select('locale', array(
           'chi'=>'Chinese',
           'eng'=>'English',),array(
-            'value'=>'chi',
+            'value'=>$this->data['News']['locale'],
             'label'=>'Language'));
 	?>
 	</fieldset>
