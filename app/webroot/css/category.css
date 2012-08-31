@@ -51,7 +51,7 @@ h1 {
 }
 .content {
 	padding: 0px 15px 15px 15px;
-	width: 595px;
+	width: 695px;
 	float: left;
 	border: 1px solid #ccc;
 	margin: 15px 2px 0 -1px;
@@ -90,7 +90,7 @@ h1 {
 	padding-left:15px;
 	padding-right:0px;
 	padding-top:20px;
-	width:302px;
+	width:200px;
 	position:relative;
 	z-index:500;
 	margin:0px !important;
