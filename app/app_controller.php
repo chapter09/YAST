@@ -36,7 +36,7 @@ class AppController extends Controller{
 															false, 
 															'20 days');
     }
-}
+  }
 
 
 

@@ -40,6 +40,14 @@
 			  'controller'=>'dashboards',
 			  'action'=>'admin'
 			)); ?></h1>
+      <span>
+      <?php echo $this->Html->link("中文", array(
+                                  'language' => 'chi'
+                                ));?> | 
+       <?php echo $this->Html->link("English", array(
+                                   'language' => 'eng'
+                                 ));?>
+      </span>
 		</div>
 		<div id="content">
 

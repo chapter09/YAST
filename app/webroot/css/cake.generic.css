@@ -539,3 +539,9 @@ div.code-coverage-results span.result-good {
 #url-rewriting-warning {
 	display: none;
 }
+
+span a,
+span a:visited,
+span a:hover{
+  color: white;
+}

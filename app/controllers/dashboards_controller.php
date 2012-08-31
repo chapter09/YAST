@@ -18,12 +18,17 @@ class DashboardsController extends AppController
       'Career',
       'Event',
       'Setting');
+  var $excludes = array('News');
   var $helpers = array('Html', 'Javascript');
   var $components = array('Session');
 
   function _setLocale(){
     foreach($this->uses as $model_name){
-      $this->$model_name->setLocale($this->Session->read('Config.language'));
+      if(!in_array($model_name, $this->excludes)){
+        $this->$model_name->setLocale($this->Session->read('Config.language'));
+      }else{
+        $this->$model_name->locale = $this->Session->read('Config.language');
+      }
     } 
   }
 
@@ -209,8 +214,12 @@ class DashboardsController extends AppController
       $category = $categories[0];
       $category_id = $category['Category']['id'];
     }
-    $news = $this->paginate('News', array(
-            'News.category_id' => $category_id ));
+    $this->paginate = array(
+            'conditions'=>(array('News.category_id' => $category_id)), 
+            'limit'=>15,
+            'order'=>'News.datetime desc'
+        );
+    $news = $this->paginate('News');
  
     $this->set('news', $news);
     $this->set('category', $category);

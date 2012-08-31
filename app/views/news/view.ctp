@@ -26,6 +26,12 @@
 			<?php echo $news['News']['datetime']; ?>
 			&nbsp;
 		</dd>
+    
+    <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Locale'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $news['News']['locale']; ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">

@@ -6,6 +6,7 @@
 			<th><?php echo $this->Paginator->sort('title');?></th>
 			<th><?php echo $this->Paginator->sort('category_id');?></th>
 			<th><?php echo $this->Paginator->sort('datetime');?></th>
+      <th><?php echo $this->Paginator->sort('locale');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
@@ -23,7 +24,8 @@
 			<?php echo $this->Html->link($news['Category']['title'], array('controller' => 'categories', 'action' => 'view', $news['Category']['id'])); ?>
 		</td>
 		<td><?php echo $news['News']['datetime']; ?>&nbsp;</td>
-		<td class="actions">
+		<td><?php echo $news['News']['locale']; ?>&nbsp;</td>
+    <td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $news['News']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $news['News']['id'])); ?>
 			<?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $news['News']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $news['News']['id'])); ?>

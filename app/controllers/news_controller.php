@@ -4,10 +4,12 @@ class NewsController extends AppController {
 	var $name = 'News';
   var $helpers = array('Html', 'Form', 'Cksource'); 
   var $components = array('Session', 'DebugKit.Toolbar');
- 
+
+ 		
 
 	function index() {
 		$this->News->recursive = 0;
+		$this->News->locale = $this->Session->read('Config.language');
 		$this->set('news', $this->paginate());
 	}
 
@@ -16,14 +18,14 @@ class NewsController extends AppController {
 			$this->Session->setFlash(__('Invalid news', true));
 			$this->redirect(array('action' => 'index'));
 		}
-    $this->News->setLocale($this->Session->read('Config.language'));
+		$this->News->locale = $this->Session->read('Config.language');
 		$this->set('news', $this->News->read(null, $id));
 	}
 
 	function add() {
-    $this->News->setLocale(array('eng','chi'));
 		if (!empty($this->data)) {
 			$this->News->create();
+			$this->News->locale = $this->data['News']['locale'];
 			if ($this->News->save($this->data)) {
 				$this->Session->setFlash(__('The news has been saved', true));
 				$this->redirect(array('action' => 'index'));
@@ -40,8 +42,6 @@ class NewsController extends AppController {
 			$this->Session->setFlash(__('Invalid news', true));
 			$this->redirect(array('action' => 'index'));
 		}
-    $this->News->setLocale(array('eng','chi'));
-    $this->News->multiTranslateOptions(array('validate'=>true,'find'=>true));
 		if (!empty($this->data)) {
 			if ($this->News->save($this->data)) {
 				$this->Session->setFlash(__('The news has been saved', true));
@@ -69,4 +69,10 @@ class NewsController extends AppController {
 		$this->Session->setFlash(__('News was not deleted', true));
 		$this->redirect(array('action' => 'index'));
 	}
+
+	function beforeFilter() {
+    parent::beforeFilter();
+	}
+
+	
 }

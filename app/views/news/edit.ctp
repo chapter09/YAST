@@ -4,20 +4,19 @@
 		<legend><?php __('Edit News'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('title.eng', array('label'=>'Title'));
-		echo $this->Form->input('title.chi', array('label'=>'標題'));
-    
-    echo $this->Form->input('description.eng', array('label'=>'Abstract'));
-		echo $this->Form->input('description.chi', array('label'=>'摘要'));
-    
+		echo $this->Form->input('title', array('label'=>'Title'));
+    echo $this->Form->input('description', array('label'=>'Abstract'));
 
-    echo $this->Form->label('body.eng', 'Body');
-    echo $cksource->ckeditor('body.eng', array('escape'=>false));
-    echo $this->Form->label('body.chi', '正文');	
-    echo $cksource->ckeditor('body.chi', array('escape'=>false));
+    echo $this->Form->label('body', 'Body');
+    echo $cksource->ckeditor('body', array('escape'=>false));
 
 		echo $this->Form->input('category_id');
     echo $this->Form->input('datetime');
+    echo $this->Form->select('locale', array(
+          'chi'=>'Chinese',
+          'eng'=>'English',),array(
+            'value'=>'chi',
+            'label'=>'Language'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

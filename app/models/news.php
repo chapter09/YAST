@@ -2,9 +2,9 @@
 class News extends AppModel {
 	var $name = 'News';
   var $actsAs = array(
-      'MulitiTranslate' => array(
+      'Translate' => array(
           'title', 'body', 'description'
-        )
+      )
   );
 	var $validate = array(
 		'title' => array(

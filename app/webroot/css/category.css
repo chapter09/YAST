@@ -56,6 +56,7 @@ h1 {
 	border: 1px solid #ccc;
 	margin: 15px 2px 0 -1px;
 	z-index:100;
+	position:relative;
 }
 .content-wide {
 	padding: 5px 15px 15px 15px;
@@ -244,8 +245,8 @@ h1 {
 
 #content-container .paging {
   position: absolute;
-  bottom: 145px;
-  right: 37px;
+  bottom: 7px;
+  right: 12px;
   color: #333;
   font-size: 10px;
 }
