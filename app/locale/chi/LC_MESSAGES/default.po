@@ -592,7 +592,7 @@ msgstr ""
 #: /views/users/index.ctp:46
 #: /views/widgets/index.ctp:40
 msgid "previous"
-msgstr ""
+msgstr "上一页"
 
 #: /views/abouts/index.ctp:43
 #: /views/applications/index.ctp:54
@@ -609,7 +609,7 @@ msgstr ""
 #: /views/users/index.ctp:49
 #: /views/widgets/index.ctp:43
 msgid "next"
-msgstr ""
+msgstr "下一页"
 
 #: /views/abouts/index.ctp:49
 #: /views/abouts/view.ctp:32
