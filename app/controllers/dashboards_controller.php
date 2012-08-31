@@ -156,6 +156,8 @@ class DashboardsController extends AppController
           array(
               'Contact.order'=>'ASC'
               )));
+    $this->set('linkedin', $this->_getSetting('linkedin.url'));
+    $this->set('weibo', $this->_getSetting('weibo.url'));
   }
 
   function service($entry_id=null){
@@ -173,6 +175,8 @@ class DashboardsController extends AppController
         $this->StSection->findAllByStEntryId($entry['StEntry']['id'], 
           array(), 
           array('StSection.order'=>'ASC')));
+    $this->set('linkedin', $this->_getSetting('linkedin.url'));
+    $this->set('weibo', $this->_getSetting('weibo.url'));
   }
 
   function apply(){

@@ -637,9 +637,7 @@ p.button {
 	margin:45px 0 0 20px;
 	width: 27px;
 }
-	#btn-facebook:hover {
-		background-position: -28px -1px;
-	}
+
 	#btn-facebook span {
 		display: none;
 	}
@@ -651,14 +649,12 @@ p.button {
 	margin:45px 0 0 20px;
 	width: 27px;
 }
-	#btn-twitter:hover {
-		background-position: -28px -29px;
-	}
+
 	#btn-twitter span {
 		display: none;
 	}
 #btn-delicious {
-	background: url("/exbd-resources/images/design-elements/social-media/sprite-socialmedia.gif") no-repeat -1px -56px;
+	background: url("../img/sprite-socialmedia.gif") no-repeat -1px -56px;
 	display: block;
 	float:left;
 	height: 27px;
@@ -672,7 +668,7 @@ p.button {
 		display: none;
 	}
 #btn-youtube {
-	background: url("/exbd-resources/images/design-elements/social-media/sprite-socialmedia.gif") no-repeat -1px -84px;
+	background: url("../img/sprite-socialmedia.gif") no-repeat -1px -84px;
 	display: block;
 	float:left;
 	height: 27px;

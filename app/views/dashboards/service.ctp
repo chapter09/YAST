@@ -59,14 +59,11 @@
                   'escape'=>false
                 ));?>
               <div id="btn-connect-bg">
-                <a id="btn-facebook" href="#" target="_blank">    
-                  <span>Facebook</span>
+                <a id="btn-facebook" href="<?php echo $linkedin['Setting']['value'];?>" target="_blank">    
+                  <span>LinkedIn</span>
                 </a> 
-                <a id="btn-twitter" href=""> 
-                  <span>Twitter</span>
-                </a>
-                <a id="btn-youtube" href="#" target="_blank">     
-                  <span>YouTube</span>
+                <a id="btn-twitter" href="<?php echo $weibo['Setting']['value'];?>"> 
+                  <span>Weibo</span>
                 </a>
               </div>
             </div>
