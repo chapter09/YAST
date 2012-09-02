@@ -3,7 +3,7 @@
 <head>
   <?php echo $this->Html->charset(); ?>
   <title>
-    YAST | 
+    ATA | 
     <?php echo $title_for_layout; ?>
   </title>
   
