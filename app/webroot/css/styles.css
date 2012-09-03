@@ -525,7 +525,7 @@ footer ul li a:hover, footer p a:hover, #footer ul li a:hover, #footer p a:hover
 	/*height: 950px;*/
 	min-height:400px;
 	padding-bottom: 120px;
-	overflow:auto;
+	overflow:hidden;
 	zoom:1;
 }
 #container {

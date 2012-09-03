@@ -28,7 +28,8 @@
       <div id="slide-wrapper">
         <ul id="slide">
           <?php foreach($sliders as $slider):?>
-          <li style="background-image:url(<?php echo '/files/'.$slider['Slider']['file_name'];?>);"></li>
+          <!--li style="background-image:url(<?php echo '/files/'.$slider['Slider']['file_name'];?>);"></li-->
+          <li><?php echo $this->Html->image('../files/'.$slider['Slider']['file_name']);?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -38,9 +39,9 @@
 
   <div class="ls-cmp-wrap" id="w1336686522183">
     <!--ls:begin[component-1336686522183]-->
-    <div class="iw_component" id="1336686522183">
+    <!--div class="iw_component" id="1336686522183">
       <div class="wrap"></div>
-    </div>
+    </div-->
     <!--ls:end[component-1336686522183]-->
   </div>
   <div class="ls-cmp-wrap" id="w1336686522128">
@@ -83,7 +84,7 @@
   <div id="slideshow">
     <ul id="menu">
       <?php $count = 0; ?>
-      <?php foreach($sliderShows as $img => $action):?>
+      <?php foreach($sliderShows as $action => $img):?>
       <?php $count ++; ?>
       <li class=<?php echo ($count == count($sliderShows))?'"last"':'""';?>>
         <?php echo $this->Html->image($img, array(

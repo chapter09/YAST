@@ -1405,3 +1405,21 @@ msgstr "感谢您关注"
 
 msgid "Thank you for your subscription."
 msgstr "感谢您的订阅。"
+
+msgid "service.png"
+msgstr "service\_cn.png"
+
+msgid "clients.png"
+msgstr "clients\_cn.png"
+
+msgid "news.png"
+msgstr "news\_cn.png"
+
+msgid "about\_us.png"
+msgstr "about\_us\_cn.png"
+
+msgid "contact.png"
+msgstr "contact\_cn.png"
+
+msgid "career.png"
+msgstr "career\_cn.png"
