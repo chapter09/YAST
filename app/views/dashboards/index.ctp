@@ -28,8 +28,8 @@
       <div id="slide-wrapper">
         <ul id="slide">
           <?php foreach($sliders as $slider):?>
-          <!--li style="background-image:url(<?php echo '/files/'.$slider['Slider']['file_name'];?>);"></li-->
-          <li><?php echo $this->Html->image('../files/'.$slider['Slider']['file_name']);?></li>
+          <li style="background-image:url(<?php echo $this->webroot.'files/'.$slider['Slider']['file_name'];?>);"></li>
+          <!--li><?php echo $this->Html->image('../files/'.$slider['Slider']['file_name']);?></li-->
           <?php endforeach; ?>
         </ul>
       </div>

@@ -575,12 +575,9 @@ p.button {
 	margin-bottom:20px;
 	width: 248px; /*not 250 - accounting for 2px from the border*/
 }
-	#btn-offices:hover {
-		background-position: 0 -133px;
-	}
-	#btn-offices span {
-		display: none;
-	}
+#btn-offices span {
+  display: none;
+}
 #btn-careers {
 	background: url("../img/btn-careers.gif") no-repeat 0 0;
 	border:1px solid #ddd;
