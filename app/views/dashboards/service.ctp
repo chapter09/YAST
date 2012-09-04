@@ -51,9 +51,9 @@
                       
             <div>
               <a id="btn-offices" title="#" href="#"><span>Our Global Offices and Member Locations</span></a> 
-               <?php echo $this->Html->link("<span>ATA Careers</span>",array(
+               <?php echo $this->Html->link("<span>About ATA</span>",array(
                   'controller'=>'dashboards',
-                  'action'=>'career'
+                  'action'=>'about'
                 ), array(
                   'id'=>'btn-careers',
                   'escape'=>false
