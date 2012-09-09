@@ -1133,3 +1133,7 @@ form.sidebar p.button span {
 	.pagination li.current a {
 		background-position:0 -14px;
 	}
+
+#ContactFormAddForm{
+  width: 650px;
+}
