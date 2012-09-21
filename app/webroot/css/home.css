@@ -69,14 +69,13 @@ body {
 }
 #insight-content {
 	float:left;
-	height:99px;
-	margin:15px 20px;
+	height:120px;
+	margin:5px 20px;
 	overflow:hidden;
 	width:840px;
 }
 #insights li {
 	color:#555;
-	font-size:14px;
 	font-weight:bold;
 	line-height:16px;
 	width:200px;

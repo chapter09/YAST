@@ -64,7 +64,7 @@
             <div id="insight-content">
               <ul id="insights">
                 <?php foreach($news as $n):?>
-                <li><?php echo $n['News']['title']; ?><br/>
+                <li><div style="height: 38px;"><?php echo $n['News']['title']; ?><br/></div>
                   <?php echo $this->Html->link($n['News']['description'],array(
                     'controller'=>'dashboards',
                     'action'=>'news',
