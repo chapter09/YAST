@@ -124,7 +124,7 @@ class SitesController extends AppController{
 		$contact = $this->Page->find('first',array(
 								'conditions'=>array(
 								'Page.event_id'=>$this->event['Event']['id'],
-								'Page.menu_type_id'=>9)));
+								'Page.menu_type_id'=>10)));
 		$this->set('contact_id', $contact['Page']['id']);
   }
 

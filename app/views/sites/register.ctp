@@ -21,7 +21,7 @@
             <div id="breadcrumbs"><?php echo $this->Html->link(__('Contact Us',true),
               array(
                 'event_id'=>$event['Event']['id'],
-                'action'=>'pages',
+                'action'=>'page',
                 $contact_id
               )
             )?> / Interested in Event?

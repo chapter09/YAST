@@ -13,6 +13,9 @@
 
 
 <div class="content-body">
- <h2><?php echo $page['Page']['title']; ?></h2>
+ <span class="breadcrumb">
+  <?php echo __('Your present position',true); ?>: &gt;
+  <?php echo $page['Page']['title']; ?>
+ </span>
  <?php echo $page['Page']['text']; ?>
 </div>

@@ -2,6 +2,11 @@
 class EventAppliesController extends AppController {
 
 	var $name = 'EventApplies';
+  
+  function beforeFilter(){
+    parent::beforeFilter();
+    $this->Auth->allowedActions = array('add');
+  }
 
 	function index() {
 		$this->EventApply->recursive = 0;

@@ -191,7 +191,7 @@
             
                       <?php if($withSidebar==true):?>
               <div id="sidebar">
-                <div id="subscribe-form">
+                <div id="subscribe-form" style="display:none;">
                   <h2><?php echo __('Subscribe Enews Here', true);?></h2>
                   <?php echo $this->Form->create('EventApply',array(
                                                              'action'=>'add'));?>

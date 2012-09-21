@@ -17,7 +17,7 @@
 	text-decoration:none;
 }
 #content-container ul {
-	margin-left:15px;
+	margin-left:25px;
 	margin-top:10px;
 }
 #content-container li {
@@ -241,4 +241,13 @@ h1 {
 	font-size:39px;
 	line-height: 39px;
 	font-weight:bold;
+}
+
+
+#content-container .breadcrumb {
+    font-size: 12px;
+    padding-bottom: 2px;
+    border-style:solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #111;
 }

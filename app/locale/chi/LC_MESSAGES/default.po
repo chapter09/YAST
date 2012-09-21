@@ -1423,3 +1423,6 @@ msgstr "contact\_cn.png"
 
 msgid "career.png"
 msgstr "career\_cn.png"
+
+msgid "Your present position"
+msgstr "您现在所在的位置"
